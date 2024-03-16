@@ -1,0 +1,63 @@
+@startuml AnaMenu
+skinparam class {
+    BackgroundColor White
+    ArrowColor Red
+    BorderColor Black
+}
+
+class HospitalSystem {
+    + login(username: string, password: string) : boolean 
+}
+
+class Hasta {
+    - isim : string
+    - soyisim : string
+    - tc : string
+    - dogumTarihi : string
+    - cinsiyet : string
+    - telefon : string
+    - email : string
+
+    + randevuAl()
+    + randevuIptal()
+    + bilgiGuncelle()
+    + randevuGecmisiGoruntule()
+}
+
+class Doktor {
+        - isim : String
+        - soyisim : String
+        - tc : String
+        - branþ : String
+        - telefon : String
+
+        + hastaGörüntüle()
+        + hastaEkle()
+        + hastaSil()
+        + hastaGüncelle()
+        + randevuGörüntüle()
+        + randevuEkle()
+        + randevuSil()
+        + randevuGüncelle()
+        + reçeteYaz()
+        }
+
+class Admin {
+    
+
+    + doktorEkle()
+    + doktorSil()
+    + doktorGüncelle()
+    + hastaEkle()
+    + hastaSil()
+    + hastaGüncelle()
+    + randevuEkle()
+    + randevuSil()
+    + randevuGüncelle()
+    + reçeteYaz()
+}
+
+HospitalSystem -- Hasta : <<uses>>
+HospitalSystem -- Doktor : <<uses>>
+HospitalSystem -- Admin : <<uses>>
+@enduml
