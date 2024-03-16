@@ -1,0 +1,70 @@
+1 ekranda 4 tane login
+1) Ana ekran
+	- hasta giris
+	- doktor giris
+	- sekreter giris
+	- admin 
+
+
+2) Hasta Giris Ozellikler
+- Login
+  	* TC kimlik no
+  	* Sifre
+ 	* Kayit ol
+		- Ad
+		- Soyad
+		- TC kimlik
+		- Telefon
+		- Sifre
+		- Sifre tekrar
+		- Cinsiyet
+  	* Geri al
+- Hasta detay
+	* Bilgilerim
+		- TC kimlik
+		- Ad ve Soyad
+		- Bilgilerimi Guncelle
+			- Ad
+			- Soyad
+			- TC kimlik
+			- Telefon
+			- Sifre
+			- Sifre tekrar
+	* Randevu paneli 
+		- Tarih ve saat
+		- Poliklinik
+		- Brans
+		- Doktor
+	* Randevu gecmisi
+		- Tarih ve saat
+		- Poliklinik
+		- Doktor
+		- Randevu Durumu
+	* Aktif Randevular
+		- Tarih ve saat 
+		- Poliklinik
+		- Doktor
+3) Doktor Giris Ozellikler
+- Login
+  	* TC kimlik no
+  	* Sifre
+	* Geri al
+- Doktor detay
+	* Bilgilerim
+		- Ad ve Soyad
+		- Bilgilerimi Guncelle
+			- Ad
+			- Soyad
+			- TC kimlik
+			- Telefon
+			- Sifre
+			- Sifre tekrar
+	* Randevu paneli 
+		- Tarih ve saat
+		- Poliklinik
+		- Brans
+		- Doktor
+	* Aktif Randevular
+		- Tarih ve saat 
+		- Poliklinik
+		- Doktor
