@@ -31,15 +31,15 @@ class Doktor {
         - branþ : String
         - telefon : String
 
-        + hastaGörüntüle()
+        + hastaGoruntule()
         + hastaEkle()
         + hastaSil()
         + hastaGüncelle()
-        + randevuGörüntüle()
+        + randevuGoruntule()
         + randevuEkle()
         + randevuSil()
-        + randevuGüncelle()
-        + reçeteYaz()
+        + randevuGuncelle()
+        + receteYaz()
         }
 
 class Admin {
@@ -47,14 +47,14 @@ class Admin {
 
     + doktorEkle()
     + doktorSil()
-    + doktorGüncelle()
+    + doktorGuncelle()
     + hastaEkle()
     + hastaSil()
-    + hastaGüncelle()
+    + hastaGuncelle()
     + randevuEkle()
     + randevuSil()
-    + randevuGüncelle()
-    + reçeteYaz()
+    + randevuGuncelle()
+    + receteYaz()
 }
 
 HospitalSystem -- Hasta : <<uses>>
