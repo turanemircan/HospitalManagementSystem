@@ -28,58 +28,148 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            tabControl1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginGUI));
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            rjBtnPatientLogin = new RJButton.RJButton();
+            rjBtnDoctorLogin = new RJButton.RJButton();
+            rjBtnSecretaryLogin = new RJButton.RJButton();
+            rjBtnAdminLogin = new RJButton.RJButton();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // tabControl1
+            // pictureBox1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(54, 62);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(708, 345);
-            tabControl1.TabIndex = 0;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(450, 462);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
-            // tabPage1
+            // panel1
             // 
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(700, 317);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
+            panel1.Controls.Add(rjBtnAdminLogin);
+            panel1.Controls.Add(rjBtnSecretaryLogin);
+            panel1.Controls.Add(rjBtnDoctorLogin);
+            panel1.Controls.Add(rjBtnPatientLogin);
+            panel1.Location = new Point(479, 88);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(372, 264);
+            panel1.TabIndex = 1;
             // 
-            // tabPage2
+            // rjBtnPatientLogin
             // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(192, 72);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            rjBtnPatientLogin.BackColor = Color.Salmon;
+            rjBtnPatientLogin.BackgroundColor = Color.Salmon;
+            rjBtnPatientLogin.BorderColor = Color.PaleVioletRed;
+            rjBtnPatientLogin.BorderRadius = 20;
+            rjBtnPatientLogin.BorderSize = 0;
+            rjBtnPatientLogin.Dock = DockStyle.Top;
+            rjBtnPatientLogin.FlatAppearance.BorderSize = 0;
+            rjBtnPatientLogin.FlatStyle = FlatStyle.Flat;
+            rjBtnPatientLogin.Font = new Font("Yu Gothic UI Semibold", 13F);
+            rjBtnPatientLogin.ForeColor = Color.White;
+            rjBtnPatientLogin.Image = (Image)resources.GetObject("rjBtnPatientLogin.Image");
+            rjBtnPatientLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            rjBtnPatientLogin.Location = new Point(0, 0);
+            rjBtnPatientLogin.Name = "rjBtnPatientLogin";
+            rjBtnPatientLogin.Size = new Size(372, 66);
+            rjBtnPatientLogin.TabIndex = 0;
+            rjBtnPatientLogin.Text = "Patient Login";
+            rjBtnPatientLogin.TextColor = Color.White;
+            rjBtnPatientLogin.UseVisualStyleBackColor = false;
+            // 
+            // rjBtnDoctorLogin
+            // 
+            rjBtnDoctorLogin.BackColor = Color.Salmon;
+            rjBtnDoctorLogin.BackgroundColor = Color.Salmon;
+            rjBtnDoctorLogin.BorderColor = Color.PaleVioletRed;
+            rjBtnDoctorLogin.BorderRadius = 20;
+            rjBtnDoctorLogin.BorderSize = 0;
+            rjBtnDoctorLogin.Dock = DockStyle.Top;
+            rjBtnDoctorLogin.FlatAppearance.BorderSize = 0;
+            rjBtnDoctorLogin.FlatStyle = FlatStyle.Flat;
+            rjBtnDoctorLogin.Font = new Font("Yu Gothic UI Semibold", 13F);
+            rjBtnDoctorLogin.ForeColor = Color.White;
+            rjBtnDoctorLogin.Image = (Image)resources.GetObject("rjBtnDoctorLogin.Image");
+            rjBtnDoctorLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            rjBtnDoctorLogin.Location = new Point(0, 66);
+            rjBtnDoctorLogin.Name = "rjBtnDoctorLogin";
+            rjBtnDoctorLogin.Size = new Size(372, 66);
+            rjBtnDoctorLogin.TabIndex = 1;
+            rjBtnDoctorLogin.Text = "Doctor Login";
+            rjBtnDoctorLogin.TextColor = Color.White;
+            rjBtnDoctorLogin.UseVisualStyleBackColor = false;
+            // 
+            // rjBtnSecretaryLogin
+            // 
+            rjBtnSecretaryLogin.BackColor = Color.Salmon;
+            rjBtnSecretaryLogin.BackgroundColor = Color.Salmon;
+            rjBtnSecretaryLogin.BorderColor = Color.PaleVioletRed;
+            rjBtnSecretaryLogin.BorderRadius = 20;
+            rjBtnSecretaryLogin.BorderSize = 0;
+            rjBtnSecretaryLogin.Dock = DockStyle.Top;
+            rjBtnSecretaryLogin.FlatAppearance.BorderSize = 0;
+            rjBtnSecretaryLogin.FlatStyle = FlatStyle.Flat;
+            rjBtnSecretaryLogin.Font = new Font("Yu Gothic UI Semibold", 13F);
+            rjBtnSecretaryLogin.ForeColor = Color.White;
+            rjBtnSecretaryLogin.Image = (Image)resources.GetObject("rjBtnSecretaryLogin.Image");
+            rjBtnSecretaryLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            rjBtnSecretaryLogin.Location = new Point(0, 132);
+            rjBtnSecretaryLogin.Name = "rjBtnSecretaryLogin";
+            rjBtnSecretaryLogin.Size = new Size(372, 66);
+            rjBtnSecretaryLogin.TabIndex = 2;
+            rjBtnSecretaryLogin.Text = "Secretary Login";
+            rjBtnSecretaryLogin.TextColor = Color.White;
+            rjBtnSecretaryLogin.UseVisualStyleBackColor = false;
+            // 
+            // rjBtnAdminLogin
+            // 
+            rjBtnAdminLogin.BackColor = Color.Salmon;
+            rjBtnAdminLogin.BackgroundColor = Color.Salmon;
+            rjBtnAdminLogin.BorderColor = Color.PaleVioletRed;
+            rjBtnAdminLogin.BorderRadius = 20;
+            rjBtnAdminLogin.BorderSize = 0;
+            rjBtnAdminLogin.Dock = DockStyle.Top;
+            rjBtnAdminLogin.FlatAppearance.BorderSize = 0;
+            rjBtnAdminLogin.FlatStyle = FlatStyle.Flat;
+            rjBtnAdminLogin.Font = new Font("Yu Gothic UI Semibold", 13F);
+            rjBtnAdminLogin.ForeColor = Color.White;
+            rjBtnAdminLogin.Image = (Image)resources.GetObject("rjBtnAdminLogin.Image");
+            rjBtnAdminLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            rjBtnAdminLogin.Location = new Point(0, 198);
+            rjBtnAdminLogin.Name = "rjBtnAdminLogin";
+            rjBtnAdminLogin.Size = new Size(372, 66);
+            rjBtnAdminLogin.TabIndex = 3;
+            rjBtnAdminLogin.Text = "Admin Login";
+            rjBtnAdminLogin.TextColor = Color.White;
+            rjBtnAdminLogin.UseVisualStyleBackColor = false;
             // 
             // LoginGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tabControl1);
+            BackColor = Color.White;
+            ClientSize = new Size(884, 461);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox1);
             Name = "LoginGUI";
             Text = "Form1";
-            tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
+        private PictureBox pictureBox1;
+        private Panel panel1;
+        private RJButton.RJButton rjBtnPatientLogin;
+        private RJButton.RJButton rjBtnAdminLogin;
+        private RJButton.RJButton rjBtnSecretaryLogin;
+        private RJButton.RJButton rjBtnDoctorLogin;
     }
 }
