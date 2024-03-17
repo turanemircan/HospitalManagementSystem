@@ -29,26 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginButtons));
-            panel1 = new Panel();
             rjBtnAdminLogin = new CustomTools.RJButton.RJButton();
             rjBtnSecretaryLogin = new CustomTools.RJButton.RJButton();
             rjBtnDoctorLogin = new CustomTools.RJButton.RJButton();
             rjBtnPatientLogin = new CustomTools.RJButton.RJButton();
-            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(rjBtnAdminLogin);
-            panel1.Controls.Add(rjBtnSecretaryLogin);
-            panel1.Controls.Add(rjBtnDoctorLogin);
-            panel1.Controls.Add(rjBtnPatientLogin);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(372, 264);
-            panel1.TabIndex = 2;
             // 
             // rjBtnAdminLogin
             // 
@@ -67,7 +52,7 @@
             rjBtnAdminLogin.Location = new Point(0, 198);
             rjBtnAdminLogin.Name = "rjBtnAdminLogin";
             rjBtnAdminLogin.Size = new Size(372, 66);
-            rjBtnAdminLogin.TabIndex = 3;
+            rjBtnAdminLogin.TabIndex = 7;
             rjBtnAdminLogin.Text = "Admin Login";
             rjBtnAdminLogin.TextColor = Color.White;
             rjBtnAdminLogin.UseVisualStyleBackColor = false;
@@ -89,7 +74,7 @@
             rjBtnSecretaryLogin.Location = new Point(0, 132);
             rjBtnSecretaryLogin.Name = "rjBtnSecretaryLogin";
             rjBtnSecretaryLogin.Size = new Size(372, 66);
-            rjBtnSecretaryLogin.TabIndex = 2;
+            rjBtnSecretaryLogin.TabIndex = 6;
             rjBtnSecretaryLogin.Text = "Secretary Login";
             rjBtnSecretaryLogin.TextColor = Color.White;
             rjBtnSecretaryLogin.UseVisualStyleBackColor = false;
@@ -111,7 +96,7 @@
             rjBtnDoctorLogin.Location = new Point(0, 66);
             rjBtnDoctorLogin.Name = "rjBtnDoctorLogin";
             rjBtnDoctorLogin.Size = new Size(372, 66);
-            rjBtnDoctorLogin.TabIndex = 1;
+            rjBtnDoctorLogin.TabIndex = 5;
             rjBtnDoctorLogin.Text = "Doctor Login";
             rjBtnDoctorLogin.TextColor = Color.White;
             rjBtnDoctorLogin.UseVisualStyleBackColor = false;
@@ -133,7 +118,7 @@
             rjBtnPatientLogin.Location = new Point(0, 0);
             rjBtnPatientLogin.Name = "rjBtnPatientLogin";
             rjBtnPatientLogin.Size = new Size(372, 66);
-            rjBtnPatientLogin.TabIndex = 0;
+            rjBtnPatientLogin.TabIndex = 4;
             rjBtnPatientLogin.Text = "Patient Login";
             rjBtnPatientLogin.TextColor = Color.White;
             rjBtnPatientLogin.UseVisualStyleBackColor = false;
@@ -142,16 +127,18 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
+            BackColor = Color.White;
+            Controls.Add(rjBtnAdminLogin);
+            Controls.Add(rjBtnSecretaryLogin);
+            Controls.Add(rjBtnDoctorLogin);
+            Controls.Add(rjBtnPatientLogin);
             Name = "LoginButtons";
             Size = new Size(372, 264);
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
         private CustomTools.RJButton.RJButton rjBtnAdminLogin;
         private CustomTools.RJButton.RJButton rjBtnSecretaryLogin;
         private CustomTools.RJButton.RJButton rjBtnDoctorLogin;
