@@ -1,17 +1,14 @@
-﻿using HospitalManagementSystem;
-using HospitalManagementSystem.CustomTools.RJButton;
-
-namespace HospitalManagementSystem
+﻿namespace HospitalManagementSystem.Forms.UserControllers
 {
-    partial class LoginGUI
+    partial class LoginButtons
     {
-        /// <summary>
-        ///  Required designer variable.
+        /// <summary> 
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
+        /// <summary> 
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,45 +20,35 @@ namespace HospitalManagementSystem
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginGUI));
-            pictureBox1 = new PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginButtons));
             panel1 = new Panel();
-            rjBtnAdminLogin = new RJButton();
-            rjBtnSecretaryLogin = new RJButton();
-            rjBtnDoctorLogin = new RJButton();
-            rjBtnPatientLogin = new RJButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            rjBtnAdminLogin = new CustomTools.RJButton.RJButton();
+            rjBtnSecretaryLogin = new CustomTools.RJButton.RJButton();
+            rjBtnDoctorLogin = new CustomTools.RJButton.RJButton();
+            rjBtnPatientLogin = new CustomTools.RJButton.RJButton();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(450, 462);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(rjBtnAdminLogin);
             panel1.Controls.Add(rjBtnSecretaryLogin);
             panel1.Controls.Add(rjBtnDoctorLogin);
             panel1.Controls.Add(rjBtnPatientLogin);
-            panel1.Location = new Point(479, 88);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(372, 264);
-            panel1.TabIndex = 1;
+            panel1.TabIndex = 2;
             // 
             // rjBtnAdminLogin
             // 
@@ -150,30 +137,24 @@ namespace HospitalManagementSystem
             rjBtnPatientLogin.Text = "Patient Login";
             rjBtnPatientLogin.TextColor = Color.White;
             rjBtnPatientLogin.UseVisualStyleBackColor = false;
-            rjBtnPatientLogin.Click += rjBtnPatientLogin_Click;
             // 
-            // LoginGUI
+            // LoginButtons
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(884, 461);
             Controls.Add(panel1);
-            Controls.Add(pictureBox1);
-            Name = "LoginGUI";
-            Text = "Main Menu";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Name = "LoginButtons";
+            Size = new Size(372, 264);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
         private Panel panel1;
-        private RJButton rjBtnPatientLogin;
-        private RJButton rjBtnAdminLogin;
-        private RJButton rjBtnSecretaryLogin;
-        private RJButton rjBtnDoctorLogin;
+        private CustomTools.RJButton.RJButton rjBtnAdminLogin;
+        private CustomTools.RJButton.RJButton rjBtnSecretaryLogin;
+        private CustomTools.RJButton.RJButton rjBtnDoctorLogin;
+        private CustomTools.RJButton.RJButton rjBtnPatientLogin;
     }
 }

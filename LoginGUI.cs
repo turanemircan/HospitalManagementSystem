@@ -6,5 +6,10 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
         }
+
+        private void rjBtnPatientLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
