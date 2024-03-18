@@ -1,13 +1,13 @@
-﻿namespace HospitalManagementSystem.Forms.UserControllers
+﻿namespace HospitalManagementSystem.Forms.LoginForms
 {
-    partial class DoctorLoginGUI
+    partial class DoctorLogin
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -51,7 +51,7 @@
             rjBtnDoctorBackMain.Location = new Point(3, 3);
             rjBtnDoctorBackMain.Name = "rjBtnDoctorBackMain";
             rjBtnDoctorBackMain.Size = new Size(40, 40);
-            rjBtnDoctorBackMain.TabIndex = 14;
+            rjBtnDoctorBackMain.TabIndex = 21;
             rjBtnDoctorBackMain.TextColor = Color.White;
             rjBtnDoctorBackMain.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             rjBtnDoctorSignIn.Location = new Point(130, 253);
             rjBtnDoctorSignIn.Name = "rjBtnDoctorSignIn";
             rjBtnDoctorSignIn.Size = new Size(140, 31);
-            rjBtnDoctorSignIn.TabIndex = 13;
+            rjBtnDoctorSignIn.TabIndex = 20;
             rjBtnDoctorSignIn.Text = "Sign in";
             rjBtnDoctorSignIn.TextColor = Color.White;
             rjBtnDoctorSignIn.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             rjTextBoxDoctorPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxDoctorPassword.PlaceholderText = "";
             rjTextBoxDoctorPassword.Size = new Size(250, 31);
-            rjTextBoxDoctorPassword.TabIndex = 12;
+            rjTextBoxDoctorPassword.TabIndex = 19;
             rjTextBoxDoctorPassword.Texts = "";
             rjTextBoxDoctorPassword.UnderlinedStyle = false;
             // 
@@ -103,7 +103,7 @@
             labelDoctorPassword.Location = new Point(75, 179);
             labelDoctorPassword.Name = "labelDoctorPassword";
             labelDoctorPassword.Size = new Size(73, 20);
-            labelDoctorPassword.TabIndex = 11;
+            labelDoctorPassword.TabIndex = 18;
             labelDoctorPassword.Text = "Password";
             // 
             // rjTextBoxDoctorIdentificationNo
@@ -124,7 +124,7 @@
             rjTextBoxDoctorIdentificationNo.PlaceholderColor = Color.DarkGray;
             rjTextBoxDoctorIdentificationNo.PlaceholderText = "";
             rjTextBoxDoctorIdentificationNo.Size = new Size(250, 31);
-            rjTextBoxDoctorIdentificationNo.TabIndex = 10;
+            rjTextBoxDoctorIdentificationNo.TabIndex = 17;
             rjTextBoxDoctorIdentificationNo.Texts = "";
             rjTextBoxDoctorIdentificationNo.UnderlinedStyle = false;
             // 
@@ -134,8 +134,8 @@
             labelDoctorID.Font = new Font("Yu Gothic UI Semibold", 11F);
             labelDoctorID.Location = new Point(75, 111);
             labelDoctorID.Name = "labelDoctorID";
-            labelDoctorID.Size = new Size(125, 20);
-            labelDoctorID.TabIndex = 9;
+            labelDoctorID.Size = new Size(124, 20);
+            labelDoctorID.TabIndex = 16;
             labelDoctorID.Text = "Identification No";
             // 
             // lbl_DoctorLoginGUI
@@ -145,14 +145,15 @@
             lbl_DoctorLoginGUI.Location = new Point(132, 62);
             lbl_DoctorLoginGUI.Name = "lbl_DoctorLoginGUI";
             lbl_DoctorLoginGUI.Size = new Size(137, 25);
-            lbl_DoctorLoginGUI.TabIndex = 8;
+            lbl_DoctorLoginGUI.TabIndex = 15;
             lbl_DoctorLoginGUI.Text = "Ready to Login";
             // 
-            // DoctorLoginGUI
+            // DoctorLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            ClientSize = new Size(400, 350);
             Controls.Add(rjBtnDoctorBackMain);
             Controls.Add(rjBtnDoctorSignIn);
             Controls.Add(rjTextBoxDoctorPassword);
@@ -160,8 +161,9 @@
             Controls.Add(rjTextBoxDoctorIdentificationNo);
             Controls.Add(labelDoctorID);
             Controls.Add(lbl_DoctorLoginGUI);
-            Name = "DoctorLoginGUI";
-            Size = new Size(400, 350);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "DoctorLogin";
+            Text = "DoctorLogin";
             ResumeLayout(false);
             PerformLayout();
         }

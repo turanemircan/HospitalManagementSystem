@@ -1,3 +1,9 @@
+using HospitalManagementSystem.Forms.UserControllers;
+using HospitalManagementSystem;
+using HospitalManagementSystem.Forms;
+using HospitalManagementSystem.Forms.LoginForms;
+using HospitalManagementSystem.Helper;
+
 namespace HospitalManagementSystem
 {
     public partial class LoginGUI : Form
@@ -6,8 +12,7 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
         }
-
-        private void rjBtnPatientLogin_Click(object sender, EventArgs e)
+        private void LoginGUI_Load(object sender, EventArgs e)
         {
 
         }

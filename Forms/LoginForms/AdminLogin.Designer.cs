@@ -1,13 +1,13 @@
-﻿namespace HospitalManagementSystem.Forms.UserControllers
+﻿namespace HospitalManagementSystem.Forms.LoginForms
 {
-    partial class AdminLoginGUI
+    partial class AdminLogin
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -51,7 +51,7 @@
             rjBtnAdminBackMain.Location = new Point(3, 3);
             rjBtnAdminBackMain.Name = "rjBtnAdminBackMain";
             rjBtnAdminBackMain.Size = new Size(40, 40);
-            rjBtnAdminBackMain.TabIndex = 21;
+            rjBtnAdminBackMain.TabIndex = 28;
             rjBtnAdminBackMain.TextColor = Color.White;
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             rjBtnAdminSignIn.Location = new Point(130, 253);
             rjBtnAdminSignIn.Name = "rjBtnAdminSignIn";
             rjBtnAdminSignIn.Size = new Size(140, 31);
-            rjBtnAdminSignIn.TabIndex = 20;
+            rjBtnAdminSignIn.TabIndex = 27;
             rjBtnAdminSignIn.Text = "Sign in";
             rjBtnAdminSignIn.TextColor = Color.White;
             rjBtnAdminSignIn.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             rjTextBoxAdminPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxAdminPassword.PlaceholderText = "";
             rjTextBoxAdminPassword.Size = new Size(250, 31);
-            rjTextBoxAdminPassword.TabIndex = 19;
+            rjTextBoxAdminPassword.TabIndex = 26;
             rjTextBoxAdminPassword.Texts = "";
             rjTextBoxAdminPassword.UnderlinedStyle = false;
             // 
@@ -103,7 +103,7 @@
             labelAdminPassword.Location = new Point(75, 179);
             labelAdminPassword.Name = "labelAdminPassword";
             labelAdminPassword.Size = new Size(73, 20);
-            labelAdminPassword.TabIndex = 18;
+            labelAdminPassword.TabIndex = 25;
             labelAdminPassword.Text = "Password";
             // 
             // rjTextBoxAdminIdentificationNo
@@ -124,7 +124,7 @@
             rjTextBoxAdminIdentificationNo.PlaceholderColor = Color.DarkGray;
             rjTextBoxAdminIdentificationNo.PlaceholderText = "";
             rjTextBoxAdminIdentificationNo.Size = new Size(250, 31);
-            rjTextBoxAdminIdentificationNo.TabIndex = 17;
+            rjTextBoxAdminIdentificationNo.TabIndex = 24;
             rjTextBoxAdminIdentificationNo.Texts = "";
             rjTextBoxAdminIdentificationNo.UnderlinedStyle = false;
             // 
@@ -134,8 +134,8 @@
             labelAdminID.Font = new Font("Yu Gothic UI Semibold", 11F);
             labelAdminID.Location = new Point(75, 111);
             labelAdminID.Name = "labelAdminID";
-            labelAdminID.Size = new Size(125, 20);
-            labelAdminID.TabIndex = 16;
+            labelAdminID.Size = new Size(124, 20);
+            labelAdminID.TabIndex = 23;
             labelAdminID.Text = "Identification No";
             // 
             // lbl_AdminLoginGUI
@@ -145,14 +145,15 @@
             lbl_AdminLoginGUI.Location = new Point(132, 62);
             lbl_AdminLoginGUI.Name = "lbl_AdminLoginGUI";
             lbl_AdminLoginGUI.Size = new Size(137, 25);
-            lbl_AdminLoginGUI.TabIndex = 15;
+            lbl_AdminLoginGUI.TabIndex = 22;
             lbl_AdminLoginGUI.Text = "Ready to Login";
             // 
-            // AdminLoginGUI
+            // AdminLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            ClientSize = new Size(400, 350);
             Controls.Add(rjBtnAdminBackMain);
             Controls.Add(rjBtnAdminSignIn);
             Controls.Add(rjTextBoxAdminPassword);
@@ -160,8 +161,9 @@
             Controls.Add(rjTextBoxAdminIdentificationNo);
             Controls.Add(labelAdminID);
             Controls.Add(lbl_AdminLoginGUI);
-            Name = "AdminLoginGUI";
-            Size = new Size(400, 350);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "AdminLogin";
+            Text = "AdminLogin";
             ResumeLayout(false);
             PerformLayout();
         }

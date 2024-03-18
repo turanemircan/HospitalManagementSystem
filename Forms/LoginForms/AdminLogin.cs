@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HospitalManagementSystem.Forms.UserControllers
+namespace HospitalManagementSystem.Forms.LoginForms
 {
-    public partial class PatientLoginGUI : UserControl
+    public partial class AdminLogin : Form
     {
-        public PatientLoginGUI()
+        public AdminLogin()
         {
             InitializeComponent();
         }

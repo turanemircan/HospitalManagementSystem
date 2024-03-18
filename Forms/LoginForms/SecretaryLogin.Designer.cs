@@ -1,13 +1,13 @@
-﻿namespace HospitalManagementSystem.Forms.UserControllers
+﻿namespace HospitalManagementSystem.Forms.LoginForms
 {
-    partial class SecretaryLoginGUI
+    partial class SecretaryLogin
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -51,7 +51,7 @@
             rjBtnSecretaryBackMain.Location = new Point(3, 3);
             rjBtnSecretaryBackMain.Name = "rjBtnSecretaryBackMain";
             rjBtnSecretaryBackMain.Size = new Size(40, 40);
-            rjBtnSecretaryBackMain.TabIndex = 14;
+            rjBtnSecretaryBackMain.TabIndex = 21;
             rjBtnSecretaryBackMain.TextColor = Color.White;
             rjBtnSecretaryBackMain.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             rjBtnSecretarySignIn.Location = new Point(130, 253);
             rjBtnSecretarySignIn.Name = "rjBtnSecretarySignIn";
             rjBtnSecretarySignIn.Size = new Size(140, 31);
-            rjBtnSecretarySignIn.TabIndex = 13;
+            rjBtnSecretarySignIn.TabIndex = 20;
             rjBtnSecretarySignIn.Text = "Sign in";
             rjBtnSecretarySignIn.TextColor = Color.White;
             rjBtnSecretarySignIn.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             rjTextBoxSecretaryPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxSecretaryPassword.PlaceholderText = "";
             rjTextBoxSecretaryPassword.Size = new Size(250, 31);
-            rjTextBoxSecretaryPassword.TabIndex = 12;
+            rjTextBoxSecretaryPassword.TabIndex = 19;
             rjTextBoxSecretaryPassword.Texts = "";
             rjTextBoxSecretaryPassword.UnderlinedStyle = false;
             // 
@@ -103,7 +103,7 @@
             label_Secretary_Password.Location = new Point(75, 179);
             label_Secretary_Password.Name = "label_Secretary_Password";
             label_Secretary_Password.Size = new Size(73, 20);
-            label_Secretary_Password.TabIndex = 11;
+            label_Secretary_Password.TabIndex = 18;
             label_Secretary_Password.Text = "Password";
             // 
             // rjTextBoxSecretaryIdentificationNo
@@ -124,7 +124,7 @@
             rjTextBoxSecretaryIdentificationNo.PlaceholderColor = Color.DarkGray;
             rjTextBoxSecretaryIdentificationNo.PlaceholderText = "";
             rjTextBoxSecretaryIdentificationNo.Size = new Size(250, 31);
-            rjTextBoxSecretaryIdentificationNo.TabIndex = 10;
+            rjTextBoxSecretaryIdentificationNo.TabIndex = 17;
             rjTextBoxSecretaryIdentificationNo.Texts = "";
             rjTextBoxSecretaryIdentificationNo.UnderlinedStyle = false;
             // 
@@ -135,7 +135,7 @@
             label_Secretary_ID.Location = new Point(75, 111);
             label_Secretary_ID.Name = "label_Secretary_ID";
             label_Secretary_ID.Size = new Size(124, 20);
-            label_Secretary_ID.TabIndex = 9;
+            label_Secretary_ID.TabIndex = 16;
             label_Secretary_ID.Text = "Identification No";
             // 
             // lbl_SecretaryLoginGUI
@@ -145,14 +145,15 @@
             lbl_SecretaryLoginGUI.Location = new Point(132, 62);
             lbl_SecretaryLoginGUI.Name = "lbl_SecretaryLoginGUI";
             lbl_SecretaryLoginGUI.Size = new Size(137, 25);
-            lbl_SecretaryLoginGUI.TabIndex = 8;
+            lbl_SecretaryLoginGUI.TabIndex = 15;
             lbl_SecretaryLoginGUI.Text = "Ready to Login";
             // 
-            // SecretaryLoginGUI
+            // SecretaryLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            ClientSize = new Size(384, 311);
             Controls.Add(rjBtnSecretaryBackMain);
             Controls.Add(rjBtnSecretarySignIn);
             Controls.Add(rjTextBoxSecretaryPassword);
@@ -160,8 +161,9 @@
             Controls.Add(rjTextBoxSecretaryIdentificationNo);
             Controls.Add(label_Secretary_ID);
             Controls.Add(lbl_SecretaryLoginGUI);
-            Name = "SecretaryLoginGUI";
-            Size = new Size(400, 350);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "SecretaryLogin";
+            Text = "SecretaryLogin";
             ResumeLayout(false);
             PerformLayout();
         }

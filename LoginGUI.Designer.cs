@@ -64,6 +64,7 @@ namespace HospitalManagementSystem
             Controls.Add(pictureBox1);
             Name = "LoginGUI";
             Text = "Main Menu";
+            Load += LoginGUI_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -71,6 +72,6 @@ namespace HospitalManagementSystem
         #endregion
 
         private PictureBox pictureBox1;
-        private Panel panelFormController;
+        public Panel panelFormController;
     }
 }
