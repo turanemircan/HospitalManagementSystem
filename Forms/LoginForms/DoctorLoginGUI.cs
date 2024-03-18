@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem.Forms.LoginForms
 {
-    public partial class AdminLogin : Form
+    public partial class DoctorLoginGUI : Form
     {
-        public AdminLogin()
+        public DoctorLoginGUI()
         {
             InitializeComponent();
         }

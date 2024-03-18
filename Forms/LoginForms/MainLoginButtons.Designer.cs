@@ -55,6 +55,7 @@
             rjBtnAdminLogin.Text = "Admin Login";
             rjBtnAdminLogin.TextColor = Color.White;
             rjBtnAdminLogin.UseVisualStyleBackColor = false;
+            rjBtnAdminLogin.Click += rjBtnAdminLogin_Click;
             // 
             // rjBtnSecretaryLogin
             // 
@@ -76,6 +77,7 @@
             rjBtnSecretaryLogin.Text = "Secretary Login";
             rjBtnSecretaryLogin.TextColor = Color.White;
             rjBtnSecretaryLogin.UseVisualStyleBackColor = false;
+            rjBtnSecretaryLogin.Click += rjBtnSecretaryLogin_Click;
             // 
             // rjBtnDoctorLogin
             // 
@@ -97,6 +99,7 @@
             rjBtnDoctorLogin.Text = "Doctor Login";
             rjBtnDoctorLogin.TextColor = Color.White;
             rjBtnDoctorLogin.UseVisualStyleBackColor = false;
+            rjBtnDoctorLogin.Click += rjBtnDoctorLogin_Click;
             // 
             // rjBtnPatientLogin
             // 

@@ -1,6 +1,6 @@
 ﻿namespace HospitalManagementSystem.Forms.LoginForms
 {
-    partial class SecretaryLogin
+    partial class SecretaryLoginGUI
     {
         /// <summary>
         /// Required designer variable.

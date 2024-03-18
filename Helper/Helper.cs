@@ -15,6 +15,7 @@ namespace HospitalManagementSystem.Helper
         }
         public void formGoster(Form form, string formName)
         {
+            panel.Controls.Clear();
             if (form != null)
             {
                 switch (formName)

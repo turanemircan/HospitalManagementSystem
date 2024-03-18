@@ -12,9 +12,15 @@ namespace HospitalManagementSystem.Forms.LoginForms
 {
     public partial class PatientLoginGUI : Form
     {
+        Panel panel;
         public PatientLoginGUI(Panel _panel)
         {
-            InitializeComponent();            
+            InitializeComponent();    
+            this.panel = _panel;
+        }
+        public PatientLoginGUI()
+        {
+            InitializeComponent();
         }
 
         private void rjBtnPatientBackMain_Click(object sender, EventArgs e)

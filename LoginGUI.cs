@@ -10,13 +10,13 @@ namespace HospitalManagementSystem
         Helper.Helper helper;
         public LoginGUI()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
         private void LoginGUI_Load(object sender, EventArgs e)
         {
             // Panelde Default MainLoginButtons ac
             helper = new Helper.Helper(panelFormController);
-            MainLoginButtons mainLoginButtons = new MainLoginButtons();
+            MainLoginButtons mainLoginButtons = new MainLoginButtons(panelFormController);
             helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
         }
     }
