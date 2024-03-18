@@ -42,17 +42,26 @@ namespace HospitalManagementSystem.Forms
 
         private void rjBtnDoctorLogin_Click(object sender, EventArgs e)
         {
-
+            //DoctorLoginGUI sayfasini panel uzerinde goster.
+            Helper.Helper helper = new Helper.Helper(panel);
+            doctorLoginGUI = new DoctorLoginGUI();
+            helper.formGoster(doctorLoginGUI, doctorLoginGUI.Name);
         }
 
         private void rjBtnSecretaryLogin_Click(object sender, EventArgs e)
         {
-
+            //SecretaryLoginGUI sayfasini panel uzerinde goster.
+            Helper.Helper helper = new Helper.Helper(panel);
+            secretaryLoginGUI = new SecretaryLoginGUI();
+            helper.formGoster(secretaryLoginGUI, secretaryLoginGUI.Name);
         }
 
         private void rjBtnAdminLogin_Click(object sender, EventArgs e)
         {
-
+            //AdminLoginGUI sayfasini panel uzerinde goster.
+            Helper.Helper helper = new Helper.Helper(panel);
+            adminLoginGUI = new AdminLoginGUI();
+            helper.formGoster(adminLoginGUI, adminLoginGUI.Name);
         }
     }
 }
