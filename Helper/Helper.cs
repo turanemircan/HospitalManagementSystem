@@ -11,7 +11,6 @@ namespace HospitalManagementSystem.Helper
         private Panel panel;
         public Helper(Panel _panel)
         {
-            
             this.panel = _panel;
         }
         public void formGoster(Form form, string formName)
@@ -36,13 +35,38 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
+                    case "DoctorLogin":
+                        form.TopLevel = false;
+                        form.AutoScroll = true;
+                        form.Dock = DockStyle.None;
+                        form.Location = new Point(1, 56);
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "SecretaryLogin":
+                        form.TopLevel = false;
+                        form.AutoScroll = true;
+                        form.Dock = DockStyle.None;
+                        form.Location = new Point(1, 56);
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "AdminLogin":
+                        form.TopLevel = false;
+                        form.AutoScroll = true;
+                        form.Dock = DockStyle.None;
+                        form.Location = new Point(1, 56);
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
                     default:
+                        panel.Controls.Clear();
                         break;
                 }
             }
             else
             {
-
+                MessageBox.Show("Sayfa bulunamadi.");
             }
         }
     }
