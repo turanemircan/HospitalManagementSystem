@@ -1,4 +1,3 @@
-using HospitalManagementSystem.Forms.UserControllers;
 using HospitalManagementSystem;
 using HospitalManagementSystem.Forms;
 using HospitalManagementSystem.Forms.LoginForms;
@@ -8,13 +7,17 @@ namespace HospitalManagementSystem
 {
     public partial class LoginGUI : Form
     {
+        Helper.Helper helper;
         public LoginGUI()
         {
             InitializeComponent();
         }
         private void LoginGUI_Load(object sender, EventArgs e)
         {
-
+            // Panelde Default MainLoginButtons ac
+            helper = new Helper.Helper(panelFormController);
+            MainLoginButtons mainLoginButtons = new MainLoginButtons();
+            helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
         }
     }
 }
