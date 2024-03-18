@@ -54,6 +54,7 @@
             rjBtnAdminBackMain.TabIndex = 28;
             rjBtnAdminBackMain.TextColor = Color.White;
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
+            rjBtnAdminBackMain.Click += rjBtnAdminBackMain_Click;
             // 
             // rjBtnAdminSignIn
             // 
@@ -148,7 +149,7 @@
             lbl_AdminLoginGUI.TabIndex = 22;
             lbl_AdminLoginGUI.Text = "Ready to Login";
             // 
-            // AdminLogin
+            // AdminLoginGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,7 +163,7 @@
             Controls.Add(labelAdminID);
             Controls.Add(lbl_AdminLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "AdminLogin";
+            Name = "AdminLoginGUI";
             Text = "AdminLogin";
             ResumeLayout(false);
             PerformLayout();

@@ -36,7 +36,7 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
-                    case "DoctorLogin":
+                    case "DoctorLoginGUI":
                         form.TopLevel = false;
                         form.AutoScroll = true;
                         form.Dock = DockStyle.None;
@@ -44,7 +44,7 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
-                    case "SecretaryLogin":
+                    case "SecretaryLoginGUI":
                         form.TopLevel = false;
                         form.AutoScroll = true;
                         form.Dock = DockStyle.None;
@@ -52,7 +52,7 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
-                    case "AdminLogin":
+                    case "AdminLoginGUI":
                         form.TopLevel = false;
                         form.AutoScroll = true;
                         form.Dock = DockStyle.None;

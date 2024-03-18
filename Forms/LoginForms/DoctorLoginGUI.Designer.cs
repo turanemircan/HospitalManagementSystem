@@ -54,6 +54,7 @@
             rjBtnDoctorBackMain.TabIndex = 21;
             rjBtnDoctorBackMain.TextColor = Color.White;
             rjBtnDoctorBackMain.UseVisualStyleBackColor = false;
+            rjBtnDoctorBackMain.Click += rjBtnDoctorBackMain_Click;
             // 
             // rjBtnDoctorSignIn
             // 
@@ -148,7 +149,7 @@
             lbl_DoctorLoginGUI.TabIndex = 15;
             lbl_DoctorLoginGUI.Text = "Ready to Login";
             // 
-            // DoctorLogin
+            // DoctorLoginGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,7 +163,7 @@
             Controls.Add(labelDoctorID);
             Controls.Add(lbl_DoctorLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "DoctorLogin";
+            Name = "DoctorLoginGUI";
             Text = "DoctorLogin";
             ResumeLayout(false);
             PerformLayout();

@@ -12,9 +12,20 @@ namespace HospitalManagementSystem.Forms.LoginForms
 {
     public partial class AdminLoginGUI : Form
     {
-        public AdminLoginGUI()
+        Panel panel;
+        MainLoginButtons mainLoginButtons;
+        public AdminLoginGUI(Panel _panel)
         {
             InitializeComponent();
+            this.panel = _panel;
+        }
+
+        private void rjBtnAdminBackMain_Click(object sender, EventArgs e)
+        {
+            //MainLoginButtons Formuna don ve paneli ilet
+            Helper.Helper helper = new Helper.Helper(panel);
+            mainLoginButtons = new MainLoginButtons(panel);
+            helper.formGoster(mainLoginButtons,mainLoginButtons.Name);
         }
     }
 }

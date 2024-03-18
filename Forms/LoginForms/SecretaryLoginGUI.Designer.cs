@@ -54,6 +54,7 @@
             rjBtnSecretaryBackMain.TabIndex = 21;
             rjBtnSecretaryBackMain.TextColor = Color.White;
             rjBtnSecretaryBackMain.UseVisualStyleBackColor = false;
+            rjBtnSecretaryBackMain.Click += rjBtnSecretaryBackMain_Click;
             // 
             // rjBtnSecretarySignIn
             // 
@@ -148,7 +149,7 @@
             lbl_SecretaryLoginGUI.TabIndex = 15;
             lbl_SecretaryLoginGUI.Text = "Ready to Login";
             // 
-            // SecretaryLogin
+            // SecretaryLoginGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,7 +163,7 @@
             Controls.Add(label_Secretary_ID);
             Controls.Add(lbl_SecretaryLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "SecretaryLogin";
+            Name = "SecretaryLoginGUI";
             Text = "SecretaryLogin";
             ResumeLayout(false);
             PerformLayout();

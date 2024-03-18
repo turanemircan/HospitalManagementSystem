@@ -21,22 +21,18 @@ namespace HospitalManagementSystem.Forms
         DoctorLoginGUI doctorLoginGUI;
         SecretaryLoginGUI secretaryLoginGUI;
         AdminLoginGUI adminLoginGUI;
-        public MainLoginButtons()
-        {
-            InitializeComponent();
-        }
+
         public MainLoginButtons(Panel _panel)
         {
             InitializeComponent();
             this.panel = _panel;
         }
 
-
         private void rjBtnPatientLogin_Click(object sender, EventArgs e)
         {
-            //PatientLoginGUI sayfasini panel uzerinde goster.
+            //PatientLoginGUI sayfasini panel uzerinde goster. Ve panel nesnesini ctor ile GUI Formuna gonder
             Helper.Helper helper = new Helper.Helper(panel);
-            patientLoginGUI = new PatientLoginGUI();
+            patientLoginGUI = new PatientLoginGUI(panel);
             helper.formGoster(patientLoginGUI, patientLoginGUI.Name);
         }
 
@@ -44,7 +40,7 @@ namespace HospitalManagementSystem.Forms
         {
             //DoctorLoginGUI sayfasini panel uzerinde goster.
             Helper.Helper helper = new Helper.Helper(panel);
-            doctorLoginGUI = new DoctorLoginGUI();
+            doctorLoginGUI = new DoctorLoginGUI(panel);
             helper.formGoster(doctorLoginGUI, doctorLoginGUI.Name);
         }
 
@@ -52,7 +48,7 @@ namespace HospitalManagementSystem.Forms
         {
             //SecretaryLoginGUI sayfasini panel uzerinde goster.
             Helper.Helper helper = new Helper.Helper(panel);
-            secretaryLoginGUI = new SecretaryLoginGUI();
+            secretaryLoginGUI = new SecretaryLoginGUI(panel);
             helper.formGoster(secretaryLoginGUI, secretaryLoginGUI.Name);
         }
 
@@ -60,7 +56,7 @@ namespace HospitalManagementSystem.Forms
         {
             //AdminLoginGUI sayfasini panel uzerinde goster.
             Helper.Helper helper = new Helper.Helper(panel);
-            adminLoginGUI = new AdminLoginGUI();
+            adminLoginGUI = new AdminLoginGUI(panel);
             helper.formGoster(adminLoginGUI, adminLoginGUI.Name);
         }
     }
