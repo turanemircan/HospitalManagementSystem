@@ -62,7 +62,10 @@ namespace HospitalManagementSystem
             ClientSize = new Size(884, 461);
             Controls.Add(panelFormController);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "LoginGUI";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main Menu";
             Load += LoginGUI_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
