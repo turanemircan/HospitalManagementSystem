@@ -75,6 +75,7 @@
             rjBtnPatientSignUp.Text = "Sign Up";
             rjBtnPatientSignUp.TextColor = Color.White;
             rjBtnPatientSignUp.UseVisualStyleBackColor = false;
+            rjBtnPatientSignUp.Click += rjBtnPatientSignUp_Click;
             // 
             // rjBtnPatientSignIn
             // 

@@ -14,9 +14,10 @@ namespace HospitalManagementSystem.Forms.LoginForms
     {
         Panel panel;
         MainLoginButtons mainLoginButtons;
+        PatientSignUpGUI patientSignUpGUI;
         public PatientLoginGUI(Panel _panel)
         {
-            InitializeComponent();    
+            InitializeComponent();
             this.panel = _panel;
         }
         private void rjBtnPatientBackMain_Click(object sender, EventArgs e)
@@ -25,6 +26,14 @@ namespace HospitalManagementSystem.Forms.LoginForms
             Helper.Helper helper = new Helper.Helper(panel);
             mainLoginButtons = new MainLoginButtons(panel);
             helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
+        }
+
+        private void rjBtnPatientSignUp_Click(object sender, EventArgs e)
+        {
+            // PatientSignUpGUI'a git ve paneli ilet
+            Helper.Helper helper = new Helper.Helper(panel);
+            patientSignUpGUI = new PatientSignUpGUI(panel);
+            helper.formGoster(patientSignUpGUI, patientSignUpGUI.Name);
         }
     }
 }
