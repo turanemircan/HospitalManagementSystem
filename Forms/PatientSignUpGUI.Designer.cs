@@ -36,6 +36,7 @@
             rjTextBoxPatientAgainPassword = new CustomTools.RJTextBox.RJTextBox();
             rjBtnPatientSignUp = new CustomTools.RJButton.RJButton();
             rjBtnAdminBackMain = new CustomTools.RJButton.RJButton();
+            lbl_AdminLoginGUI = new Label();
             SuspendLayout();
             // 
             // rjTextPatientSurname
@@ -47,7 +48,7 @@
             rjTextPatientSurname.BorderSize = 2;
             rjTextPatientSurname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
             rjTextPatientSurname.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextPatientSurname.Location = new Point(75, 82);
+            rjTextPatientSurname.Location = new Point(75, 93);
             rjTextPatientSurname.Margin = new Padding(4);
             rjTextPatientSurname.Multiline = false;
             rjTextPatientSurname.Name = "rjTextPatientSurname";
@@ -69,7 +70,7 @@
             rjTextBoxPatientName.BorderSize = 2;
             rjTextBoxPatientName.Font = new Font("Yu Gothic UI Semibold", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxPatientName.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPatientName.Location = new Point(75, 43);
+            rjTextBoxPatientName.Location = new Point(75, 54);
             rjTextBoxPatientName.Margin = new Padding(4);
             rjTextBoxPatientName.Multiline = false;
             rjTextBoxPatientName.Name = "rjTextBoxPatientName";
@@ -92,7 +93,7 @@
             rjTextBoxGSMNumber.BorderSize = 2;
             rjTextBoxGSMNumber.Font = new Font("Yu Gothic UI Semibold", 9.5F);
             rjTextBoxGSMNumber.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxGSMNumber.Location = new Point(75, 160);
+            rjTextBoxGSMNumber.Location = new Point(75, 171);
             rjTextBoxGSMNumber.Margin = new Padding(4);
             rjTextBoxGSMNumber.Multiline = false;
             rjTextBoxGSMNumber.Name = "rjTextBoxGSMNumber";
@@ -114,7 +115,7 @@
             rjTextBoxIdentificationNo.BorderSize = 2;
             rjTextBoxIdentificationNo.Font = new Font("Yu Gothic UI Semibold", 9.5F);
             rjTextBoxIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxIdentificationNo.Location = new Point(75, 121);
+            rjTextBoxIdentificationNo.Location = new Point(75, 132);
             rjTextBoxIdentificationNo.Margin = new Padding(4);
             rjTextBoxIdentificationNo.Multiline = false;
             rjTextBoxIdentificationNo.Name = "rjTextBoxIdentificationNo";
@@ -136,7 +137,7 @@
             rjTextBoxPatientPassword.BorderSize = 2;
             rjTextBoxPatientPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
             rjTextBoxPatientPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPatientPassword.Location = new Point(75, 199);
+            rjTextBoxPatientPassword.Location = new Point(75, 210);
             rjTextBoxPatientPassword.Margin = new Padding(4);
             rjTextBoxPatientPassword.Multiline = false;
             rjTextBoxPatientPassword.Name = "rjTextBoxPatientPassword";
@@ -158,7 +159,7 @@
             rjTextBoxPatientAgainPassword.BorderSize = 2;
             rjTextBoxPatientAgainPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
             rjTextBoxPatientAgainPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPatientAgainPassword.Location = new Point(75, 238);
+            rjTextBoxPatientAgainPassword.Location = new Point(75, 249);
             rjTextBoxPatientAgainPassword.Margin = new Padding(4);
             rjTextBoxPatientAgainPassword.Multiline = false;
             rjTextBoxPatientAgainPassword.Name = "rjTextBoxPatientAgainPassword";
@@ -182,7 +183,7 @@
             rjBtnPatientSignUp.FlatStyle = FlatStyle.Flat;
             rjBtnPatientSignUp.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnPatientSignUp.ForeColor = Color.White;
-            rjBtnPatientSignUp.Location = new Point(130, 288);
+            rjBtnPatientSignUp.Location = new Point(130, 299);
             rjBtnPatientSignUp.Name = "rjBtnPatientSignUp";
             rjBtnPatientSignUp.Size = new Size(140, 31);
             rjBtnPatientSignUp.TabIndex = 33;
@@ -209,12 +210,23 @@
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
             rjBtnAdminBackMain.Click += rjBtnAdminBackMain_Click;
             // 
+            // lbl_AdminLoginGUI
+            // 
+            lbl_AdminLoginGUI.AutoSize = true;
+            lbl_AdminLoginGUI.Font = new Font("Yu Gothic UI Semibold", 13F);
+            lbl_AdminLoginGUI.Location = new Point(160, 10);
+            lbl_AdminLoginGUI.Name = "lbl_AdminLoginGUI";
+            lbl_AdminLoginGUI.Size = new Size(81, 25);
+            lbl_AdminLoginGUI.TabIndex = 36;
+            lbl_AdminLoginGUI.Text = "Register";
+            // 
             // PatientSignUpGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(400, 350);
+            Controls.Add(lbl_AdminLoginGUI);
             Controls.Add(rjBtnAdminBackMain);
             Controls.Add(rjBtnPatientSignUp);
             Controls.Add(rjTextBoxPatientAgainPassword);
@@ -227,6 +239,7 @@
             Name = "PatientSignUpGUI";
             Text = "PatientSignUpGUI";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -239,5 +252,6 @@
         private CustomTools.RJTextBox.RJTextBox rjTextBoxPatientAgainPassword;
         private CustomTools.RJButton.RJButton rjBtnPatientSignUp;
         private CustomTools.RJButton.RJButton rjBtnAdminBackMain;
+        private Label lbl_AdminLoginGUI;
     }
 }
