@@ -1,4 +1,5 @@
 using HospitalManagementSystem;
+using HospitalManagementSystem.Database;
 using HospitalManagementSystem.Forms;
 using HospitalManagementSystem.Forms.LoginForms;
 using HospitalManagementSystem.Helper;

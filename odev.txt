@@ -17,7 +17,7 @@
 		- Telefon
 		- Sifre
 		- Sifre tekrar
-		- Cinsiyet
+		
   	* Geri al
 - Hasta detay
 	* Bilgilerim
