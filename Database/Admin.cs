@@ -8,6 +8,7 @@ namespace HospitalManagementSystem.Database
 {
     public class Admin : User
     {
-        public Admin() { }
+        public DateTime startDateOfEmployment { get; set; }
+        public User user { get; set; }
     }
 }

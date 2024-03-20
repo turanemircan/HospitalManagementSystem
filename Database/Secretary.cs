@@ -8,10 +8,7 @@ namespace HospitalManagementSystem.Database
 {
     public class Secretary  : User
     {
-        public Secretary()
-        {
-            
-        }
-
+        public string locationClinic { get; set; }
+        public User user { get; set; }
     }
 }

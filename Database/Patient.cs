@@ -8,9 +8,7 @@ namespace HospitalManagementSystem.Database
 {
     public class Patient : User
     {
-        public Patient() { }
-
-        private string _againPassword;
-        public string againPassword { get { return _againPassword; } }
+        public string againPassword { get; set; }
+        public User user { get; set; }
     }
 }
