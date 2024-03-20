@@ -8,9 +8,7 @@ namespace HospitalManagementSystem.Database
 {
     public class Doctor : User
     {
-        private string? _branch;
-
-        public string? branch { get { return _branch; } }
-        
+        public string branch { get; set; }
+        public User user { get; set; }
     }
 }
