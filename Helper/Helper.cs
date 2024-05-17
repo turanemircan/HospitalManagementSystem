@@ -13,6 +13,10 @@ namespace HospitalManagementSystem.Helper
         {
             this.panel = _panel;
         }
+        public Helper()
+        {
+            
+        }
         public void formGoster(Form form, string formName)
         {
             panel.Controls.Clear();
@@ -69,6 +73,22 @@ namespace HospitalManagementSystem.Helper
                         form.Show();
                         break;
                     case "PALF_RandevuAl":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "PALF_RandevuBilgileri":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "PALF_Bilgilerim":
                         form.TopLevel = false;
                         form.FormBorderStyle = FormBorderStyle.None;
                         form.Dock = DockStyle.Fill;

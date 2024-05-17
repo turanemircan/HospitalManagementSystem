@@ -95,6 +95,7 @@
             rjBtnPatientSignIn.Text = "Sign in";
             rjBtnPatientSignIn.TextColor = Color.White;
             rjBtnPatientSignIn.UseVisualStyleBackColor = false;
+            rjBtnPatientSignIn.Click += rjBtnPatientSignIn_Click;
             // 
             // rjTextBoxPatientPassword
             // 

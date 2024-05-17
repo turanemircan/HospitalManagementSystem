@@ -18,8 +18,9 @@ namespace HospitalManagementSystem
         {
             // Panelde Default MainLoginButtons ac
             helper = new Helper.Helper(panelFormController);
-            MainLoginButtons mainLoginButtons = new MainLoginButtons(panelFormController);
+            MainLoginButtons mainLoginButtons = new MainLoginButtons(panelFormController, this);
             helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
+            
         }
     }
 }

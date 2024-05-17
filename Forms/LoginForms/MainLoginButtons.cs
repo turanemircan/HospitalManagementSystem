@@ -16,6 +16,7 @@ namespace HospitalManagementSystem.Forms
     public partial class MainLoginButtons : Form
     {
         Panel panel;
+        LoginGUI loginGUI;
 
         PatientLoginGUI patientLoginGUI;
         DoctorLoginGUI doctorLoginGUI;
@@ -27,12 +28,18 @@ namespace HospitalManagementSystem.Forms
             InitializeComponent();
             this.panel = _panel;
         }
+        public MainLoginButtons(Panel _panel, LoginGUI _loginGUI)
+        {
+            InitializeComponent();
+            this.panel = _panel;
+            this.loginGUI = _loginGUI;
+        }
 
         private void rjBtnPatientLogin_Click(object sender, EventArgs e)
         {
             //PatientLoginGUI sayfasini panel uzerinde goster. Ve panel nesnesini ctor ile GUI Formuna gonder
             Helper.Helper helper = new Helper.Helper(panel);
-            patientLoginGUI = new PatientLoginGUI(panel);
+            patientLoginGUI = new PatientLoginGUI(panel, loginGUI);
             helper.formGoster(patientLoginGUI, patientLoginGUI.Name);
         }
 

@@ -63,6 +63,7 @@
             buttonPALF_Bilgilerim.TabIndex = 3;
             buttonPALF_Bilgilerim.Text = "Bilgilerim";
             buttonPALF_Bilgilerim.UseVisualStyleBackColor = true;
+            buttonPALF_Bilgilerim.Click += buttonPALF_Bilgilerim_Click;
             // 
             // buttonPALF_RandevuBilgileri
             // 
@@ -74,6 +75,7 @@
             buttonPALF_RandevuBilgileri.TabIndex = 2;
             buttonPALF_RandevuBilgileri.Text = "Randevu Bilgileri";
             buttonPALF_RandevuBilgileri.UseVisualStyleBackColor = true;
+            buttonPALF_RandevuBilgileri.Click += buttonPALF_RandevuBilgileri_Click;
             // 
             // buttonPALF_RandevuAl
             // 
@@ -85,6 +87,7 @@
             buttonPALF_RandevuAl.TabIndex = 1;
             buttonPALF_RandevuAl.Text = "Randevu Al";
             buttonPALF_RandevuAl.UseVisualStyleBackColor = true;
+            buttonPALF_RandevuAl.Click += buttonPALF_RandevuAl_Click;
             // 
             // panel2
             // 
@@ -135,6 +138,8 @@
             Controls.Add(panel1);
             Name = "PatientALF";
             Text = "PatientALF";
+            FormClosed += PatientALF_FormClosed;
+            Load += PatientALF_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
