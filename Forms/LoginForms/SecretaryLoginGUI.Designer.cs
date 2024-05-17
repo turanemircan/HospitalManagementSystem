@@ -89,7 +89,7 @@
             rjTextBoxSecretaryPassword.Multiline = false;
             rjTextBoxSecretaryPassword.Name = "rjTextBoxSecretaryPassword";
             rjTextBoxSecretaryPassword.Padding = new Padding(10, 7, 10, 7);
-            rjTextBoxSecretaryPassword.PasswordChar = false;
+            rjTextBoxSecretaryPassword.PasswordChar = true;
             rjTextBoxSecretaryPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxSecretaryPassword.PlaceholderText = "";
             rjTextBoxSecretaryPassword.Size = new Size(250, 31);
