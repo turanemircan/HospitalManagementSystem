@@ -89,7 +89,7 @@
             rjTextBoxDoctorPassword.Multiline = false;
             rjTextBoxDoctorPassword.Name = "rjTextBoxDoctorPassword";
             rjTextBoxDoctorPassword.Padding = new Padding(10, 7, 10, 7);
-            rjTextBoxDoctorPassword.PasswordChar = false;
+            rjTextBoxDoctorPassword.PasswordChar = true;
             rjTextBoxDoctorPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxDoctorPassword.PlaceholderText = "";
             rjTextBoxDoctorPassword.Size = new Size(250, 31);
