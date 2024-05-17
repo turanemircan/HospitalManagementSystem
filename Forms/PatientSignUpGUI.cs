@@ -28,5 +28,15 @@ namespace HospitalManagementSystem.Forms
             patientLoginGUI = new PatientLoginGUI(panel);
             helper.formGoster(patientLoginGUI, patientLoginGUI.Name);
         }
+
+        private void rjTextBoxPatientName_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PatientSignUpGUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

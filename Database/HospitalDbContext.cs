@@ -30,7 +30,7 @@ namespace HospitalManagementSystem.Database
             modelBuilder.Entity<Doctor>(entity =>
             {
                 entity.HasOne(d => d.user)
-                    .WithOne()
+                    .WithOne(u => u.Doctor)
                     .HasForeignKey<Doctor>(d => d.Id)
                     .OnDelete(DeleteBehavior.Restrict);
                 entity.Property(d => d.branch).IsRequired().HasMaxLength(50);
@@ -39,7 +39,7 @@ namespace HospitalManagementSystem.Database
             modelBuilder.Entity<Patient>(entity =>
             {
                 entity.HasOne(p => p.user)
-                    .WithOne()
+                    .WithOne(u => u.Patient)
                     .HasForeignKey<Patient>(p => p.Id)
                     .OnDelete(DeleteBehavior.Restrict);
                 entity.Property(p => p.againPassword).IsRequired().HasMaxLength(50);
@@ -48,7 +48,7 @@ namespace HospitalManagementSystem.Database
             modelBuilder.Entity<Secretary>(entity =>
             {
                 entity.HasOne(s => s.user)
-                    .WithOne()
+                    .WithOne(u => u.Secretary)
                     .HasForeignKey<Secretary>(s => s.Id)
                     .OnDelete(DeleteBehavior.Restrict);
                 entity.Property(s => s.locationClinic).IsRequired().HasMaxLength(50);
@@ -57,7 +57,7 @@ namespace HospitalManagementSystem.Database
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.HasOne(a => a.user)
-                    .WithOne()
+                    .WithOne(u => u.Admin)
                     .HasForeignKey<Admin>(a => a.Id)
                     .OnDelete(DeleteBehavior.Restrict);
                 entity.Property(a => a.startDateOfEmployment).IsRequired();
