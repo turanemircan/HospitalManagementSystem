@@ -90,13 +90,9 @@
             rjTextBoxAdminPassword.Margin = new Padding(5, 5, 5, 5);
             rjTextBoxAdminPassword.Multiline = false;
             rjTextBoxAdminPassword.Name = "rjTextBoxAdminPassword";
-<<<<<<< HEAD
             rjTextBoxAdminPassword.Padding = new Padding(10, 7, 10, 7);
             rjTextBoxAdminPassword.PasswordChar = true;
-=======
-            rjTextBoxAdminPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAdminPassword.PasswordChar = false;
->>>>>>> 63870c915e80762956d832c3a28a2795efda6fb5
+
             rjTextBoxAdminPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxAdminPassword.PlaceholderText = "";
             rjTextBoxAdminPassword.Size = new Size(286, 39);
