@@ -1,6 +1,7 @@
 using HospitalManagementSystem;
 using HospitalManagementSystem.Database;
 using HospitalManagementSystem.Forms;
+using HospitalManagementSystem.Forms.AfterLoginForms;
 using HospitalManagementSystem.Forms.LoginForms;
 using HospitalManagementSystem.Helper;
 
@@ -19,7 +20,8 @@ namespace HospitalManagementSystem
             helper = new Helper.Helper(panelFormController);
             MainLoginButtons mainLoginButtons = new MainLoginButtons(panelFormController);
             helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
-
+            PatientALF patientALF = new PatientALF();
+            patientALF.Show();
             var hasta = new Patient()
             {
                 name = "bilal",
