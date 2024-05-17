@@ -95,6 +95,7 @@
             rjBtnPatientSignIn.Text = "Sign in";
             rjBtnPatientSignIn.TextColor = Color.White;
             rjBtnPatientSignIn.UseVisualStyleBackColor = false;
+            rjBtnPatientSignIn.Click += rjBtnPatientSignIn_Click;
             // 
             // rjTextBoxPatientPassword
             // 
@@ -110,7 +111,7 @@
             rjTextBoxPatientPassword.Multiline = false;
             rjTextBoxPatientPassword.Name = "rjTextBoxPatientPassword";
             rjTextBoxPatientPassword.Padding = new Padding(10, 7, 10, 7);
-            rjTextBoxPatientPassword.PasswordChar = false;
+            rjTextBoxPatientPassword.PasswordChar = true;
             rjTextBoxPatientPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxPatientPassword.PlaceholderText = "";
             rjTextBoxPatientPassword.Size = new Size(250, 31);

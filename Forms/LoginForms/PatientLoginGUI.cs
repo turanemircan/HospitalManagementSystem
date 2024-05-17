@@ -7,18 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HospitalManagementSystem.Forms.AfterLoginForms;
 
 namespace HospitalManagementSystem.Forms.LoginForms
 {
     public partial class PatientLoginGUI : Form
     {
         Panel panel;
+        LoginGUI LoginGUI;
+
         MainLoginButtons mainLoginButtons;
         PatientSignUpGUI patientSignUpGUI;
+        Helper.Helper helper;
         public PatientLoginGUI(Panel _panel)
         {
             InitializeComponent();
             this.panel = _panel;
+        }
+        public PatientLoginGUI(Panel _panel, LoginGUI _loginGUI)
+        {
+            InitializeComponent();
+            this.panel = _panel;
+            this.LoginGUI = _loginGUI;
         }
         private void rjBtnPatientBackMain_Click(object sender, EventArgs e)
         {
@@ -35,5 +45,18 @@ namespace HospitalManagementSystem.Forms.LoginForms
             patientSignUpGUI = new PatientSignUpGUI(panel);
             helper.formGoster(patientSignUpGUI, patientSignUpGUI.Name);
         }
+
+        private void rjBtnPatientSignIn_Click(object sender, EventArgs e)
+        {
+            helper = new Helper.Helper();
+            bool kullaniciKontrol = helper.IsValidUser("kullanici1", "sifre123");
+            if (kullaniciKontrol)
+            {
+                PatientALF patientALF = new PatientALF();
+                patientALF.Show();
+                LoginGUI.Hide();
+            }
+        }
+
     }
 }

@@ -13,6 +13,10 @@ namespace HospitalManagementSystem.Helper
         {
             this.panel = _panel;
         }
+        public Helper()
+        {
+            
+        }
         public void formGoster(Form form, string formName)
         {
             panel.Controls.Clear();
@@ -68,6 +72,46 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
+                    case "PALF_RandevuAl":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "PALF_RandevuBilgileri":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "PALF_Bilgilerim":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "DALF_Bilgilerim":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "DALF_RandevuGörüntüle":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
                     default:
                         panel.Controls.Clear();
                         break;
@@ -77,6 +121,10 @@ namespace HospitalManagementSystem.Helper
             {
                 MessageBox.Show("Sayfa bulunamadi.");
             }
+        }
+        public bool IsValidUser(string username, string password)
+        {
+            return true;
         }
     }
 }

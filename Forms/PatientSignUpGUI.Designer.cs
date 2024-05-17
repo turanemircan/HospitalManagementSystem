@@ -142,8 +142,8 @@
             rjTextBoxPatientPassword.Margin = new Padding(5, 5, 5, 5);
             rjTextBoxPatientPassword.Multiline = false;
             rjTextBoxPatientPassword.Name = "rjTextBoxPatientPassword";
-            rjTextBoxPatientPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPatientPassword.PasswordChar = false;
+            rjTextBoxPatientPassword.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPatientPassword.PasswordChar = true;
             rjTextBoxPatientPassword.PlaceholderColor = Color.Gray;
             rjTextBoxPatientPassword.PlaceholderText = "Password";
             rjTextBoxPatientPassword.Size = new Size(286, 40);
@@ -164,8 +164,8 @@
             rjTextBoxPatientAgainPassword.Margin = new Padding(5, 5, 5, 5);
             rjTextBoxPatientAgainPassword.Multiline = false;
             rjTextBoxPatientAgainPassword.Name = "rjTextBoxPatientAgainPassword";
-            rjTextBoxPatientAgainPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPatientAgainPassword.PasswordChar = false;
+            rjTextBoxPatientAgainPassword.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPatientAgainPassword.PasswordChar = true;
             rjTextBoxPatientAgainPassword.PlaceholderColor = Color.Gray;
             rjTextBoxPatientAgainPassword.PlaceholderText = "Password Again";
             rjTextBoxPatientAgainPassword.Size = new Size(286, 40);
