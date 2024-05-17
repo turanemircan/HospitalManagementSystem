@@ -36,6 +36,7 @@
             buttonDALF_İnformation = new Button();
             buttonDALF_ViewAppointment = new Button();
             pictureBox1 = new PictureBox();
+            panelDoctorALF = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -97,15 +98,17 @@
             buttonDALF_İnformation.TabIndex = 7;
             buttonDALF_İnformation.Text = "İnformation";
             buttonDALF_İnformation.UseVisualStyleBackColor = true;
+            buttonDALF_İnformation.Click += buttonDALF_İnformation_Click;
             // 
             // buttonDALF_ViewAppointment
             // 
-            buttonDALF_ViewAppointment.Location = new Point(0, 351);
+            buttonDALF_ViewAppointment.Location = new Point(0, 347);
             buttonDALF_ViewAppointment.Name = "buttonDALF_ViewAppointment";
             buttonDALF_ViewAppointment.Size = new Size(286, 53);
             buttonDALF_ViewAppointment.TabIndex = 6;
             buttonDALF_ViewAppointment.Text = "View Appointment";
             buttonDALF_ViewAppointment.UseVisualStyleBackColor = true;
+            buttonDALF_ViewAppointment.Click += buttonDALF_ViewAppointment_Click;
             // 
             // pictureBox1
             // 
@@ -119,14 +122,25 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // panelDoctorALF
+            // 
+            panelDoctorALF.BackColor = Color.White;
+            panelDoctorALF.Location = new Point(283, 0);
+            panelDoctorALF.Name = "panelDoctorALF";
+            panelDoctorALF.Size = new Size(1164, 804);
+            panelDoctorALF.TabIndex = 1;
+            // 
             // DoctorALF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1444, 804);
+            Controls.Add(panelDoctorALF);
             Controls.Add(panel1);
             Name = "DoctorALF";
             Text = "DoctorALF";
+            FormClosed += DoctorALF_FormClosed;
+            Load += DoctorALF_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -144,5 +158,6 @@
         private Label labelDALF_DoctorID;
         private TextBox textBox2;
         private TextBox textBox1;
+        private Panel panelDoctorALF;
     }
 }

@@ -96,6 +96,22 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
+                    case "DALF_Bilgilerim":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "DALF_RandevuGörüntüle":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
                     default:
                         panel.Controls.Clear();
                         break;
