@@ -55,7 +55,7 @@ namespace HospitalManagementSystem.Forms
         {
             //SecretaryLoginGUI sayfasini panel uzerinde goster.
             Helper.Helper helper = new Helper.Helper(panel);
-            secretaryLoginGUI = new SecretaryLoginGUI(panel);
+            secretaryLoginGUI = new SecretaryLoginGUI(panel, loginGUI);
             helper.formGoster(secretaryLoginGUI, secretaryLoginGUI.Name);
         }
 
