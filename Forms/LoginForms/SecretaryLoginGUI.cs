@@ -37,7 +37,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
 
         private void rjBtnSecretarySignIn_Click(object sender, EventArgs e)
         {
-            Helper.Helper helper= new Helper.Helper();
+            Helper.Helper helper= new Helper.Helper(panel);
             bool userControl = helper.IsValidUser("user", "user1");
             if (userControl)
             {

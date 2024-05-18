@@ -20,6 +20,7 @@ namespace HospitalManagementSystem.Helper
         public void formGoster(Form form, string formName)
         {
             panel.Controls.Clear();
+            
             if (form != null)
             {
                 switch (formName)
@@ -129,6 +130,14 @@ namespace HospitalManagementSystem.Helper
                         form.Show();
                         break;
                     case "SALF_Appointments":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "ALF_PasswordUpdate":
                         form.TopLevel = false;
                         form.FormBorderStyle = FormBorderStyle.None;
                         form.Dock = DockStyle.Fill;

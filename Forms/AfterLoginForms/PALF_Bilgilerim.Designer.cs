@@ -32,20 +32,19 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            btnBilgiGuncelle = new Button();
+            buttonPALF_Upd = new CustomTools.RJButton.RJButton();
+            rjTextBoxPALF_Name = new CustomTools.RJTextBox.RJTextBox();
+            rjTextBoxPALF_GSMNo = new CustomTools.RJTextBox.RJTextBox();
+            rjTextBoxPALF_IdentNo = new CustomTools.RJTextBox.RJTextBox();
+            rjTextBoxPALF_Surname = new CustomTools.RJTextBox.RJTextBox();
+            linkLabelPasswordUpdate = new LinkLabel();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label1.Location = new Point(192, 95);
+            label1.Location = new Point(154, 89);
             label1.Name = "label1";
             label1.Size = new Size(54, 20);
             label1.TabIndex = 0;
@@ -55,7 +54,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label2.Location = new Point(172, 132);
+            label2.Location = new Point(134, 128);
             label2.Name = "label2";
             label2.Size = new Size(74, 20);
             label2.TabIndex = 1;
@@ -65,7 +64,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label3.Location = new Point(118, 168);
+            label3.Location = new Point(80, 167);
             label3.Name = "label3";
             label3.Size = new Size(128, 20);
             label3.TabIndex = 2;
@@ -75,66 +74,129 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label4.Location = new Point(172, 206);
+            label4.Location = new Point(138, 206);
             label4.Name = "label4";
             label4.Size = new Size(70, 20);
             label4.TabIndex = 3;
             label4.Text = "GSM No:";
             // 
-            // label5
+            // buttonPALF_Upd
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label5.Location = new Point(169, 243);
-            label5.Name = "label5";
-            label5.Size = new Size(77, 20);
-            label5.TabIndex = 4;
-            label5.Text = "Password:";
+            buttonPALF_Upd.BackColor = Color.Black;
+            buttonPALF_Upd.BackgroundColor = Color.Black;
+            buttonPALF_Upd.BorderColor = Color.Salmon;
+            buttonPALF_Upd.BorderRadius = 17;
+            buttonPALF_Upd.BorderSize = 0;
+            buttonPALF_Upd.FlatAppearance.BorderSize = 0;
+            buttonPALF_Upd.FlatStyle = FlatStyle.Flat;
+            buttonPALF_Upd.Font = new Font("Yu Gothic UI Semibold", 10F);
+            buttonPALF_Upd.ForeColor = Color.White;
+            buttonPALF_Upd.Location = new Point(276, 239);
+            buttonPALF_Upd.Name = "buttonPALF_Upd";
+            buttonPALF_Upd.Size = new Size(140, 31);
+            buttonPALF_Upd.TabIndex = 34;
+            buttonPALF_Upd.Text = "Update";
+            buttonPALF_Upd.TextColor = Color.White;
+            buttonPALF_Upd.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // rjTextBoxPALF_Name
             // 
-            textBox1.Location = new Point(252, 92);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(205, 23);
-            textBox1.TabIndex = 5;
+            rjTextBoxPALF_Name.BackColor = SystemColors.Window;
+            rjTextBoxPALF_Name.BorderColor = Color.Salmon;
+            rjTextBoxPALF_Name.BorderFocusColor = Color.HotPink;
+            rjTextBoxPALF_Name.BorderRadius = 15;
+            rjTextBoxPALF_Name.BorderSize = 2;
+            rjTextBoxPALF_Name.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBoxPALF_Name.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBoxPALF_Name.Location = new Point(221, 84);
+            rjTextBoxPALF_Name.Margin = new Padding(4);
+            rjTextBoxPALF_Name.Multiline = false;
+            rjTextBoxPALF_Name.Name = "rjTextBoxPALF_Name";
+            rjTextBoxPALF_Name.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPALF_Name.PasswordChar = false;
+            rjTextBoxPALF_Name.PlaceholderColor = Color.DarkGray;
+            rjTextBoxPALF_Name.PlaceholderText = "";
+            rjTextBoxPALF_Name.Size = new Size(250, 31);
+            rjTextBoxPALF_Name.TabIndex = 35;
+            rjTextBoxPALF_Name.Texts = "";
+            rjTextBoxPALF_Name.UnderlinedStyle = false;
             // 
-            // textBox2
+            // rjTextBoxPALF_GSMNo
             // 
-            textBox2.Location = new Point(252, 129);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(205, 23);
-            textBox2.TabIndex = 6;
+            rjTextBoxPALF_GSMNo.BackColor = SystemColors.Window;
+            rjTextBoxPALF_GSMNo.BorderColor = Color.Salmon;
+            rjTextBoxPALF_GSMNo.BorderFocusColor = Color.HotPink;
+            rjTextBoxPALF_GSMNo.BorderRadius = 15;
+            rjTextBoxPALF_GSMNo.BorderSize = 2;
+            rjTextBoxPALF_GSMNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBoxPALF_GSMNo.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBoxPALF_GSMNo.Location = new Point(221, 201);
+            rjTextBoxPALF_GSMNo.Margin = new Padding(4);
+            rjTextBoxPALF_GSMNo.Multiline = false;
+            rjTextBoxPALF_GSMNo.Name = "rjTextBoxPALF_GSMNo";
+            rjTextBoxPALF_GSMNo.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPALF_GSMNo.PasswordChar = false;
+            rjTextBoxPALF_GSMNo.PlaceholderColor = Color.DarkGray;
+            rjTextBoxPALF_GSMNo.PlaceholderText = "";
+            rjTextBoxPALF_GSMNo.Size = new Size(250, 31);
+            rjTextBoxPALF_GSMNo.TabIndex = 36;
+            rjTextBoxPALF_GSMNo.Texts = "";
+            rjTextBoxPALF_GSMNo.UnderlinedStyle = false;
             // 
-            // textBox3
+            // rjTextBoxPALF_IdentNo
             // 
-            textBox3.Location = new Point(252, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(205, 23);
-            textBox3.TabIndex = 7;
+            rjTextBoxPALF_IdentNo.BackColor = SystemColors.Window;
+            rjTextBoxPALF_IdentNo.BorderColor = Color.Salmon;
+            rjTextBoxPALF_IdentNo.BorderFocusColor = Color.HotPink;
+            rjTextBoxPALF_IdentNo.BorderRadius = 15;
+            rjTextBoxPALF_IdentNo.BorderSize = 2;
+            rjTextBoxPALF_IdentNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBoxPALF_IdentNo.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBoxPALF_IdentNo.Location = new Point(221, 162);
+            rjTextBoxPALF_IdentNo.Margin = new Padding(4);
+            rjTextBoxPALF_IdentNo.Multiline = false;
+            rjTextBoxPALF_IdentNo.Name = "rjTextBoxPALF_IdentNo";
+            rjTextBoxPALF_IdentNo.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPALF_IdentNo.PasswordChar = false;
+            rjTextBoxPALF_IdentNo.PlaceholderColor = Color.DarkGray;
+            rjTextBoxPALF_IdentNo.PlaceholderText = "";
+            rjTextBoxPALF_IdentNo.Size = new Size(250, 31);
+            rjTextBoxPALF_IdentNo.TabIndex = 37;
+            rjTextBoxPALF_IdentNo.Texts = "";
+            rjTextBoxPALF_IdentNo.UnderlinedStyle = false;
             // 
-            // textBox4
+            // rjTextBoxPALF_Surname
             // 
-            textBox4.Location = new Point(252, 203);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(205, 23);
-            textBox4.TabIndex = 8;
+            rjTextBoxPALF_Surname.BackColor = SystemColors.Window;
+            rjTextBoxPALF_Surname.BorderColor = Color.Salmon;
+            rjTextBoxPALF_Surname.BorderFocusColor = Color.HotPink;
+            rjTextBoxPALF_Surname.BorderRadius = 15;
+            rjTextBoxPALF_Surname.BorderSize = 2;
+            rjTextBoxPALF_Surname.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBoxPALF_Surname.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBoxPALF_Surname.Location = new Point(221, 123);
+            rjTextBoxPALF_Surname.Margin = new Padding(4);
+            rjTextBoxPALF_Surname.Multiline = false;
+            rjTextBoxPALF_Surname.Name = "rjTextBoxPALF_Surname";
+            rjTextBoxPALF_Surname.Padding = new Padding(10, 7, 10, 7);
+            rjTextBoxPALF_Surname.PasswordChar = false;
+            rjTextBoxPALF_Surname.PlaceholderColor = Color.DarkGray;
+            rjTextBoxPALF_Surname.PlaceholderText = "";
+            rjTextBoxPALF_Surname.Size = new Size(250, 31);
+            rjTextBoxPALF_Surname.TabIndex = 38;
+            rjTextBoxPALF_Surname.Texts = "";
+            rjTextBoxPALF_Surname.UnderlinedStyle = false;
             // 
-            // textBox5
+            // linkLabelPasswordUpdate
             // 
-            textBox5.Location = new Point(252, 240);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(205, 23);
-            textBox5.TabIndex = 9;
-            // 
-            // btnBilgiGuncelle
-            // 
-            btnBilgiGuncelle.Font = new Font("Yu Gothic UI Semibold", 10F);
-            btnBilgiGuncelle.Location = new Point(252, 279);
-            btnBilgiGuncelle.Name = "btnBilgiGuncelle";
-            btnBilgiGuncelle.Size = new Size(205, 39);
-            btnBilgiGuncelle.TabIndex = 10;
-            btnBilgiGuncelle.Text = "Guncelle";
-            btnBilgiGuncelle.UseVisualStyleBackColor = true;
+            linkLabelPasswordUpdate.AutoSize = true;
+            linkLabelPasswordUpdate.Location = new Point(260, 293);
+            linkLabelPasswordUpdate.Name = "linkLabelPasswordUpdate";
+            linkLabelPasswordUpdate.Size = new Size(172, 15);
+            linkLabelPasswordUpdate.TabIndex = 39;
+            linkLabelPasswordUpdate.TabStop = true;
+            linkLabelPasswordUpdate.Text = "Click here to changer password";
+            linkLabelPasswordUpdate.LinkClicked += linkLabelPasswordUpdate_LinkClicked;
             // 
             // PALF_Bilgilerim
             // 
@@ -142,13 +204,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(601, 402);
-            Controls.Add(btnBilgiGuncelle);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label5);
+            Controls.Add(linkLabelPasswordUpdate);
+            Controls.Add(rjTextBoxPALF_Surname);
+            Controls.Add(rjTextBoxPALF_IdentNo);
+            Controls.Add(rjTextBoxPALF_GSMNo);
+            Controls.Add(rjTextBoxPALF_Name);
+            Controls.Add(buttonPALF_Upd);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -166,12 +227,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button btnBilgiGuncelle;
+        private CustomTools.RJButton.RJButton buttonPALF_Upd;
+        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_Name;
+        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_GSMNo;
+        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_IdentNo;
+        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_Surname;
+        private LinkLabel linkLabelPasswordUpdate;
     }
 }

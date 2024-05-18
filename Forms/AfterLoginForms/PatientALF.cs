@@ -52,7 +52,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void buttonPALF_Bilgilerim_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelPatientALF);
-            bilgilerim = new PALF_Bilgilerim();
+            bilgilerim = new PALF_Bilgilerim(panelPatientALF);
             helper.formGoster(bilgilerim,bilgilerim.Name);
         }
     }
