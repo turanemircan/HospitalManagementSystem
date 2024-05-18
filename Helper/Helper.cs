@@ -145,7 +145,30 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
-
+                    case "AALF_SecretaryEdit":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "AALF_DoctorEdit":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
+                    case "AALF_DoctorReviews":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
                     default:
                         panel.Controls.Clear();
                         break;
