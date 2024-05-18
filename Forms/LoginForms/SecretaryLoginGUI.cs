@@ -31,7 +31,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
         {
             // MainLoginButtons Formuna don ve paneli ilet
             Helper.Helper helper = new Helper.Helper(panel);
-            mainLoginButtons = new MainLoginButtons(panel);
+            mainLoginButtons = new MainLoginButtons(panel, loginGUI);
             helper.formGoster(mainLoginButtons, mainLoginButtons.Name);
         }
 
