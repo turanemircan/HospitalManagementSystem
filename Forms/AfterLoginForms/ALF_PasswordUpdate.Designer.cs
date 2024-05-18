@@ -137,6 +137,7 @@
             rjBtnAdminBackMain.TabIndex = 38;
             rjBtnAdminBackMain.TextColor = Color.White;
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
+            rjBtnAdminBackMain.Click += rjBtnAdminBackMain_Click;
             // 
             // ALF_PasswordUpdate
             // 

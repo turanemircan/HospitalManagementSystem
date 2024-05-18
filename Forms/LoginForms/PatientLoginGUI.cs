@@ -48,7 +48,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
 
         private void rjBtnPatientSignIn_Click(object sender, EventArgs e)
         {
-            helper = new Helper.Helper();
+            helper = new Helper.Helper(panel);
             bool kullaniciKontrol = helper.IsValidUser("kullanici1", "sifre123");
             if (kullaniciKontrol)
             {
