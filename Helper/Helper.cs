@@ -137,6 +137,14 @@ namespace HospitalManagementSystem.Helper
                         panel.Controls.Add(form);
                         form.Show();
                         break;
+                    case "ALF_PasswordUpdate":
+                        form.TopLevel = false;
+                        form.FormBorderStyle = FormBorderStyle.None;
+                        form.Dock = DockStyle.Fill;
+                        panel.Controls.Clear();
+                        panel.Controls.Add(form);
+                        form.Show();
+                        break;
                     case "AALF_SecretaryEdit":
                         form.TopLevel = false;
                         form.FormBorderStyle = FormBorderStyle.None;
