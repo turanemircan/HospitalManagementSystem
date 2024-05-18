@@ -42,7 +42,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
         {
             // PatientSignUpGUI'a git ve paneli ilet
             Helper.Helper helper = new Helper.Helper(panel);
-            patientSignUpGUI = new PatientSignUpGUI(panel);
+            patientSignUpGUI = new PatientSignUpGUI(panel, LoginGUI);
             helper.formGoster(patientSignUpGUI, patientSignUpGUI.Name);
         }
 

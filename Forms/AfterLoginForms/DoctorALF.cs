@@ -14,7 +14,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
     {
         Helper.Helper helper;
 
-        DALF_Bilgilerim dalf_bilgilerim;
+        ALF_Information ALF_Information;
         DALF_RandevuGörüntüle dalf_randevuGörüntüle;
 
         public DoctorALF()
@@ -37,15 +37,15 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void DoctorALF_Load(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelDoctorALF);
-            dalf_bilgilerim = new DALF_Bilgilerim();
-            helper.formGoster(dalf_bilgilerim, dalf_bilgilerim.Name);
+            ALF_Information = new ALF_Information(panelDoctorALF);
+            helper.formGoster(ALF_Information, ALF_Information.Name);
         }
 
         private void buttonDALF_İnformation_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelDoctorALF);
-            dalf_bilgilerim = new DALF_Bilgilerim();
-            helper.formGoster(dalf_bilgilerim, dalf_bilgilerim.Name);
+            ALF_Information = new ALF_Information(panelDoctorALF);
+            helper.formGoster(ALF_Information, ALF_Information.Name);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
     public partial class SecretaryALF : Form
     {
         SALF_Appointments appointments;
-        SALF_Information myinformation;
+        ALF_Information myinformation;
         SALF_MadeAppointment madeAppointment;
 
         Helper.Helper helper;
@@ -22,9 +22,6 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             InitializeComponent();
         }
-
-
-
 
         private void SecretaryALF_Load(object sender, EventArgs e)
         {
@@ -57,7 +54,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void SALF_MainPageInformation_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelSecretaryAlf);
-            myinformation= new SALF_Information();
+            myinformation= new ALF_Information(panelSecretaryAlf);
             helper.formGoster(myinformation, myinformation.Name);
         }
     }

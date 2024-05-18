@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SALF_PatientIDTextbox = new CustomTools.RJTextBox.RJTextBox();
+            TextboxSALF_PatientID = new CustomTools.RJTextBox.RJTextBox();
             SALF_PatientNameTextbox = new CustomTools.RJTextBox.RJTextBox();
             SALF_AvailableAppointments = new Label();
             SALF_DateLabel = new Label();
@@ -47,27 +47,27 @@
             ((System.ComponentModel.ISupportInitialize)SALF_MakeDataGrid).BeginInit();
             SuspendLayout();
             // 
-            // SALF_PatientIDTextbox
+            // TextboxSALF_PatientID
             // 
-            SALF_PatientIDTextbox.BackColor = SystemColors.Window;
-            SALF_PatientIDTextbox.BorderColor = Color.Salmon;
-            SALF_PatientIDTextbox.BorderFocusColor = Color.HotPink;
-            SALF_PatientIDTextbox.BorderRadius = 15;
-            SALF_PatientIDTextbox.BorderSize = 2;
-            SALF_PatientIDTextbox.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SALF_PatientIDTextbox.ForeColor = Color.FromArgb(64, 64, 64);
-            SALF_PatientIDTextbox.Location = new Point(172, 127);
-            SALF_PatientIDTextbox.Margin = new Padding(5);
-            SALF_PatientIDTextbox.Multiline = false;
-            SALF_PatientIDTextbox.Name = "SALF_PatientIDTextbox";
-            SALF_PatientIDTextbox.Padding = new Padding(11, 9, 11, 9);
-            SALF_PatientIDTextbox.PasswordChar = false;
-            SALF_PatientIDTextbox.PlaceholderColor = Color.DarkGray;
-            SALF_PatientIDTextbox.PlaceholderText = "";
-            SALF_PatientIDTextbox.Size = new Size(192, 39);
-            SALF_PatientIDTextbox.TabIndex = 70;
-            SALF_PatientIDTextbox.Texts = "";
-            SALF_PatientIDTextbox.UnderlinedStyle = false;
+            TextboxSALF_PatientID.BackColor = SystemColors.Window;
+            TextboxSALF_PatientID.BorderColor = Color.Salmon;
+            TextboxSALF_PatientID.BorderFocusColor = Color.HotPink;
+            TextboxSALF_PatientID.BorderRadius = 15;
+            TextboxSALF_PatientID.BorderSize = 2;
+            TextboxSALF_PatientID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TextboxSALF_PatientID.ForeColor = Color.FromArgb(64, 64, 64);
+            TextboxSALF_PatientID.Location = new Point(172, 120);
+            TextboxSALF_PatientID.Margin = new Padding(5);
+            TextboxSALF_PatientID.Multiline = false;
+            TextboxSALF_PatientID.Name = "TextboxSALF_PatientID";
+            TextboxSALF_PatientID.Padding = new Padding(11, 9, 11, 9);
+            TextboxSALF_PatientID.PasswordChar = false;
+            TextboxSALF_PatientID.PlaceholderColor = Color.DarkGray;
+            TextboxSALF_PatientID.PlaceholderText = "";
+            TextboxSALF_PatientID.Size = new Size(192, 39);
+            TextboxSALF_PatientID.TabIndex = 70;
+            TextboxSALF_PatientID.Texts = "";
+            TextboxSALF_PatientID.UnderlinedStyle = false;
             // 
             // SALF_PatientNameTextbox
             // 
@@ -260,7 +260,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1270, 555);
-            Controls.Add(SALF_PatientIDTextbox);
+            Controls.Add(TextboxSALF_PatientID);
             Controls.Add(SALF_PatientNameTextbox);
             Controls.Add(SALF_AvailableAppointments);
             Controls.Add(SALF_DateLabel);
@@ -286,7 +286,7 @@
 
         #endregion
 
-        private CustomTools.RJTextBox.RJTextBox SALF_PatientIDTextbox;
+        private CustomTools.RJTextBox.RJTextBox TextboxSALF_PatientID;
         private CustomTools.RJTextBox.RJTextBox SALF_PatientNameTextbox;
         private Label SALF_AvailableAppointments;
         private Label SALF_DateLabel;

@@ -16,7 +16,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 
         PALF_RandevuAl randevuAl;
         PALF_RandevuBilgileri randevuBilgileri;
-        PALF_Bilgilerim bilgilerim;
+        ALF_Information bilgilerim;
 
         public PatientALF()
         {
@@ -52,7 +52,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void buttonPALF_Bilgilerim_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelPatientALF);
-            bilgilerim = new PALF_Bilgilerim(panelPatientALF);
+            bilgilerim = new ALF_Information(panelPatientALF);
             helper.formGoster(bilgilerim,bilgilerim.Name);
         }
     }
