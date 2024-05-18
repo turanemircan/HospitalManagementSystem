@@ -28,48 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SALF_AppointmentsDataGrid = new DataGridView();
-            SALF_AllAppointments = new Label();
-            ((System.ComponentModel.ISupportInitialize)SALF_AppointmentsDataGrid).BeginInit();
+            DataGridSALF_Appointments = new DataGridView();
+            LabelSALF_AllAppointments = new Label();
+            ((System.ComponentModel.ISupportInitialize)DataGridSALF_Appointments).BeginInit();
             SuspendLayout();
             // 
-            // SALF_AppointmentsDataGrid
+            // DataGridSALF_Appointments
             // 
-            SALF_AppointmentsDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            SALF_AppointmentsDataGrid.Location = new Point(42, 74);
-            SALF_AppointmentsDataGrid.Name = "SALF_AppointmentsDataGrid";
-            SALF_AppointmentsDataGrid.RowHeadersWidth = 51;
-            SALF_AppointmentsDataGrid.Size = new Size(694, 309);
-            SALF_AppointmentsDataGrid.TabIndex = 0;
+            DataGridSALF_Appointments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DataGridSALF_Appointments.Location = new Point(42, 74);
+            DataGridSALF_Appointments.Name = "DataGridSALF_Appointments";
+            DataGridSALF_Appointments.RowHeadersWidth = 51;
+            DataGridSALF_Appointments.Size = new Size(694, 309);
+            DataGridSALF_Appointments.TabIndex = 0;
             // 
-            // SALF_AllAppointments
+            // LabelSALF_AllAppointments
             // 
-            SALF_AllAppointments.AutoSize = true;
-            SALF_AllAppointments.Font = new Font("Yu Gothic UI Semibold", 11F);
-            SALF_AllAppointments.Location = new Point(42, 26);
-            SALF_AllAppointments.Name = "SALF_AllAppointments";
-            SALF_AllAppointments.Size = new Size(162, 25);
-            SALF_AllAppointments.TabIndex = 53;
-            SALF_AllAppointments.Text = "All Appointments";
+            LabelSALF_AllAppointments.AutoSize = true;
+            LabelSALF_AllAppointments.Font = new Font("Yu Gothic UI Semibold", 11F);
+            LabelSALF_AllAppointments.Location = new Point(42, 26);
+            LabelSALF_AllAppointments.Name = "LabelSALF_AllAppointments";
+            LabelSALF_AllAppointments.Size = new Size(162, 25);
+            LabelSALF_AllAppointments.TabIndex = 53;
+            LabelSALF_AllAppointments.Text = "All Appointments";
             // 
             // SALF_Appointments
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(SALF_AllAppointments);
-            Controls.Add(SALF_AppointmentsDataGrid);
+            Controls.Add(LabelSALF_AllAppointments);
+            Controls.Add(DataGridSALF_Appointments);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SALF_Appointments";
             Text = "SALF_Appointments";
-            ((System.ComponentModel.ISupportInitialize)SALF_AppointmentsDataGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DataGridSALF_Appointments).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView SALF_AppointmentsDataGrid;
-        private Label SALF_AllAppointments;
+        private DataGridView DataGridSALF_Appointments;
+        private Label LabelSALF_AllAppointments;
     }
 }
