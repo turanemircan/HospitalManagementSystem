@@ -33,6 +33,13 @@ namespace HospitalManagementSystem.Forms.LoginForms
             this.loginGUI = _loginGUI;
         }
 
+        public AdminLoginGUI(Panel _panel, LoginGUI _loginGUI)
+        {
+            InitializeComponent();
+            this.panel = _panel;
+            this.loginGUI = _loginGUI;
+        }
+
         private void rjBtnAdminBackMain_Click(object sender, EventArgs e)
         {
             //MainLoginButtons Formuna don ve paneli ilet
