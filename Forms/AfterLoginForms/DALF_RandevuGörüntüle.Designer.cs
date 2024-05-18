@@ -46,10 +46,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(338, 21);
+            dataGridView1.Location = new Point(352, 65);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(450, 417);
+            dataGridView1.Size = new Size(566, 472);
             dataGridView1.TabIndex = 2;
             // 
             // buttonDALF_Upd
@@ -63,7 +63,7 @@
             buttonDALF_Upd.FlatStyle = FlatStyle.Flat;
             buttonDALF_Upd.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonDALF_Upd.ForeColor = Color.White;
-            buttonDALF_Upd.Location = new Point(152, 318);
+            buttonDALF_Upd.Location = new Point(164, 403);
             buttonDALF_Upd.Margin = new Padding(3, 4, 3, 4);
             buttonDALF_Upd.Name = "buttonDALF_Upd";
             buttonDALF_Upd.Size = new Size(178, 36);
@@ -83,7 +83,7 @@
             buttonDALF_Del.FlatStyle = FlatStyle.Flat;
             buttonDALF_Del.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonDALF_Del.ForeColor = Color.White;
-            buttonDALF_Del.Location = new Point(12, 318);
+            buttonDALF_Del.Location = new Point(24, 403);
             buttonDALF_Del.Margin = new Padding(3, 4, 3, 4);
             buttonDALF_Del.Name = "buttonDALF_Del";
             buttonDALF_Del.Size = new Size(134, 36);
@@ -103,7 +103,7 @@
             buttonDALF_Save.FlatStyle = FlatStyle.Flat;
             buttonDALF_Save.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonDALF_Save.ForeColor = Color.White;
-            buttonDALF_Save.Location = new Point(12, 270);
+            buttonDALF_Save.Location = new Point(24, 355);
             buttonDALF_Save.Margin = new Padding(3, 4, 3, 4);
             buttonDALF_Save.Name = "buttonDALF_Save";
             buttonDALF_Save.Size = new Size(318, 43);
@@ -121,7 +121,7 @@
             rjTextBox2.BorderSize = 2;
             rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(140, 187);
+            rjTextBox2.Location = new Point(152, 272);
             rjTextBox2.Margin = new Padding(5);
             rjTextBox2.Multiline = false;
             rjTextBox2.Name = "rjTextBox2";
@@ -143,7 +143,7 @@
             rjTextBoxAdminPassword.BorderSize = 2;
             rjTextBoxAdminPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminPassword.Location = new Point(138, 137);
+            rjTextBoxAdminPassword.Location = new Point(150, 222);
             rjTextBoxAdminPassword.Margin = new Padding(5);
             rjTextBoxAdminPassword.Multiline = false;
             rjTextBoxAdminPassword.Name = "rjTextBoxAdminPassword";
@@ -165,7 +165,7 @@
             rjTextBox1.BorderSize = 2;
             rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(140, 88);
+            rjTextBox1.Location = new Point(152, 173);
             rjTextBox1.Margin = new Padding(5);
             rjTextBox1.Multiline = false;
             rjTextBox1.Name = "rjTextBox1";
@@ -187,7 +187,7 @@
             rjTextBoxAdminIdentificationNo.BorderSize = 2;
             rjTextBoxAdminIdentificationNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminIdentificationNo.Location = new Point(140, 39);
+            rjTextBoxAdminIdentificationNo.Location = new Point(152, 124);
             rjTextBoxAdminIdentificationNo.Margin = new Padding(5);
             rjTextBoxAdminIdentificationNo.Multiline = false;
             rjTextBoxAdminIdentificationNo.Name = "rjTextBoxAdminIdentificationNo";
@@ -204,7 +204,7 @@
             // 
             labelDALF_Presc.AutoSize = true;
             labelDALF_Presc.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Presc.Location = new Point(5, 201);
+            labelDALF_Presc.Location = new Point(17, 286);
             labelDALF_Presc.Name = "labelDALF_Presc";
             labelDALF_Presc.Size = new Size(122, 25);
             labelDALF_Presc.TabIndex = 44;
@@ -214,7 +214,7 @@
             // 
             labelDALF_Diag.AutoSize = true;
             labelDALF_Diag.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Diag.Location = new Point(5, 151);
+            labelDALF_Diag.Location = new Point(17, 236);
             labelDALF_Diag.Name = "labelDALF_Diag";
             labelDALF_Diag.Size = new Size(109, 25);
             labelDALF_Diag.TabIndex = 43;
@@ -224,7 +224,7 @@
             // 
             labelDALF_PatiId.AutoSize = true;
             labelDALF_PatiId.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_PatiId.Location = new Point(10, 53);
+            labelDALF_PatiId.Location = new Point(17, 138);
             labelDALF_PatiId.Name = "labelDALF_PatiId";
             labelDALF_PatiId.Size = new Size(98, 25);
             labelDALF_PatiId.TabIndex = 42;
@@ -234,7 +234,7 @@
             // 
             labelDALF_Patinam.AutoSize = true;
             labelDALF_Patinam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Patinam.Location = new Point(5, 102);
+            labelDALF_Patinam.Location = new Point(17, 187);
             labelDALF_Patinam.Name = "labelDALF_Patinam";
             labelDALF_Patinam.Size = new Size(130, 25);
             labelDALF_Patinam.TabIndex = 41;
@@ -245,7 +245,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(946, 621);
             Controls.Add(labelDALF_Presc);
             Controls.Add(labelDALF_Diag);
             Controls.Add(labelDALF_PatiId);

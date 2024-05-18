@@ -53,7 +53,7 @@
             rjTextBoxAdminIdentificationNo.BorderSize = 2;
             rjTextBoxAdminIdentificationNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminIdentificationNo.Location = new Point(325, 73);
+            rjTextBoxAdminIdentificationNo.Location = new Point(397, 157);
             rjTextBoxAdminIdentificationNo.Margin = new Padding(5);
             rjTextBoxAdminIdentificationNo.Multiline = false;
             rjTextBoxAdminIdentificationNo.Name = "rjTextBoxAdminIdentificationNo";
@@ -77,7 +77,7 @@
             buttonDALF_Upd.FlatStyle = FlatStyle.Flat;
             buttonDALF_Upd.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonDALF_Upd.ForeColor = Color.White;
-            buttonDALF_Upd.Location = new Point(325, 386);
+            buttonDALF_Upd.Location = new Point(397, 470);
             buttonDALF_Upd.Margin = new Padding(3, 4, 3, 4);
             buttonDALF_Upd.Name = "buttonDALF_Upd";
             buttonDALF_Upd.Size = new Size(160, 41);
@@ -95,7 +95,7 @@
             rjTextBoxAdminPassword.BorderSize = 2;
             rjTextBoxAdminPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminPassword.Location = new Point(325, 171);
+            rjTextBoxAdminPassword.Location = new Point(397, 255);
             rjTextBoxAdminPassword.Margin = new Padding(5);
             rjTextBoxAdminPassword.Multiline = false;
             rjTextBoxAdminPassword.Name = "rjTextBoxAdminPassword";
@@ -112,7 +112,7 @@
             // 
             labelDALF_Pass.AutoSize = true;
             labelDALF_Pass.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Pass.Location = new Point(153, 284);
+            labelDALF_Pass.Location = new Point(225, 368);
             labelDALF_Pass.Name = "labelDALF_Pass";
             labelDALF_Pass.Size = new Size(92, 25);
             labelDALF_Pass.TabIndex = 31;
@@ -127,7 +127,7 @@
             rjTextBox1.BorderSize = 2;
             rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(325, 122);
+            rjTextBox1.Location = new Point(397, 206);
             rjTextBox1.Margin = new Padding(5);
             rjTextBox1.Multiline = false;
             rjTextBox1.Name = "rjTextBox1";
@@ -144,7 +144,7 @@
             // 
             labelDALF_Surnam.AutoSize = true;
             labelDALF_Surnam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Surnam.Location = new Point(153, 136);
+            labelDALF_Surnam.Location = new Point(225, 220);
             labelDALF_Surnam.Name = "labelDALF_Surnam";
             labelDALF_Surnam.Size = new Size(88, 25);
             labelDALF_Surnam.TabIndex = 29;
@@ -154,7 +154,7 @@
             // 
             lbl_AdminLoginGUI.AutoSize = true;
             lbl_AdminLoginGUI.Font = new Font("Yu Gothic UI Semibold", 13F);
-            lbl_AdminLoginGUI.Location = new Point(325, 20);
+            lbl_AdminLoginGUI.Location = new Point(397, 104);
             lbl_AdminLoginGUI.Name = "lbl_AdminLoginGUI";
             lbl_AdminLoginGUI.Size = new Size(132, 30);
             lbl_AdminLoginGUI.TabIndex = 28;
@@ -169,7 +169,7 @@
             rjTextBox2.BorderSize = 2;
             rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(325, 221);
+            rjTextBox2.Location = new Point(397, 305);
             rjTextBox2.Margin = new Padding(5);
             rjTextBox2.Multiline = false;
             rjTextBox2.Name = "rjTextBox2";
@@ -191,7 +191,7 @@
             rjTextBox3.BorderSize = 2;
             rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox3.Location = new Point(325, 270);
+            rjTextBox3.Location = new Point(397, 354);
             rjTextBox3.Margin = new Padding(5);
             rjTextBox3.Multiline = false;
             rjTextBox3.Name = "rjTextBox3";
@@ -213,7 +213,7 @@
             rjTextBox4.BorderSize = 2;
             rjTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox4.Location = new Point(325, 319);
+            rjTextBox4.Location = new Point(397, 403);
             rjTextBox4.Margin = new Padding(5);
             rjTextBox4.Multiline = false;
             rjTextBox4.Name = "rjTextBox4";
@@ -230,7 +230,7 @@
             // 
             labelDALF_Name.AutoSize = true;
             labelDALF_Name.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Name.Location = new Point(153, 87);
+            labelDALF_Name.Location = new Point(225, 171);
             labelDALF_Name.Name = "labelDALF_Name";
             labelDALF_Name.Size = new Size(64, 25);
             labelDALF_Name.TabIndex = 37;
@@ -240,7 +240,7 @@
             // 
             labelDALF_ID.AutoSize = true;
             labelDALF_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_ID.Location = new Point(153, 185);
+            labelDALF_ID.Location = new Point(225, 269);
             labelDALF_ID.Name = "labelDALF_ID";
             labelDALF_ID.Size = new Size(157, 25);
             labelDALF_ID.TabIndex = 38;
@@ -250,7 +250,7 @@
             // 
             labelDALF_phon.AutoSize = true;
             labelDALF_phon.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_phon.Location = new Point(151, 235);
+            labelDALF_phon.Location = new Point(223, 319);
             labelDALF_phon.Name = "labelDALF_phon";
             labelDALF_phon.Size = new Size(66, 25);
             labelDALF_phon.TabIndex = 39;
@@ -260,7 +260,7 @@
             // 
             labelDALF_RePass.AutoSize = true;
             labelDALF_RePass.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_RePass.Location = new Point(153, 333);
+            labelDALF_RePass.Location = new Point(225, 417);
             labelDALF_RePass.Name = "labelDALF_RePass";
             labelDALF_RePass.Size = new Size(157, 25);
             labelDALF_RePass.TabIndex = 40;
@@ -271,7 +271,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(946, 621);
             Controls.Add(labelDALF_RePass);
             Controls.Add(labelDALF_phon);
             Controls.Add(labelDALF_ID);

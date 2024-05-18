@@ -76,6 +76,7 @@
             rjBtnAdminSignIn.Text = "Sign in";
             rjBtnAdminSignIn.TextColor = Color.White;
             rjBtnAdminSignIn.UseVisualStyleBackColor = false;
+            rjBtnAdminSignIn.Click += rjBtnAdminSignIn_Click;
             // 
             // rjTextBoxAdminPassword
             // 
@@ -87,15 +88,14 @@
             rjTextBoxAdminPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminPassword.ForeColor = Color.FromArgb(64, 64, 64);
             rjTextBoxAdminPassword.Location = new Point(86, 268);
-            rjTextBoxAdminPassword.Margin = new Padding(5, 5, 5, 5);
+            rjTextBoxAdminPassword.Margin = new Padding(5);
             rjTextBoxAdminPassword.Multiline = false;
             rjTextBoxAdminPassword.Name = "rjTextBoxAdminPassword";
             rjTextBoxAdminPassword.Padding = new Padding(10, 7, 10, 7);
             rjTextBoxAdminPassword.PasswordChar = true;
-
             rjTextBoxAdminPassword.PlaceholderColor = Color.DarkGray;
             rjTextBoxAdminPassword.PlaceholderText = "";
-            rjTextBoxAdminPassword.Size = new Size(286, 39);
+            rjTextBoxAdminPassword.Size = new Size(286, 35);
             rjTextBoxAdminPassword.TabIndex = 26;
             rjTextBoxAdminPassword.Texts = "";
             rjTextBoxAdminPassword.UnderlinedStyle = false;
@@ -120,7 +120,7 @@
             rjTextBoxAdminIdentificationNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBoxAdminIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
             rjTextBoxAdminIdentificationNo.Location = new Point(86, 180);
-            rjTextBoxAdminIdentificationNo.Margin = new Padding(5, 5, 5, 5);
+            rjTextBoxAdminIdentificationNo.Margin = new Padding(5);
             rjTextBoxAdminIdentificationNo.Multiline = false;
             rjTextBoxAdminIdentificationNo.Name = "rjTextBoxAdminIdentificationNo";
             rjTextBoxAdminIdentificationNo.Padding = new Padding(11, 9, 11, 9);
