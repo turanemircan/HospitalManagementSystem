@@ -48,10 +48,9 @@
             rjBtnSecretaryBackMain.FlatStyle = FlatStyle.Flat;
             rjBtnSecretaryBackMain.ForeColor = Color.White;
             rjBtnSecretaryBackMain.Image = Properties.Resources.LeftArrowIcon;
-            rjBtnSecretaryBackMain.Location = new Point(3, 4);
-            rjBtnSecretaryBackMain.Margin = new Padding(3, 4, 3, 4);
+            rjBtnSecretaryBackMain.Location = new Point(3, 3);
             rjBtnSecretaryBackMain.Name = "rjBtnSecretaryBackMain";
-            rjBtnSecretaryBackMain.Size = new Size(46, 53);
+            rjBtnSecretaryBackMain.Size = new Size(40, 40);
             rjBtnSecretaryBackMain.TabIndex = 21;
             rjBtnSecretaryBackMain.TextColor = Color.White;
             rjBtnSecretaryBackMain.UseVisualStyleBackColor = false;
@@ -68,10 +67,9 @@
             rjBtnSecretarySignIn.FlatStyle = FlatStyle.Flat;
             rjBtnSecretarySignIn.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnSecretarySignIn.ForeColor = Color.White;
-            rjBtnSecretarySignIn.Location = new Point(149, 337);
-            rjBtnSecretarySignIn.Margin = new Padding(3, 4, 3, 4);
+            rjBtnSecretarySignIn.Location = new Point(130, 253);
             rjBtnSecretarySignIn.Name = "rjBtnSecretarySignIn";
-            rjBtnSecretarySignIn.Size = new Size(160, 41);
+            rjBtnSecretarySignIn.Size = new Size(140, 31);
             rjBtnSecretarySignIn.TabIndex = 20;
             rjBtnSecretarySignIn.Text = "Sign in";
             rjBtnSecretarySignIn.TextColor = Color.White;
@@ -82,9 +80,9 @@
             // 
             label_Secretary_Password.AutoSize = true;
             label_Secretary_Password.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label_Secretary_Password.Location = new Point(68, 240);
+            label_Secretary_Password.Location = new Point(60, 180);
             label_Secretary_Password.Name = "label_Secretary_Password";
-            label_Secretary_Password.Size = new Size(92, 25);
+            label_Secretary_Password.Size = new Size(73, 20);
             label_Secretary_Password.TabIndex = 18;
             label_Secretary_Password.Text = "Password";
             // 
@@ -92,9 +90,9 @@
             // 
             label_Secretary_ID.AutoSize = true;
             label_Secretary_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label_Secretary_ID.Location = new Point(68, 147);
+            label_Secretary_ID.Location = new Point(60, 110);
             label_Secretary_ID.Name = "label_Secretary_ID";
-            label_Secretary_ID.Size = new Size(157, 25);
+            label_Secretary_ID.Size = new Size(124, 20);
             label_Secretary_ID.TabIndex = 16;
             label_Secretary_ID.Text = "Identification No";
             // 
@@ -102,38 +100,37 @@
             // 
             lbl_SecretaryLoginGUI.AutoSize = true;
             lbl_SecretaryLoginGUI.Font = new Font("Yu Gothic UI Semibold", 13F);
-            lbl_SecretaryLoginGUI.Location = new Point(151, 83);
+            lbl_SecretaryLoginGUI.Location = new Point(132, 62);
             lbl_SecretaryLoginGUI.Name = "lbl_SecretaryLoginGUI";
-            lbl_SecretaryLoginGUI.Size = new Size(163, 30);
+            lbl_SecretaryLoginGUI.Size = new Size(137, 25);
             lbl_SecretaryLoginGUI.TabIndex = 15;
             lbl_SecretaryLoginGUI.Text = "Ready to Login";
             // 
             // textBoxSecretaryLoginId
             // 
             textBoxSecretaryLoginId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBoxSecretaryLoginId.Location = new Point(68, 186);
-            textBoxSecretaryLoginId.Margin = new Padding(3, 4, 3, 4);
+            textBoxSecretaryLoginId.Location = new Point(60, 140);
             textBoxSecretaryLoginId.Name = "textBoxSecretaryLoginId";
             textBoxSecretaryLoginId.PlaceholderText = "ID";
-            textBoxSecretaryLoginId.Size = new Size(303, 29);
+            textBoxSecretaryLoginId.Size = new Size(266, 24);
             textBoxSecretaryLoginId.TabIndex = 38;
             // 
             // textboxSecretaryPasswordId
             // 
             textboxSecretaryPasswordId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxSecretaryPasswordId.Location = new Point(68, 283);
-            textboxSecretaryPasswordId.Margin = new Padding(3, 4, 3, 4);
+            textboxSecretaryPasswordId.Location = new Point(60, 212);
             textboxSecretaryPasswordId.Name = "textboxSecretaryPasswordId";
+            textboxSecretaryPasswordId.PasswordChar = '*';
             textboxSecretaryPasswordId.PlaceholderText = "Password";
-            textboxSecretaryPasswordId.Size = new Size(303, 29);
+            textboxSecretaryPasswordId.Size = new Size(266, 24);
             textboxSecretaryPasswordId.TabIndex = 39;
             // 
             // SecretaryLoginGUI
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(439, 415);
+            ClientSize = new Size(384, 311);
             Controls.Add(textboxSecretaryPasswordId);
             Controls.Add(textBoxSecretaryLoginId);
             Controls.Add(rjBtnSecretaryBackMain);
@@ -142,7 +139,6 @@
             Controls.Add(label_Secretary_ID);
             Controls.Add(lbl_SecretaryLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "SecretaryLoginGUI";
             Text = "SecretaryLogin";
             ResumeLayout(false);

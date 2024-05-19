@@ -48,10 +48,9 @@
             rjBtnAdminBackMain.FlatStyle = FlatStyle.Flat;
             rjBtnAdminBackMain.ForeColor = Color.White;
             rjBtnAdminBackMain.Image = Properties.Resources.LeftArrowIcon;
-            rjBtnAdminBackMain.Location = new Point(3, 4);
-            rjBtnAdminBackMain.Margin = new Padding(3, 4, 3, 4);
+            rjBtnAdminBackMain.Location = new Point(3, 3);
             rjBtnAdminBackMain.Name = "rjBtnAdminBackMain";
-            rjBtnAdminBackMain.Size = new Size(46, 53);
+            rjBtnAdminBackMain.Size = new Size(40, 40);
             rjBtnAdminBackMain.TabIndex = 28;
             rjBtnAdminBackMain.TextColor = Color.White;
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
@@ -68,10 +67,9 @@
             rjBtnAdminSignIn.FlatStyle = FlatStyle.Flat;
             rjBtnAdminSignIn.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnAdminSignIn.ForeColor = Color.White;
-            rjBtnAdminSignIn.Location = new Point(149, 337);
-            rjBtnAdminSignIn.Margin = new Padding(3, 4, 3, 4);
+            rjBtnAdminSignIn.Location = new Point(130, 253);
             rjBtnAdminSignIn.Name = "rjBtnAdminSignIn";
-            rjBtnAdminSignIn.Size = new Size(160, 41);
+            rjBtnAdminSignIn.Size = new Size(140, 31);
             rjBtnAdminSignIn.TabIndex = 27;
             rjBtnAdminSignIn.Text = "Sign in";
             rjBtnAdminSignIn.TextColor = Color.White;
@@ -82,9 +80,9 @@
             // 
             labelAdminPassword.AutoSize = true;
             labelAdminPassword.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAdminPassword.Location = new Point(86, 237);
+            labelAdminPassword.Location = new Point(75, 178);
             labelAdminPassword.Name = "labelAdminPassword";
-            labelAdminPassword.Size = new Size(92, 25);
+            labelAdminPassword.Size = new Size(73, 20);
             labelAdminPassword.TabIndex = 25;
             labelAdminPassword.Text = "Password";
             // 
@@ -92,9 +90,9 @@
             // 
             labelAdminID.AutoSize = true;
             labelAdminID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAdminID.Location = new Point(86, 145);
+            labelAdminID.Location = new Point(75, 109);
             labelAdminID.Name = "labelAdminID";
-            labelAdminID.Size = new Size(157, 25);
+            labelAdminID.Size = new Size(124, 20);
             labelAdminID.TabIndex = 23;
             labelAdminID.Text = "Identification No";
             // 
@@ -102,38 +100,37 @@
             // 
             lbl_AdminLoginGUI.AutoSize = true;
             lbl_AdminLoginGUI.Font = new Font("Yu Gothic UI Semibold", 13F);
-            lbl_AdminLoginGUI.Location = new Point(151, 83);
+            lbl_AdminLoginGUI.Location = new Point(132, 62);
             lbl_AdminLoginGUI.Name = "lbl_AdminLoginGUI";
-            lbl_AdminLoginGUI.Size = new Size(163, 30);
+            lbl_AdminLoginGUI.Size = new Size(137, 25);
             lbl_AdminLoginGUI.TabIndex = 22;
             lbl_AdminLoginGUI.Text = "Ready to Login";
             // 
             // textBoxAdminLogiId
             // 
             textBoxAdminLogiId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBoxAdminLogiId.Location = new Point(86, 187);
-            textBoxAdminLogiId.Margin = new Padding(3, 4, 3, 4);
+            textBoxAdminLogiId.Location = new Point(75, 140);
             textBoxAdminLogiId.Name = "textBoxAdminLogiId";
             textBoxAdminLogiId.PlaceholderText = "ID";
-            textBoxAdminLogiId.Size = new Size(303, 29);
+            textBoxAdminLogiId.Size = new Size(266, 24);
             textBoxAdminLogiId.TabIndex = 41;
             // 
             // textboxAdminPassword
             // 
             textboxAdminPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAdminPassword.Location = new Point(86, 279);
-            textboxAdminPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxAdminPassword.Location = new Point(75, 209);
             textboxAdminPassword.Name = "textboxAdminPassword";
+            textboxAdminPassword.PasswordChar = '*';
             textboxAdminPassword.PlaceholderText = "Password";
-            textboxAdminPassword.Size = new Size(303, 29);
+            textboxAdminPassword.Size = new Size(266, 24);
             textboxAdminPassword.TabIndex = 42;
             // 
             // AdminLoginGUI
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(457, 467);
+            ClientSize = new Size(400, 350);
             Controls.Add(textboxAdminPassword);
             Controls.Add(textBoxAdminLogiId);
             Controls.Add(rjBtnAdminBackMain);
@@ -142,7 +139,6 @@
             Controls.Add(labelAdminID);
             Controls.Add(lbl_AdminLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "AdminLoginGUI";
             Text = "AdminLogin";
             ResumeLayout(false);

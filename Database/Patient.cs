@@ -18,6 +18,5 @@ namespace HospitalManagementSystem.Database
         public string identification { get; set; }
         public string GSM_No { get; set; }
         public string password { get; set; }
-        public string againPassword { get; set; }
     }
 }

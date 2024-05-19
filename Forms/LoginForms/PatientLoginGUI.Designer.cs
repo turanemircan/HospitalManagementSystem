@@ -49,10 +49,9 @@
             rjBtnPatientBackMain.FlatStyle = FlatStyle.Flat;
             rjBtnPatientBackMain.ForeColor = Color.White;
             rjBtnPatientBackMain.Image = Properties.Resources.LeftArrowIcon;
-            rjBtnPatientBackMain.Location = new Point(3, 4);
-            rjBtnPatientBackMain.Margin = new Padding(3, 4, 3, 4);
+            rjBtnPatientBackMain.Location = new Point(3, 3);
             rjBtnPatientBackMain.Name = "rjBtnPatientBackMain";
-            rjBtnPatientBackMain.Size = new Size(46, 53);
+            rjBtnPatientBackMain.Size = new Size(40, 40);
             rjBtnPatientBackMain.TabIndex = 15;
             rjBtnPatientBackMain.TextColor = Color.White;
             rjBtnPatientBackMain.UseVisualStyleBackColor = false;
@@ -69,10 +68,9 @@
             rjBtnPatientSignUp.FlatStyle = FlatStyle.Flat;
             rjBtnPatientSignUp.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnPatientSignUp.ForeColor = Color.White;
-            rjBtnPatientSignUp.Location = new Point(369, 9);
-            rjBtnPatientSignUp.Margin = new Padding(3, 4, 3, 4);
+            rjBtnPatientSignUp.Location = new Point(323, 7);
             rjBtnPatientSignUp.Name = "rjBtnPatientSignUp";
-            rjBtnPatientSignUp.Size = new Size(85, 41);
+            rjBtnPatientSignUp.Size = new Size(74, 31);
             rjBtnPatientSignUp.TabIndex = 14;
             rjBtnPatientSignUp.Text = "Sign Up";
             rjBtnPatientSignUp.TextColor = Color.White;
@@ -90,10 +88,9 @@
             rjBtnPatientSignIn.FlatStyle = FlatStyle.Flat;
             rjBtnPatientSignIn.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnPatientSignIn.ForeColor = Color.White;
-            rjBtnPatientSignIn.Location = new Point(149, 337);
-            rjBtnPatientSignIn.Margin = new Padding(3, 4, 3, 4);
+            rjBtnPatientSignIn.Location = new Point(130, 253);
             rjBtnPatientSignIn.Name = "rjBtnPatientSignIn";
-            rjBtnPatientSignIn.Size = new Size(160, 41);
+            rjBtnPatientSignIn.Size = new Size(140, 31);
             rjBtnPatientSignIn.TabIndex = 13;
             rjBtnPatientSignIn.Text = "Sign in";
             rjBtnPatientSignIn.TextColor = Color.White;
@@ -104,9 +101,9 @@
             // 
             label_Patient_Password.AutoSize = true;
             label_Patient_Password.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label_Patient_Password.Location = new Point(86, 239);
+            label_Patient_Password.Location = new Point(75, 179);
             label_Patient_Password.Name = "label_Patient_Password";
-            label_Patient_Password.Size = new Size(92, 25);
+            label_Patient_Password.Size = new Size(73, 20);
             label_Patient_Password.TabIndex = 11;
             label_Patient_Password.Text = "Password";
             // 
@@ -114,9 +111,9 @@
             // 
             label_Patient_ID.AutoSize = true;
             label_Patient_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label_Patient_ID.Location = new Point(86, 147);
+            label_Patient_ID.Location = new Point(75, 110);
             label_Patient_ID.Name = "label_Patient_ID";
-            label_Patient_ID.Size = new Size(157, 25);
+            label_Patient_ID.Size = new Size(124, 20);
             label_Patient_ID.TabIndex = 9;
             label_Patient_ID.Text = "Identification No";
             // 
@@ -124,38 +121,38 @@
             // 
             lbl_PatientLoginGUI.AutoSize = true;
             lbl_PatientLoginGUI.Font = new Font("Yu Gothic UI Semibold", 13F);
-            lbl_PatientLoginGUI.Location = new Point(151, 83);
+            lbl_PatientLoginGUI.Location = new Point(132, 62);
             lbl_PatientLoginGUI.Name = "lbl_PatientLoginGUI";
-            lbl_PatientLoginGUI.Size = new Size(163, 30);
+            lbl_PatientLoginGUI.Size = new Size(137, 25);
             lbl_PatientLoginGUI.TabIndex = 8;
             lbl_PatientLoginGUI.Text = "Ready to Login";
             // 
             // textBoxPatientLoginId
             // 
             textBoxPatientLoginId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBoxPatientLoginId.Location = new Point(86, 186);
-            textBoxPatientLoginId.Margin = new Padding(3, 4, 3, 4);
+            textBoxPatientLoginId.Location = new Point(75, 140);
             textBoxPatientLoginId.Name = "textBoxPatientLoginId";
             textBoxPatientLoginId.PlaceholderText = "ID";
-            textBoxPatientLoginId.Size = new Size(303, 29);
+            textBoxPatientLoginId.Size = new Size(266, 24);
             textBoxPatientLoginId.TabIndex = 39;
+            textBoxPatientLoginId.KeyPress += textBoxPatientLoginId_KeyPress;
             // 
             // textBoxPatientPassword
             // 
             textBoxPatientPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBoxPatientPassword.Location = new Point(86, 278);
-            textBoxPatientPassword.Margin = new Padding(3, 4, 3, 4);
+            textBoxPatientPassword.Location = new Point(75, 208);
             textBoxPatientPassword.Name = "textBoxPatientPassword";
+            textBoxPatientPassword.PasswordChar = '*';
             textBoxPatientPassword.PlaceholderText = "Password";
-            textBoxPatientPassword.Size = new Size(303, 29);
+            textBoxPatientPassword.Size = new Size(266, 24);
             textBoxPatientPassword.TabIndex = 40;
             // 
             // PatientLoginGUI
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(457, 467);
+            ClientSize = new Size(400, 350);
             Controls.Add(textBoxPatientPassword);
             Controls.Add(textBoxPatientLoginId);
             Controls.Add(rjBtnPatientBackMain);
@@ -165,7 +162,6 @@
             Controls.Add(label_Patient_ID);
             Controls.Add(lbl_PatientLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "PatientLoginGUI";
             Text = "PatientLoginGUI";
             ResumeLayout(false);

@@ -34,34 +34,72 @@ namespace HospitalManagementSystem.Forms
         }
 
         private void rjBtnPatientSignUp_Click(object sender, EventArgs e)
-         {
-            hasher = new Helper.PasswordHasher();
-           
-            if (!string.Equals(textBoxP_AgainPassword.Text,textBoxP_Password.Text))
+        {
+
+            bool[] signUpControlArray = new bool[6];
+
+            signUpControlArray[0] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxPatientName);
+            signUpControlArray[1] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxPatientSurname);
+            signUpControlArray[2] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxP_IdentificationNo);
+            signUpControlArray[3] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxP_GSM_No);
+            signUpControlArray[4] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxP_Password);
+            signUpControlArray[5] = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxP_AgainPassword);
+
+
+            bool result = true;
+
+            foreach (bool value in signUpControlArray)
             {
-                MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                result = result && value;
+            }
+
+            if (result)
+            {
+                if (!(textBoxP_IdentificationNo.Text.Length < 11))
+                {
+                    hasher = new Helper.PasswordHasher();
+                    if (!string.Equals(textBoxP_AgainPassword.Text, textBoxP_Password.Text))
+                    {
+                        MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        string hashedPassword = hasher.HashPassword(textBoxP_Password.Text);
+                        using (var context = new HospitalDbContext())
+                        {
+                            Patient newPatient = new Patient
+                            {
+                                name = textBoxPatientName.Text,
+                                surname = textBoxPatientSurname.Text,
+                                identification = textBoxP_IdentificationNo.Text,
+                                GSM_No = textBoxP_GSM_No.Text,
+                                password = hashedPassword,
+                            };
+                            context.Patients.Add(newPatient);
+                            context.SaveChanges();
+                            MessageBox.Show("Registration successful. You will be redirected to the login screen.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Identification number must be 11 characters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                string hashedPassword = hasher.HashPassword(textBoxP_Password.Text);
-                using(var context = new HospitalDbContext())
-                {
-                    Patient newPatient = new Patient
-                    {
-                        name = textBoxPatientName.Text,
-                        surname = textBoxPatientSurname.Text,
-                        identification = textBoxP_IdentificationNo.Text,
-                        GSM_No = textBoxP_GSM_No.Text,
-                        password = hashedPassword,
-                        againPassword = hashedPassword
-                    };
-                    context.Patients.Add(newPatient);
-                    context.SaveChanges();
-                    MessageBox.Show("Registration successful. You will be redirected to the login screen.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
-                }
-
+                MessageBox.Show("All fields are required for registration.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void textBoxP_IdentificationNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxP_IdentificationNo);
+        }
+
+        private void textBoxP_GSM_No_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxP_GSM_No);
         }
     }
 }

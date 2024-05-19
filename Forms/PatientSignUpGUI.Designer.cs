@@ -114,6 +114,7 @@
             textBoxP_GSM_No.PlaceholderText = "GSM No";
             textBoxP_GSM_No.Size = new Size(266, 24);
             textBoxP_GSM_No.TabIndex = 41;
+            textBoxP_GSM_No.KeyPress += textBoxP_GSM_No_KeyPress;
             // 
             // textBoxP_IdentificationNo
             // 
@@ -123,6 +124,7 @@
             textBoxP_IdentificationNo.PlaceholderText = "Identification No";
             textBoxP_IdentificationNo.Size = new Size(266, 24);
             textBoxP_IdentificationNo.TabIndex = 40;
+            textBoxP_IdentificationNo.KeyPress += textBoxP_IdentificationNo_KeyPress;
             // 
             // textBoxP_AgainPassword
             // 
