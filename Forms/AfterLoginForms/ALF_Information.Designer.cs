@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             linkLabelPasswordUpdate = new LinkLabel();
-            rjTextBoxPALF_Surname = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxPALF_IdentNo = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxPALF_GSMNo = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxPALF_Name = new CustomTools.RJTextBox.RJTextBox();
             buttonPALF_Upd = new CustomTools.RJButton.RJButton();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            textboxALF_Name = new TextBox();
+            textboxALF_Surname = new TextBox();
+            textboxALF_Id = new TextBox();
+            textboxALF_GSM = new TextBox();
             SuspendLayout();
             // 
             // linkLabelPasswordUpdate
@@ -50,94 +50,6 @@
             linkLabelPasswordUpdate.TabStop = true;
             linkLabelPasswordUpdate.Text = "Click here to changer password";
             linkLabelPasswordUpdate.LinkClicked += linkLabelPasswordUpdate_LinkClicked;
-            // 
-            // rjTextBoxPALF_Surname
-            // 
-            rjTextBoxPALF_Surname.BackColor = SystemColors.Window;
-            rjTextBoxPALF_Surname.BorderColor = Color.Salmon;
-            rjTextBoxPALF_Surname.BorderFocusColor = Color.HotPink;
-            rjTextBoxPALF_Surname.BorderRadius = 15;
-            rjTextBoxPALF_Surname.BorderSize = 2;
-            rjTextBoxPALF_Surname.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxPALF_Surname.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPALF_Surname.Location = new Point(342, 193);
-            rjTextBoxPALF_Surname.Margin = new Padding(5);
-            rjTextBoxPALF_Surname.Multiline = false;
-            rjTextBoxPALF_Surname.Name = "rjTextBoxPALF_Surname";
-            rjTextBoxPALF_Surname.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPALF_Surname.PasswordChar = false;
-            rjTextBoxPALF_Surname.PlaceholderColor = Color.DarkGray;
-            rjTextBoxPALF_Surname.PlaceholderText = "";
-            rjTextBoxPALF_Surname.Size = new Size(286, 39);
-            rjTextBoxPALF_Surname.TabIndex = 48;
-            rjTextBoxPALF_Surname.Texts = "";
-            rjTextBoxPALF_Surname.UnderlinedStyle = false;
-            // 
-            // rjTextBoxPALF_IdentNo
-            // 
-            rjTextBoxPALF_IdentNo.BackColor = SystemColors.Window;
-            rjTextBoxPALF_IdentNo.BorderColor = Color.Salmon;
-            rjTextBoxPALF_IdentNo.BorderFocusColor = Color.HotPink;
-            rjTextBoxPALF_IdentNo.BorderRadius = 15;
-            rjTextBoxPALF_IdentNo.BorderSize = 2;
-            rjTextBoxPALF_IdentNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxPALF_IdentNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPALF_IdentNo.Location = new Point(342, 245);
-            rjTextBoxPALF_IdentNo.Margin = new Padding(5);
-            rjTextBoxPALF_IdentNo.Multiline = false;
-            rjTextBoxPALF_IdentNo.Name = "rjTextBoxPALF_IdentNo";
-            rjTextBoxPALF_IdentNo.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPALF_IdentNo.PasswordChar = false;
-            rjTextBoxPALF_IdentNo.PlaceholderColor = Color.DarkGray;
-            rjTextBoxPALF_IdentNo.PlaceholderText = "";
-            rjTextBoxPALF_IdentNo.Size = new Size(286, 39);
-            rjTextBoxPALF_IdentNo.TabIndex = 47;
-            rjTextBoxPALF_IdentNo.Texts = "";
-            rjTextBoxPALF_IdentNo.UnderlinedStyle = false;
-            // 
-            // rjTextBoxPALF_GSMNo
-            // 
-            rjTextBoxPALF_GSMNo.BackColor = SystemColors.Window;
-            rjTextBoxPALF_GSMNo.BorderColor = Color.Salmon;
-            rjTextBoxPALF_GSMNo.BorderFocusColor = Color.HotPink;
-            rjTextBoxPALF_GSMNo.BorderRadius = 15;
-            rjTextBoxPALF_GSMNo.BorderSize = 2;
-            rjTextBoxPALF_GSMNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxPALF_GSMNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPALF_GSMNo.Location = new Point(342, 297);
-            rjTextBoxPALF_GSMNo.Margin = new Padding(5);
-            rjTextBoxPALF_GSMNo.Multiline = false;
-            rjTextBoxPALF_GSMNo.Name = "rjTextBoxPALF_GSMNo";
-            rjTextBoxPALF_GSMNo.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPALF_GSMNo.PasswordChar = false;
-            rjTextBoxPALF_GSMNo.PlaceholderColor = Color.DarkGray;
-            rjTextBoxPALF_GSMNo.PlaceholderText = "";
-            rjTextBoxPALF_GSMNo.Size = new Size(286, 39);
-            rjTextBoxPALF_GSMNo.TabIndex = 46;
-            rjTextBoxPALF_GSMNo.Texts = "";
-            rjTextBoxPALF_GSMNo.UnderlinedStyle = false;
-            // 
-            // rjTextBoxPALF_Name
-            // 
-            rjTextBoxPALF_Name.BackColor = SystemColors.Window;
-            rjTextBoxPALF_Name.BorderColor = Color.Salmon;
-            rjTextBoxPALF_Name.BorderFocusColor = Color.HotPink;
-            rjTextBoxPALF_Name.BorderRadius = 15;
-            rjTextBoxPALF_Name.BorderSize = 2;
-            rjTextBoxPALF_Name.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxPALF_Name.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxPALF_Name.Location = new Point(342, 141);
-            rjTextBoxPALF_Name.Margin = new Padding(5);
-            rjTextBoxPALF_Name.Multiline = false;
-            rjTextBoxPALF_Name.Name = "rjTextBoxPALF_Name";
-            rjTextBoxPALF_Name.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxPALF_Name.PasswordChar = false;
-            rjTextBoxPALF_Name.PlaceholderColor = Color.DarkGray;
-            rjTextBoxPALF_Name.PlaceholderText = "";
-            rjTextBoxPALF_Name.Size = new Size(286, 39);
-            rjTextBoxPALF_Name.TabIndex = 45;
-            rjTextBoxPALF_Name.Texts = "";
-            rjTextBoxPALF_Name.UnderlinedStyle = false;
             // 
             // buttonPALF_Upd
             // 
@@ -173,7 +85,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label3.Location = new Point(180, 252);
+            label3.Location = new Point(180, 255);
             label3.Name = "label3";
             label3.Size = new Size(162, 25);
             label3.TabIndex = 42;
@@ -183,7 +95,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label2.Location = new Point(242, 200);
+            label2.Location = new Point(242, 204);
             label2.Name = "label2";
             label2.Size = new Size(93, 25);
             label2.TabIndex = 41;
@@ -193,11 +105,51 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label1.Location = new Point(265, 148);
+            label1.Location = new Point(266, 157);
             label1.Name = "label1";
             label1.Size = new Size(69, 25);
             label1.TabIndex = 40;
             label1.Text = "Name:";
+            // 
+            // textboxALF_Name
+            // 
+            textboxALF_Name.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxALF_Name.Location = new Point(347, 155);
+            textboxALF_Name.Margin = new Padding(3, 4, 3, 4);
+            textboxALF_Name.Name = "textboxALF_Name";
+            textboxALF_Name.PlaceholderText = "Name";
+            textboxALF_Name.Size = new Size(260, 29);
+            textboxALF_Name.TabIndex = 78;
+            // 
+            // textboxALF_Surname
+            // 
+            textboxALF_Surname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxALF_Surname.Location = new Point(347, 202);
+            textboxALF_Surname.Margin = new Padding(3, 4, 3, 4);
+            textboxALF_Surname.Name = "textboxALF_Surname";
+            textboxALF_Surname.PlaceholderText = "Surname";
+            textboxALF_Surname.Size = new Size(260, 29);
+            textboxALF_Surname.TabIndex = 79;
+            // 
+            // textboxALF_Id
+            // 
+            textboxALF_Id.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxALF_Id.Location = new Point(348, 253);
+            textboxALF_Id.Margin = new Padding(3, 4, 3, 4);
+            textboxALF_Id.Name = "textboxALF_Id";
+            textboxALF_Id.PlaceholderText = "ID";
+            textboxALF_Id.Size = new Size(260, 29);
+            textboxALF_Id.TabIndex = 80;
+            // 
+            // textboxALF_GSM
+            // 
+            textboxALF_GSM.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxALF_GSM.Location = new Point(348, 302);
+            textboxALF_GSM.Margin = new Padding(3, 4, 3, 4);
+            textboxALF_GSM.Name = "textboxALF_GSM";
+            textboxALF_GSM.PlaceholderText = "GSM";
+            textboxALF_GSM.Size = new Size(260, 29);
+            textboxALF_GSM.TabIndex = 81;
             // 
             // ALF_Information
             // 
@@ -205,11 +157,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(955, 539);
+            Controls.Add(textboxALF_GSM);
+            Controls.Add(textboxALF_Id);
+            Controls.Add(textboxALF_Surname);
+            Controls.Add(textboxALF_Name);
             Controls.Add(linkLabelPasswordUpdate);
-            Controls.Add(rjTextBoxPALF_Surname);
-            Controls.Add(rjTextBoxPALF_IdentNo);
-            Controls.Add(rjTextBoxPALF_GSMNo);
-            Controls.Add(rjTextBoxPALF_Name);
             Controls.Add(buttonPALF_Upd);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -225,14 +177,14 @@
         #endregion
 
         private LinkLabel linkLabelPasswordUpdate;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_Surname;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_IdentNo;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_GSMNo;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxPALF_Name;
         private CustomTools.RJButton.RJButton buttonPALF_Upd;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
+        private TextBox textboxALF_Name;
+        private TextBox textboxALF_Surname;
+        private TextBox textboxALF_Id;
+        private TextBox textboxALF_GSM;
     }
 }

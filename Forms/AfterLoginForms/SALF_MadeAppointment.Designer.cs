@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            TextboxSALF_PatientID = new CustomTools.RJTextBox.RJTextBox();
-            TextboxSALF_PatientName = new CustomTools.RJTextBox.RJTextBox();
             LabelSALF_AvailableAppointments = new Label();
             LabelSALF_Time = new Label();
             LabelSALF_Policlinic = new Label();
@@ -39,57 +37,15 @@
             LabelSALF_Name = new Label();
             LabelSALF_Surname = new Label();
             ButtonSALF_Show = new CustomTools.RJButton.RJButton();
-            TextboxSALF_PatientSurname = new CustomTools.RJTextBox.RJTextBox();
             ComboBoxSALF_Doctor = new ComboBox();
             ComboBoxSALF_Policlinic = new ComboBox();
             DataGridSALF_Make = new DataGridView();
             checkedListBoxSALF_Time = new CheckedListBox();
+            textboxSALF_PatientId = new TextBox();
+            textboxSALF_PatientName = new TextBox();
+            textboxSALF_PatientSurname = new TextBox();
             ((System.ComponentModel.ISupportInitialize)DataGridSALF_Make).BeginInit();
             SuspendLayout();
-            // 
-            // TextboxSALF_PatientID
-            // 
-            TextboxSALF_PatientID.BackColor = SystemColors.Window;
-            TextboxSALF_PatientID.BorderColor = Color.Salmon;
-            TextboxSALF_PatientID.BorderFocusColor = Color.HotPink;
-            TextboxSALF_PatientID.BorderRadius = 15;
-            TextboxSALF_PatientID.BorderSize = 2;
-            TextboxSALF_PatientID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TextboxSALF_PatientID.ForeColor = Color.FromArgb(64, 64, 64);
-            TextboxSALF_PatientID.Location = new Point(177, 74);
-            TextboxSALF_PatientID.Margin = new Padding(5);
-            TextboxSALF_PatientID.Multiline = false;
-            TextboxSALF_PatientID.Name = "TextboxSALF_PatientID";
-            TextboxSALF_PatientID.Padding = new Padding(11, 9, 11, 9);
-            TextboxSALF_PatientID.PasswordChar = false;
-            TextboxSALF_PatientID.PlaceholderColor = Color.DarkGray;
-            TextboxSALF_PatientID.PlaceholderText = "";
-            TextboxSALF_PatientID.Size = new Size(192, 39);
-            TextboxSALF_PatientID.TabIndex = 70;
-            TextboxSALF_PatientID.Texts = "";
-            TextboxSALF_PatientID.UnderlinedStyle = false;
-            // 
-            // TextboxSALF_PatientName
-            // 
-            TextboxSALF_PatientName.BackColor = SystemColors.Window;
-            TextboxSALF_PatientName.BorderColor = Color.Salmon;
-            TextboxSALF_PatientName.BorderFocusColor = Color.HotPink;
-            TextboxSALF_PatientName.BorderRadius = 15;
-            TextboxSALF_PatientName.BorderSize = 2;
-            TextboxSALF_PatientName.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TextboxSALF_PatientName.ForeColor = Color.FromArgb(64, 64, 64);
-            TextboxSALF_PatientName.Location = new Point(177, 123);
-            TextboxSALF_PatientName.Margin = new Padding(5);
-            TextboxSALF_PatientName.Multiline = false;
-            TextboxSALF_PatientName.Name = "TextboxSALF_PatientName";
-            TextboxSALF_PatientName.Padding = new Padding(11, 9, 11, 9);
-            TextboxSALF_PatientName.PasswordChar = false;
-            TextboxSALF_PatientName.PlaceholderColor = Color.DarkGray;
-            TextboxSALF_PatientName.PlaceholderText = "";
-            TextboxSALF_PatientName.Size = new Size(192, 39);
-            TextboxSALF_PatientName.TabIndex = 69;
-            TextboxSALF_PatientName.Texts = "";
-            TextboxSALF_PatientName.UnderlinedStyle = false;
             // 
             // LabelSALF_AvailableAppointments
             // 
@@ -201,28 +157,6 @@
             ButtonSALF_Show.TextColor = Color.White;
             ButtonSALF_Show.UseVisualStyleBackColor = false;
             // 
-            // TextboxSALF_PatientSurname
-            // 
-            TextboxSALF_PatientSurname.BackColor = SystemColors.Window;
-            TextboxSALF_PatientSurname.BorderColor = Color.Salmon;
-            TextboxSALF_PatientSurname.BorderFocusColor = Color.HotPink;
-            TextboxSALF_PatientSurname.BorderRadius = 15;
-            TextboxSALF_PatientSurname.BorderSize = 2;
-            TextboxSALF_PatientSurname.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TextboxSALF_PatientSurname.ForeColor = Color.FromArgb(64, 64, 64);
-            TextboxSALF_PatientSurname.Location = new Point(177, 172);
-            TextboxSALF_PatientSurname.Margin = new Padding(5);
-            TextboxSALF_PatientSurname.Multiline = false;
-            TextboxSALF_PatientSurname.Name = "TextboxSALF_PatientSurname";
-            TextboxSALF_PatientSurname.Padding = new Padding(11, 9, 11, 9);
-            TextboxSALF_PatientSurname.PasswordChar = false;
-            TextboxSALF_PatientSurname.PlaceholderColor = Color.DarkGray;
-            TextboxSALF_PatientSurname.PlaceholderText = "";
-            TextboxSALF_PatientSurname.Size = new Size(192, 39);
-            TextboxSALF_PatientSurname.TabIndex = 59;
-            TextboxSALF_PatientSurname.Texts = "";
-            TextboxSALF_PatientSurname.UnderlinedStyle = false;
-            // 
             // ComboBoxSALF_Doctor
             // 
             ComboBoxSALF_Doctor.FormattingEnabled = true;
@@ -258,15 +192,46 @@
             checkedListBoxSALF_Time.TabIndex = 71;
             checkedListBoxSALF_Time.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
+            // textboxSALF_PatientId
+            // 
+            textboxSALF_PatientId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxSALF_PatientId.Location = new Point(178, 81);
+            textboxSALF_PatientId.Margin = new Padding(3, 4, 3, 4);
+            textboxSALF_PatientId.Name = "textboxSALF_PatientId";
+            textboxSALF_PatientId.PlaceholderText = "ID";
+            textboxSALF_PatientId.Size = new Size(191, 29);
+            textboxSALF_PatientId.TabIndex = 81;
+            // 
+            // textboxSALF_PatientName
+            // 
+            textboxSALF_PatientName.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxSALF_PatientName.Location = new Point(178, 126);
+            textboxSALF_PatientName.Margin = new Padding(3, 4, 3, 4);
+            textboxSALF_PatientName.Name = "textboxSALF_PatientName";
+            textboxSALF_PatientName.PlaceholderText = "Name";
+            textboxSALF_PatientName.Size = new Size(191, 29);
+            textboxSALF_PatientName.TabIndex = 82;
+            // 
+            // textboxSALF_PatientSurname
+            // 
+            textboxSALF_PatientSurname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxSALF_PatientSurname.Location = new Point(178, 179);
+            textboxSALF_PatientSurname.Margin = new Padding(3, 4, 3, 4);
+            textboxSALF_PatientSurname.Name = "textboxSALF_PatientSurname";
+            textboxSALF_PatientSurname.PlaceholderText = "Surname";
+            textboxSALF_PatientSurname.Size = new Size(191, 29);
+            textboxSALF_PatientSurname.TabIndex = 83;
+            // 
             // SALF_MadeAppointment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(933, 555);
+            Controls.Add(textboxSALF_PatientSurname);
+            Controls.Add(textboxSALF_PatientName);
+            Controls.Add(textboxSALF_PatientId);
             Controls.Add(checkedListBoxSALF_Time);
-            Controls.Add(TextboxSALF_PatientID);
-            Controls.Add(TextboxSALF_PatientName);
             Controls.Add(LabelSALF_AvailableAppointments);
             Controls.Add(LabelSALF_Time);
             Controls.Add(LabelSALF_Policlinic);
@@ -276,7 +241,6 @@
             Controls.Add(LabelSALF_Name);
             Controls.Add(LabelSALF_Surname);
             Controls.Add(ButtonSALF_Show);
-            Controls.Add(TextboxSALF_PatientSurname);
             Controls.Add(ComboBoxSALF_Doctor);
             Controls.Add(ComboBoxSALF_Policlinic);
             Controls.Add(DataGridSALF_Make);
@@ -289,9 +253,6 @@
         }
 
         #endregion
-
-        private CustomTools.RJTextBox.RJTextBox TextboxSALF_PatientID;
-        private CustomTools.RJTextBox.RJTextBox TextboxSALF_PatientName;
         private Label LabelSALF_AvailableAppointments;
         private Label LabelSALF_Time;
         private Label LabelSALF_Policlinic;
@@ -301,10 +262,12 @@
         private Label LabelSALF_Name;
         private Label LabelSALF_Surname;
         private CustomTools.RJButton.RJButton ButtonSALF_Show;
-        private CustomTools.RJTextBox.RJTextBox TextboxSALF_PatientSurname;
         private ComboBox ComboBoxSALF_Doctor;
         private ComboBox ComboBoxSALF_Policlinic;
         private DataGridView DataGridSALF_Make;
         private CheckedListBox checkedListBoxSALF_Time;
+        private TextBox textboxSALF_PatientId;
+        private TextBox textboxSALF_PatientName;
+        private TextBox textboxSALF_PatientSurname;
     }
 }

@@ -32,14 +32,14 @@
             buttonDALF_Upd = new CustomTools.RJButton.RJButton();
             buttonDALF_Del = new CustomTools.RJButton.RJButton();
             buttonDALF_Save = new CustomTools.RJButton.RJButton();
-            rjTextBox2 = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxAdminPassword = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBox1 = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxAdminIdentificationNo = new CustomTools.RJTextBox.RJTextBox();
             labelDALF_Presc = new Label();
             labelDALF_Diag = new Label();
             labelDALF_PatiId = new Label();
             labelDALF_Patinam = new Label();
+            textboxDALF_PatientId = new TextBox();
+            textboxDALF_PatientName = new TextBox();
+            textboxDALF_Diagnosing = new TextBox();
+            textboxDALF_Prescriptions = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -112,99 +112,11 @@
             buttonDALF_Save.TextColor = Color.White;
             buttonDALF_Save.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox2
-            // 
-            rjTextBox2.BackColor = SystemColors.Window;
-            rjTextBox2.BorderColor = Color.Salmon;
-            rjTextBox2.BorderFocusColor = Color.HotPink;
-            rjTextBox2.BorderRadius = 15;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(152, 272);
-            rjTextBox2.Margin = new Padding(5);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(11, 9, 11, 9);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "";
-            rjTextBox2.Size = new Size(192, 39);
-            rjTextBox2.TabIndex = 40;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = false;
-            // 
-            // rjTextBoxAdminPassword
-            // 
-            rjTextBoxAdminPassword.BackColor = SystemColors.Window;
-            rjTextBoxAdminPassword.BorderColor = Color.Salmon;
-            rjTextBoxAdminPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxAdminPassword.BorderRadius = 15;
-            rjTextBoxAdminPassword.BorderSize = 2;
-            rjTextBoxAdminPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAdminPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminPassword.Location = new Point(150, 222);
-            rjTextBoxAdminPassword.Margin = new Padding(5);
-            rjTextBoxAdminPassword.Multiline = false;
-            rjTextBoxAdminPassword.Name = "rjTextBoxAdminPassword";
-            rjTextBoxAdminPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAdminPassword.PasswordChar = false;
-            rjTextBoxAdminPassword.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAdminPassword.PlaceholderText = "";
-            rjTextBoxAdminPassword.Size = new Size(192, 39);
-            rjTextBoxAdminPassword.TabIndex = 39;
-            rjTextBoxAdminPassword.Texts = "";
-            rjTextBoxAdminPassword.UnderlinedStyle = false;
-            // 
-            // rjTextBox1
-            // 
-            rjTextBox1.BackColor = SystemColors.Window;
-            rjTextBox1.BorderColor = Color.Salmon;
-            rjTextBox1.BorderFocusColor = Color.HotPink;
-            rjTextBox1.BorderRadius = 15;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(152, 173);
-            rjTextBox1.Margin = new Padding(5);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(11, 9, 11, 9);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.Size = new Size(192, 39);
-            rjTextBox1.TabIndex = 38;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
-            // 
-            // rjTextBoxAdminIdentificationNo
-            // 
-            rjTextBoxAdminIdentificationNo.BackColor = SystemColors.Window;
-            rjTextBoxAdminIdentificationNo.BorderColor = Color.Salmon;
-            rjTextBoxAdminIdentificationNo.BorderFocusColor = Color.HotPink;
-            rjTextBoxAdminIdentificationNo.BorderRadius = 15;
-            rjTextBoxAdminIdentificationNo.BorderSize = 2;
-            rjTextBoxAdminIdentificationNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAdminIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAdminIdentificationNo.Location = new Point(152, 124);
-            rjTextBoxAdminIdentificationNo.Margin = new Padding(5);
-            rjTextBoxAdminIdentificationNo.Multiline = false;
-            rjTextBoxAdminIdentificationNo.Name = "rjTextBoxAdminIdentificationNo";
-            rjTextBoxAdminIdentificationNo.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAdminIdentificationNo.PasswordChar = false;
-            rjTextBoxAdminIdentificationNo.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAdminIdentificationNo.PlaceholderText = "";
-            rjTextBoxAdminIdentificationNo.Size = new Size(192, 39);
-            rjTextBoxAdminIdentificationNo.TabIndex = 37;
-            rjTextBoxAdminIdentificationNo.Texts = "";
-            rjTextBoxAdminIdentificationNo.UnderlinedStyle = false;
-            // 
             // labelDALF_Presc
             // 
             labelDALF_Presc.AutoSize = true;
             labelDALF_Presc.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Presc.Location = new Point(17, 286);
+            labelDALF_Presc.Location = new Point(17, 284);
             labelDALF_Presc.Name = "labelDALF_Presc";
             labelDALF_Presc.Size = new Size(122, 25);
             labelDALF_Presc.TabIndex = 44;
@@ -214,7 +126,7 @@
             // 
             labelDALF_Diag.AutoSize = true;
             labelDALF_Diag.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Diag.Location = new Point(17, 236);
+            labelDALF_Diag.Location = new Point(17, 234);
             labelDALF_Diag.Name = "labelDALF_Diag";
             labelDALF_Diag.Size = new Size(109, 25);
             labelDALF_Diag.TabIndex = 43;
@@ -224,7 +136,7 @@
             // 
             labelDALF_PatiId.AutoSize = true;
             labelDALF_PatiId.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_PatiId.Location = new Point(17, 138);
+            labelDALF_PatiId.Location = new Point(17, 136);
             labelDALF_PatiId.Name = "labelDALF_PatiId";
             labelDALF_PatiId.Size = new Size(98, 25);
             labelDALF_PatiId.TabIndex = 42;
@@ -234,11 +146,51 @@
             // 
             labelDALF_Patinam.AutoSize = true;
             labelDALF_Patinam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelDALF_Patinam.Location = new Point(17, 187);
+            labelDALF_Patinam.Location = new Point(17, 189);
             labelDALF_Patinam.Name = "labelDALF_Patinam";
             labelDALF_Patinam.Size = new Size(130, 25);
             labelDALF_Patinam.TabIndex = 41;
             labelDALF_Patinam.Text = "Patient Name";
+            // 
+            // textboxDALF_PatientId
+            // 
+            textboxDALF_PatientId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxDALF_PatientId.Location = new Point(151, 134);
+            textboxDALF_PatientId.Margin = new Padding(3, 4, 3, 4);
+            textboxDALF_PatientId.Name = "textboxDALF_PatientId";
+            textboxDALF_PatientId.PlaceholderText = "ID";
+            textboxDALF_PatientId.Size = new Size(191, 29);
+            textboxDALF_PatientId.TabIndex = 80;
+            // 
+            // textboxDALF_PatientName
+            // 
+            textboxDALF_PatientName.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxDALF_PatientName.Location = new Point(151, 187);
+            textboxDALF_PatientName.Margin = new Padding(3, 4, 3, 4);
+            textboxDALF_PatientName.Name = "textboxDALF_PatientName";
+            textboxDALF_PatientName.PlaceholderText = "Name";
+            textboxDALF_PatientName.Size = new Size(191, 29);
+            textboxDALF_PatientName.TabIndex = 81;
+            // 
+            // textboxDALF_Diagnosing
+            // 
+            textboxDALF_Diagnosing.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxDALF_Diagnosing.Location = new Point(151, 232);
+            textboxDALF_Diagnosing.Margin = new Padding(3, 4, 3, 4);
+            textboxDALF_Diagnosing.Name = "textboxDALF_Diagnosing";
+            textboxDALF_Diagnosing.PlaceholderText = "Diagnosing";
+            textboxDALF_Diagnosing.Size = new Size(191, 29);
+            textboxDALF_Diagnosing.TabIndex = 82;
+            // 
+            // textboxDALF_Prescriptions
+            // 
+            textboxDALF_Prescriptions.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxDALF_Prescriptions.Location = new Point(151, 282);
+            textboxDALF_Prescriptions.Margin = new Padding(3, 4, 3, 4);
+            textboxDALF_Prescriptions.Name = "textboxDALF_Prescriptions";
+            textboxDALF_Prescriptions.PlaceholderText = "Prescriptions";
+            textboxDALF_Prescriptions.Size = new Size(191, 29);
+            textboxDALF_Prescriptions.TabIndex = 83;
             // 
             // DALF_RandevuGörüntüle
             // 
@@ -246,14 +198,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(946, 621);
+            Controls.Add(textboxDALF_Prescriptions);
+            Controls.Add(textboxDALF_Diagnosing);
+            Controls.Add(textboxDALF_PatientName);
+            Controls.Add(textboxDALF_PatientId);
             Controls.Add(labelDALF_Presc);
             Controls.Add(labelDALF_Diag);
             Controls.Add(labelDALF_PatiId);
             Controls.Add(labelDALF_Patinam);
-            Controls.Add(rjTextBox2);
-            Controls.Add(rjTextBoxAdminPassword);
-            Controls.Add(rjTextBox1);
-            Controls.Add(rjTextBoxAdminIdentificationNo);
             Controls.Add(buttonDALF_Save);
             Controls.Add(buttonDALF_Del);
             Controls.Add(buttonDALF_Upd);
@@ -271,13 +223,13 @@
         private CustomTools.RJButton.RJButton buttonDALF_Upd;
         private CustomTools.RJButton.RJButton buttonDALF_Del;
         private CustomTools.RJButton.RJButton buttonDALF_Save;
-        private CustomTools.RJTextBox.RJTextBox rjTextBox2;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAdminPassword;
-        private CustomTools.RJTextBox.RJTextBox rjTextBox1;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAdminIdentificationNo;
         private Label labelDALF_Presc;
         private Label labelDALF_Diag;
         private Label labelDALF_PatiId;
         private Label labelDALF_Patinam;
+        private TextBox textboxDALF_PatientId;
+        private TextBox textboxDALF_PatientName;
+        private TextBox textboxDALF_Diagnosing;
+        private TextBox textboxDALF_Prescriptions;
     }
 }

@@ -30,11 +30,11 @@
         {
             rjBtnDoctorBackMain = new CustomTools.RJButton.RJButton();
             rjBtnDoctorSignIn = new CustomTools.RJButton.RJButton();
-            rjTextBoxDoctorPassword = new CustomTools.RJTextBox.RJTextBox();
             labelDoctorPassword = new Label();
-            rjTextBoxDoctorIdentificationNo = new CustomTools.RJTextBox.RJTextBox();
             labelDoctorID = new Label();
             lbl_DoctorLoginGUI = new Label();
+            textBoxDoctorLogiId = new TextBox();
+            textboxDoctorPassword = new TextBox();
             SuspendLayout();
             // 
             // rjBtnDoctorBackMain
@@ -78,28 +78,6 @@
             rjBtnDoctorSignIn.UseVisualStyleBackColor = false;
             rjBtnDoctorSignIn.Click += rjBtnDoctorSignIn_Click;
             // 
-            // rjTextBoxDoctorPassword
-            // 
-            rjTextBoxDoctorPassword.BackColor = SystemColors.Window;
-            rjTextBoxDoctorPassword.BorderColor = Color.Salmon;
-            rjTextBoxDoctorPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxDoctorPassword.BorderRadius = 15;
-            rjTextBoxDoctorPassword.BorderSize = 2;
-            rjTextBoxDoctorPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxDoctorPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxDoctorPassword.Location = new Point(86, 268);
-            rjTextBoxDoctorPassword.Margin = new Padding(5, 5, 5, 5);
-            rjTextBoxDoctorPassword.Multiline = false;
-            rjTextBoxDoctorPassword.Name = "rjTextBoxDoctorPassword";
-            rjTextBoxDoctorPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxDoctorPassword.PasswordChar = true;
-            rjTextBoxDoctorPassword.PlaceholderColor = Color.DarkGray;
-            rjTextBoxDoctorPassword.PlaceholderText = "";
-            rjTextBoxDoctorPassword.Size = new Size(286, 39);
-            rjTextBoxDoctorPassword.TabIndex = 19;
-            rjTextBoxDoctorPassword.Texts = "";
-            rjTextBoxDoctorPassword.UnderlinedStyle = false;
-            // 
             // labelDoctorPassword
             // 
             labelDoctorPassword.AutoSize = true;
@@ -109,28 +87,6 @@
             labelDoctorPassword.Size = new Size(92, 25);
             labelDoctorPassword.TabIndex = 18;
             labelDoctorPassword.Text = "Password";
-            // 
-            // rjTextBoxDoctorIdentificationNo
-            // 
-            rjTextBoxDoctorIdentificationNo.BackColor = SystemColors.Window;
-            rjTextBoxDoctorIdentificationNo.BorderColor = Color.Salmon;
-            rjTextBoxDoctorIdentificationNo.BorderFocusColor = Color.HotPink;
-            rjTextBoxDoctorIdentificationNo.BorderRadius = 15;
-            rjTextBoxDoctorIdentificationNo.BorderSize = 2;
-            rjTextBoxDoctorIdentificationNo.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxDoctorIdentificationNo.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxDoctorIdentificationNo.Location = new Point(86, 180);
-            rjTextBoxDoctorIdentificationNo.Margin = new Padding(5, 5, 5, 5);
-            rjTextBoxDoctorIdentificationNo.Multiline = false;
-            rjTextBoxDoctorIdentificationNo.Name = "rjTextBoxDoctorIdentificationNo";
-            rjTextBoxDoctorIdentificationNo.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxDoctorIdentificationNo.PasswordChar = false;
-            rjTextBoxDoctorIdentificationNo.PlaceholderColor = Color.DarkGray;
-            rjTextBoxDoctorIdentificationNo.PlaceholderText = "";
-            rjTextBoxDoctorIdentificationNo.Size = new Size(286, 39);
-            rjTextBoxDoctorIdentificationNo.TabIndex = 17;
-            rjTextBoxDoctorIdentificationNo.Texts = "";
-            rjTextBoxDoctorIdentificationNo.UnderlinedStyle = false;
             // 
             // labelDoctorID
             // 
@@ -152,17 +108,37 @@
             lbl_DoctorLoginGUI.TabIndex = 15;
             lbl_DoctorLoginGUI.Text = "Ready to Login";
             // 
+            // textBoxDoctorLogiId
+            // 
+            textBoxDoctorLogiId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textBoxDoctorLogiId.Location = new Point(86, 186);
+            textBoxDoctorLogiId.Margin = new Padding(3, 4, 3, 4);
+            textBoxDoctorLogiId.Name = "textBoxDoctorLogiId";
+            textBoxDoctorLogiId.PlaceholderText = "ID";
+            textBoxDoctorLogiId.Size = new Size(303, 29);
+            textBoxDoctorLogiId.TabIndex = 40;
+            // 
+            // textboxDoctorPassword
+            // 
+            textboxDoctorPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxDoctorPassword.Location = new Point(86, 277);
+            textboxDoctorPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxDoctorPassword.Name = "textboxDoctorPassword";
+            textboxDoctorPassword.PlaceholderText = "Password";
+            textboxDoctorPassword.Size = new Size(303, 29);
+            textboxDoctorPassword.TabIndex = 41;
+            // 
             // DoctorLoginGUI
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(457, 467);
+            Controls.Add(textboxDoctorPassword);
+            Controls.Add(textBoxDoctorLogiId);
             Controls.Add(rjBtnDoctorBackMain);
             Controls.Add(rjBtnDoctorSignIn);
-            Controls.Add(rjTextBoxDoctorPassword);
             Controls.Add(labelDoctorPassword);
-            Controls.Add(rjTextBoxDoctorIdentificationNo);
             Controls.Add(labelDoctorID);
             Controls.Add(lbl_DoctorLoginGUI);
             FormBorderStyle = FormBorderStyle.None;
@@ -177,10 +153,10 @@
 
         private CustomTools.RJButton.RJButton rjBtnDoctorBackMain;
         private CustomTools.RJButton.RJButton rjBtnDoctorSignIn;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxDoctorPassword;
         private Label labelDoctorPassword;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxDoctorIdentificationNo;
         private Label labelDoctorID;
         private Label lbl_DoctorLoginGUI;
+        private TextBox textBoxDoctorLogiId;
+        private TextBox textboxDoctorPassword;
     }
 }

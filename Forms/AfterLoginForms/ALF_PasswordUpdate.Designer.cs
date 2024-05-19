@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             rjBtnPasswordUpdate = new CustomTools.RJButton.RJButton();
-            rjTextBoxNewAgainPassword = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxNewPassword = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxOldPassword = new CustomTools.RJTextBox.RJTextBox();
             rjBtnAdminBackMain = new CustomTools.RJButton.RJButton();
+            textboxOldPassword = new TextBox();
+            textboxNewPassword = new TextBox();
+            textboxNewPasswordAgain = new TextBox();
             SuspendLayout();
             // 
             // rjBtnPasswordUpdate
@@ -46,79 +46,14 @@
             rjBtnPasswordUpdate.FlatStyle = FlatStyle.Flat;
             rjBtnPasswordUpdate.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnPasswordUpdate.ForeColor = Color.White;
-            rjBtnPasswordUpdate.Location = new Point(125, 140);
+            rjBtnPasswordUpdate.Location = new Point(143, 187);
+            rjBtnPasswordUpdate.Margin = new Padding(3, 4, 3, 4);
             rjBtnPasswordUpdate.Name = "rjBtnPasswordUpdate";
-            rjBtnPasswordUpdate.Size = new Size(140, 31);
+            rjBtnPasswordUpdate.Size = new Size(160, 41);
             rjBtnPasswordUpdate.TabIndex = 36;
             rjBtnPasswordUpdate.Text = "Update";
             rjBtnPasswordUpdate.TextColor = Color.White;
             rjBtnPasswordUpdate.UseVisualStyleBackColor = false;
-            // 
-            // rjTextBoxNewAgainPassword
-            // 
-            rjTextBoxNewAgainPassword.BackColor = SystemColors.Window;
-            rjTextBoxNewAgainPassword.BorderColor = Color.Salmon;
-            rjTextBoxNewAgainPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxNewAgainPassword.BorderRadius = 15;
-            rjTextBoxNewAgainPassword.BorderSize = 2;
-            rjTextBoxNewAgainPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            rjTextBoxNewAgainPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxNewAgainPassword.Location = new Point(70, 95);
-            rjTextBoxNewAgainPassword.Margin = new Padding(4);
-            rjTextBoxNewAgainPassword.Multiline = false;
-            rjTextBoxNewAgainPassword.Name = "rjTextBoxNewAgainPassword";
-            rjTextBoxNewAgainPassword.Padding = new Padding(9, 5, 9, 5);
-            rjTextBoxNewAgainPassword.PasswordChar = true;
-            rjTextBoxNewAgainPassword.PlaceholderColor = Color.Gray;
-            rjTextBoxNewAgainPassword.PlaceholderText = "New Password Again";
-            rjTextBoxNewAgainPassword.Size = new Size(250, 28);
-            rjTextBoxNewAgainPassword.TabIndex = 35;
-            rjTextBoxNewAgainPassword.Texts = "";
-            rjTextBoxNewAgainPassword.UnderlinedStyle = false;
-            // 
-            // rjTextBoxNewPassword
-            // 
-            rjTextBoxNewPassword.BackColor = SystemColors.Window;
-            rjTextBoxNewPassword.BorderColor = Color.Salmon;
-            rjTextBoxNewPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxNewPassword.BorderRadius = 15;
-            rjTextBoxNewPassword.BorderSize = 2;
-            rjTextBoxNewPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            rjTextBoxNewPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxNewPassword.Location = new Point(70, 59);
-            rjTextBoxNewPassword.Margin = new Padding(4);
-            rjTextBoxNewPassword.Multiline = false;
-            rjTextBoxNewPassword.Name = "rjTextBoxNewPassword";
-            rjTextBoxNewPassword.Padding = new Padding(9, 5, 9, 5);
-            rjTextBoxNewPassword.PasswordChar = true;
-            rjTextBoxNewPassword.PlaceholderColor = Color.Gray;
-            rjTextBoxNewPassword.PlaceholderText = "New Password";
-            rjTextBoxNewPassword.Size = new Size(250, 28);
-            rjTextBoxNewPassword.TabIndex = 34;
-            rjTextBoxNewPassword.Texts = "";
-            rjTextBoxNewPassword.UnderlinedStyle = false;
-            // 
-            // rjTextBoxOldPassword
-            // 
-            rjTextBoxOldPassword.BackColor = SystemColors.Window;
-            rjTextBoxOldPassword.BorderColor = Color.Salmon;
-            rjTextBoxOldPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxOldPassword.BorderRadius = 15;
-            rjTextBoxOldPassword.BorderSize = 2;
-            rjTextBoxOldPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            rjTextBoxOldPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxOldPassword.Location = new Point(70, 23);
-            rjTextBoxOldPassword.Margin = new Padding(4);
-            rjTextBoxOldPassword.Multiline = false;
-            rjTextBoxOldPassword.Name = "rjTextBoxOldPassword";
-            rjTextBoxOldPassword.Padding = new Padding(9, 5, 9, 5);
-            rjTextBoxOldPassword.PasswordChar = true;
-            rjTextBoxOldPassword.PlaceholderColor = Color.Gray;
-            rjTextBoxOldPassword.PlaceholderText = "Old Password";
-            rjTextBoxOldPassword.Size = new Size(250, 28);
-            rjTextBoxOldPassword.TabIndex = 37;
-            rjTextBoxOldPassword.Texts = "";
-            rjTextBoxOldPassword.UnderlinedStyle = false;
             // 
             // rjBtnAdminBackMain
             // 
@@ -131,37 +66,70 @@
             rjBtnAdminBackMain.FlatStyle = FlatStyle.Flat;
             rjBtnAdminBackMain.ForeColor = Color.White;
             rjBtnAdminBackMain.Image = Properties.Resources.LeftArrowIcon;
-            rjBtnAdminBackMain.Location = new Point(3, 3);
+            rjBtnAdminBackMain.Location = new Point(3, 4);
+            rjBtnAdminBackMain.Margin = new Padding(3, 4, 3, 4);
             rjBtnAdminBackMain.Name = "rjBtnAdminBackMain";
-            rjBtnAdminBackMain.Size = new Size(40, 40);
+            rjBtnAdminBackMain.Size = new Size(46, 53);
             rjBtnAdminBackMain.TabIndex = 38;
             rjBtnAdminBackMain.TextColor = Color.White;
             rjBtnAdminBackMain.UseVisualStyleBackColor = false;
             rjBtnAdminBackMain.Click += rjBtnAdminBackMain_Click;
             // 
+            // textboxOldPassword
+            // 
+            textboxOldPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxOldPassword.Location = new Point(99, 42);
+            textboxOldPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxOldPassword.Name = "textboxOldPassword";
+            textboxOldPassword.PlaceholderText = "Old Password";
+            textboxOldPassword.Size = new Size(260, 29);
+            textboxOldPassword.TabIndex = 79;
+            // 
+            // textboxNewPassword
+            // 
+            textboxNewPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxNewPassword.Location = new Point(99, 90);
+            textboxNewPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxNewPassword.Name = "textboxNewPassword";
+            textboxNewPassword.PlaceholderText = "New Password";
+            textboxNewPassword.Size = new Size(260, 29);
+            textboxNewPassword.TabIndex = 80;
+            // 
+            // textboxNewPasswordAgain
+            // 
+            textboxNewPasswordAgain.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxNewPasswordAgain.Location = new Point(99, 138);
+            textboxNewPasswordAgain.Margin = new Padding(3, 4, 3, 4);
+            textboxNewPasswordAgain.Name = "textboxNewPasswordAgain";
+            textboxNewPasswordAgain.PlaceholderText = "New Password Again";
+            textboxNewPasswordAgain.Size = new Size(260, 29);
+            textboxNewPasswordAgain.TabIndex = 81;
+            // 
             // ALF_PasswordUpdate
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(400, 200);
+            ClientSize = new Size(457, 267);
+            Controls.Add(textboxNewPasswordAgain);
+            Controls.Add(textboxNewPassword);
+            Controls.Add(textboxOldPassword);
             Controls.Add(rjBtnAdminBackMain);
-            Controls.Add(rjTextBoxOldPassword);
             Controls.Add(rjBtnPasswordUpdate);
-            Controls.Add(rjTextBoxNewAgainPassword);
-            Controls.Add(rjTextBoxNewPassword);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ALF_PasswordUpdate";
             Text = "ALF_PasswordUpdate";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private CustomTools.RJButton.RJButton rjBtnPasswordUpdate;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxNewAgainPassword;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxNewPassword;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxOldPassword;
         private CustomTools.RJButton.RJButton rjBtnAdminBackMain;
+        private TextBox textboxOldPassword;
+        private TextBox textboxNewPassword;
+        private TextBox textboxNewPasswordAgain;
     }
 }

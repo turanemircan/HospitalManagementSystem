@@ -36,7 +36,7 @@ namespace HospitalManagementSystem.Forms
         private void rjBtnPatientSignUp_Click(object sender, EventArgs e)
          {
             hasher = new Helper.PasswordHasher();
-            string deneme = rjTextBoxPatientName.Text;
+           
             if (!string.Equals(textBoxP_AgainPassword.Text,textBoxP_Password.Text))
             {
                 MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

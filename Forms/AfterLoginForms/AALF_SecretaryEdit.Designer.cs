@@ -35,14 +35,14 @@
             labelAALF_phon = new Label();
             labelAALF_ID = new Label();
             labelAALF_Name = new Label();
-            rjTextBoxAALF_SecretPassword = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxAALF_SecretPhone = new CustomTools.RJTextBox.RJTextBox();
-            rjTextBoxAALF_SecretIDentification = new CustomTools.RJTextBox.RJTextBox();
             labelAALF_Pass = new Label();
-            rjTextBoxAALF_SecretSurname = new CustomTools.RJTextBox.RJTextBox();
             labelAALF_Surnam = new Label();
-            rjTextBoxAALF_SecretName = new CustomTools.RJTextBox.RJTextBox();
             dataGridViewAALF_Secretary = new DataGridView();
+            textboxAALF_SecretaryName = new TextBox();
+            textboxAALF_SecretarySurname = new TextBox();
+            textboxAALF_SecretaryId = new TextBox();
+            textboxAALF_SecretaryPhone = new TextBox();
+            textboxAALF_SecretaryPassword = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAALF_Secretary).BeginInit();
             SuspendLayout();
             // 
@@ -120,7 +120,7 @@
             // 
             labelAALF_phon.AutoSize = true;
             labelAALF_phon.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_phon.Location = new Point(37, 229);
+            labelAALF_phon.Location = new Point(37, 231);
             labelAALF_phon.Name = "labelAALF_phon";
             labelAALF_phon.Size = new Size(66, 25);
             labelAALF_phon.TabIndex = 67;
@@ -130,7 +130,7 @@
             // 
             labelAALF_ID.AutoSize = true;
             labelAALF_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_ID.Location = new Point(39, 179);
+            labelAALF_ID.Location = new Point(39, 181);
             labelAALF_ID.Name = "labelAALF_ID";
             labelAALF_ID.Size = new Size(157, 25);
             labelAALF_ID.TabIndex = 66;
@@ -140,141 +140,31 @@
             // 
             labelAALF_Name.AutoSize = true;
             labelAALF_Name.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Name.Location = new Point(39, 81);
+            labelAALF_Name.Location = new Point(39, 83);
             labelAALF_Name.Name = "labelAALF_Name";
             labelAALF_Name.Size = new Size(64, 25);
             labelAALF_Name.TabIndex = 65;
             labelAALF_Name.Text = "Name";
             // 
-            // rjTextBoxAALF_SecretPassword
-            // 
-            rjTextBoxAALF_SecretPassword.BackColor = SystemColors.Window;
-            rjTextBoxAALF_SecretPassword.BorderColor = Color.Salmon;
-            rjTextBoxAALF_SecretPassword.BorderFocusColor = Color.HotPink;
-            rjTextBoxAALF_SecretPassword.BorderRadius = 15;
-            rjTextBoxAALF_SecretPassword.BorderSize = 2;
-            rjTextBoxAALF_SecretPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAALF_SecretPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAALF_SecretPassword.Location = new Point(211, 264);
-            rjTextBoxAALF_SecretPassword.Margin = new Padding(5);
-            rjTextBoxAALF_SecretPassword.Multiline = false;
-            rjTextBoxAALF_SecretPassword.Name = "rjTextBoxAALF_SecretPassword";
-            rjTextBoxAALF_SecretPassword.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAALF_SecretPassword.PasswordChar = false;
-            rjTextBoxAALF_SecretPassword.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAALF_SecretPassword.PlaceholderText = "";
-            rjTextBoxAALF_SecretPassword.Size = new Size(286, 39);
-            rjTextBoxAALF_SecretPassword.TabIndex = 63;
-            rjTextBoxAALF_SecretPassword.Texts = "";
-            rjTextBoxAALF_SecretPassword.UnderlinedStyle = false;
-            // 
-            // rjTextBoxAALF_SecretPhone
-            // 
-            rjTextBoxAALF_SecretPhone.BackColor = SystemColors.Window;
-            rjTextBoxAALF_SecretPhone.BorderColor = Color.Salmon;
-            rjTextBoxAALF_SecretPhone.BorderFocusColor = Color.HotPink;
-            rjTextBoxAALF_SecretPhone.BorderRadius = 15;
-            rjTextBoxAALF_SecretPhone.BorderSize = 2;
-            rjTextBoxAALF_SecretPhone.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAALF_SecretPhone.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAALF_SecretPhone.Location = new Point(211, 215);
-            rjTextBoxAALF_SecretPhone.Margin = new Padding(5);
-            rjTextBoxAALF_SecretPhone.Multiline = false;
-            rjTextBoxAALF_SecretPhone.Name = "rjTextBoxAALF_SecretPhone";
-            rjTextBoxAALF_SecretPhone.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAALF_SecretPhone.PasswordChar = false;
-            rjTextBoxAALF_SecretPhone.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAALF_SecretPhone.PlaceholderText = "";
-            rjTextBoxAALF_SecretPhone.Size = new Size(286, 39);
-            rjTextBoxAALF_SecretPhone.TabIndex = 62;
-            rjTextBoxAALF_SecretPhone.Texts = "";
-            rjTextBoxAALF_SecretPhone.UnderlinedStyle = false;
-            // 
-            // rjTextBoxAALF_SecretIDentification
-            // 
-            rjTextBoxAALF_SecretIDentification.BackColor = SystemColors.Window;
-            rjTextBoxAALF_SecretIDentification.BorderColor = Color.Salmon;
-            rjTextBoxAALF_SecretIDentification.BorderFocusColor = Color.HotPink;
-            rjTextBoxAALF_SecretIDentification.BorderRadius = 15;
-            rjTextBoxAALF_SecretIDentification.BorderSize = 2;
-            rjTextBoxAALF_SecretIDentification.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAALF_SecretIDentification.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAALF_SecretIDentification.Location = new Point(211, 165);
-            rjTextBoxAALF_SecretIDentification.Margin = new Padding(5);
-            rjTextBoxAALF_SecretIDentification.Multiline = false;
-            rjTextBoxAALF_SecretIDentification.Name = "rjTextBoxAALF_SecretIDentification";
-            rjTextBoxAALF_SecretIDentification.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAALF_SecretIDentification.PasswordChar = false;
-            rjTextBoxAALF_SecretIDentification.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAALF_SecretIDentification.PlaceholderText = "";
-            rjTextBoxAALF_SecretIDentification.Size = new Size(286, 39);
-            rjTextBoxAALF_SecretIDentification.TabIndex = 61;
-            rjTextBoxAALF_SecretIDentification.Texts = "";
-            rjTextBoxAALF_SecretIDentification.UnderlinedStyle = false;
-            // 
             // labelAALF_Pass
             // 
             labelAALF_Pass.AutoSize = true;
             labelAALF_Pass.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Pass.Location = new Point(39, 278);
+            labelAALF_Pass.Location = new Point(39, 280);
             labelAALF_Pass.Name = "labelAALF_Pass";
             labelAALF_Pass.Size = new Size(92, 25);
             labelAALF_Pass.TabIndex = 60;
             labelAALF_Pass.Text = "Password";
             // 
-            // rjTextBoxAALF_SecretSurname
-            // 
-            rjTextBoxAALF_SecretSurname.BackColor = SystemColors.Window;
-            rjTextBoxAALF_SecretSurname.BorderColor = Color.Salmon;
-            rjTextBoxAALF_SecretSurname.BorderFocusColor = Color.HotPink;
-            rjTextBoxAALF_SecretSurname.BorderRadius = 15;
-            rjTextBoxAALF_SecretSurname.BorderSize = 2;
-            rjTextBoxAALF_SecretSurname.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAALF_SecretSurname.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAALF_SecretSurname.Location = new Point(211, 116);
-            rjTextBoxAALF_SecretSurname.Margin = new Padding(5);
-            rjTextBoxAALF_SecretSurname.Multiline = false;
-            rjTextBoxAALF_SecretSurname.Name = "rjTextBoxAALF_SecretSurname";
-            rjTextBoxAALF_SecretSurname.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAALF_SecretSurname.PasswordChar = false;
-            rjTextBoxAALF_SecretSurname.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAALF_SecretSurname.PlaceholderText = "";
-            rjTextBoxAALF_SecretSurname.Size = new Size(286, 39);
-            rjTextBoxAALF_SecretSurname.TabIndex = 59;
-            rjTextBoxAALF_SecretSurname.Texts = "";
-            rjTextBoxAALF_SecretSurname.UnderlinedStyle = false;
-            // 
             // labelAALF_Surnam
             // 
             labelAALF_Surnam.AutoSize = true;
             labelAALF_Surnam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Surnam.Location = new Point(39, 130);
+            labelAALF_Surnam.Location = new Point(39, 132);
             labelAALF_Surnam.Name = "labelAALF_Surnam";
             labelAALF_Surnam.Size = new Size(88, 25);
             labelAALF_Surnam.TabIndex = 58;
             labelAALF_Surnam.Text = "Surname";
-            // 
-            // rjTextBoxAALF_SecretName
-            // 
-            rjTextBoxAALF_SecretName.BackColor = SystemColors.Window;
-            rjTextBoxAALF_SecretName.BorderColor = Color.Salmon;
-            rjTextBoxAALF_SecretName.BorderFocusColor = Color.HotPink;
-            rjTextBoxAALF_SecretName.BorderRadius = 15;
-            rjTextBoxAALF_SecretName.BorderSize = 2;
-            rjTextBoxAALF_SecretName.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBoxAALF_SecretName.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBoxAALF_SecretName.Location = new Point(211, 67);
-            rjTextBoxAALF_SecretName.Margin = new Padding(5);
-            rjTextBoxAALF_SecretName.Multiline = false;
-            rjTextBoxAALF_SecretName.Name = "rjTextBoxAALF_SecretName";
-            rjTextBoxAALF_SecretName.Padding = new Padding(11, 9, 11, 9);
-            rjTextBoxAALF_SecretName.PasswordChar = false;
-            rjTextBoxAALF_SecretName.PlaceholderColor = Color.DarkGray;
-            rjTextBoxAALF_SecretName.PlaceholderText = "";
-            rjTextBoxAALF_SecretName.Size = new Size(286, 39);
-            rjTextBoxAALF_SecretName.TabIndex = 57;
-            rjTextBoxAALF_SecretName.Texts = "";
-            rjTextBoxAALF_SecretName.UnderlinedStyle = false;
             // 
             // dataGridViewAALF_Secretary
             // 
@@ -285,25 +175,75 @@
             dataGridViewAALF_Secretary.Size = new Size(453, 427);
             dataGridViewAALF_Secretary.TabIndex = 56;
             // 
+            // textboxAALF_SecretaryName
+            // 
+            textboxAALF_SecretaryName.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_SecretaryName.Location = new Point(211, 81);
+            textboxAALF_SecretaryName.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryName.Name = "textboxAALF_SecretaryName";
+            textboxAALF_SecretaryName.PlaceholderText = "Name";
+            textboxAALF_SecretaryName.Size = new Size(260, 29);
+            textboxAALF_SecretaryName.TabIndex = 77;
+            // 
+            // textboxAALF_SecretarySurname
+            // 
+            textboxAALF_SecretarySurname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_SecretarySurname.Location = new Point(211, 130);
+            textboxAALF_SecretarySurname.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretarySurname.Name = "textboxAALF_SecretarySurname";
+            textboxAALF_SecretarySurname.PlaceholderText = "Surname";
+            textboxAALF_SecretarySurname.Size = new Size(260, 29);
+            textboxAALF_SecretarySurname.TabIndex = 78;
+            // 
+            // textboxAALF_SecretaryId
+            // 
+            textboxAALF_SecretaryId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_SecretaryId.Location = new Point(211, 179);
+            textboxAALF_SecretaryId.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryId.Name = "textboxAALF_SecretaryId";
+            textboxAALF_SecretaryId.PlaceholderText = "ID";
+            textboxAALF_SecretaryId.Size = new Size(260, 29);
+            textboxAALF_SecretaryId.TabIndex = 79;
+            // 
+            // textboxAALF_SecretaryPhone
+            // 
+            textboxAALF_SecretaryPhone.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_SecretaryPhone.Location = new Point(211, 229);
+            textboxAALF_SecretaryPhone.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryPhone.Name = "textboxAALF_SecretaryPhone";
+            textboxAALF_SecretaryPhone.PlaceholderText = "Phone Number";
+            textboxAALF_SecretaryPhone.Size = new Size(260, 29);
+            textboxAALF_SecretaryPhone.TabIndex = 80;
+            // 
+            // textboxAALF_SecretaryPassword
+            // 
+            textboxAALF_SecretaryPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_SecretaryPassword.Location = new Point(211, 278);
+            textboxAALF_SecretaryPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryPassword.Name = "textboxAALF_SecretaryPassword";
+            textboxAALF_SecretaryPassword.PlaceholderText = "Password";
+            textboxAALF_SecretaryPassword.Size = new Size(260, 29);
+            textboxAALF_SecretaryPassword.TabIndex = 81;
+            // 
             // AALF_SecretaryEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(995, 553);
+            Controls.Add(textboxAALF_SecretaryPassword);
+            Controls.Add(textboxAALF_SecretaryPhone);
+            Controls.Add(textboxAALF_SecretaryId);
+            Controls.Add(textboxAALF_SecretarySurname);
+            Controls.Add(textboxAALF_SecretaryName);
             Controls.Add(buttonAALF_SecretarySave);
             Controls.Add(buttonAALF_SecretaryDelete);
             Controls.Add(buttonAALF_SecretaryUpdate);
             Controls.Add(labelAALF_phon);
             Controls.Add(labelAALF_ID);
             Controls.Add(labelAALF_Name);
-            Controls.Add(rjTextBoxAALF_SecretPassword);
-            Controls.Add(rjTextBoxAALF_SecretPhone);
-            Controls.Add(rjTextBoxAALF_SecretIDentification);
             Controls.Add(labelAALF_Pass);
-            Controls.Add(rjTextBoxAALF_SecretSurname);
             Controls.Add(labelAALF_Surnam);
-            Controls.Add(rjTextBoxAALF_SecretName);
             Controls.Add(dataGridViewAALF_Secretary);
             Controls.Add(labelAALF_Secret);
             FormBorderStyle = FormBorderStyle.None;
@@ -323,13 +263,13 @@
         private Label labelAALF_phon;
         private Label labelAALF_ID;
         private Label labelAALF_Name;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAALF_SecretPassword;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAALF_SecretPhone;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAALF_SecretIDentification;
         private Label labelAALF_Pass;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAALF_SecretSurname;
         private Label labelAALF_Surnam;
-        private CustomTools.RJTextBox.RJTextBox rjTextBoxAALF_SecretName;
         private DataGridView dataGridViewAALF_Secretary;
+        private TextBox textboxAALF_SecretaryName;
+        private TextBox textboxAALF_SecretarySurname;
+        private TextBox textboxAALF_SecretaryId;
+        private TextBox textboxAALF_SecretaryPhone;
+        private TextBox textboxAALF_SecretaryPassword;
     }
 }
