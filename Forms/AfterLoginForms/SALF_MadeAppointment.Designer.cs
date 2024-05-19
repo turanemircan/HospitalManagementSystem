@@ -111,7 +111,7 @@
             // 
             LabelSALF_PatientId.AutoSize = true;
             LabelSALF_PatientId.Font = new Font("Yu Gothic UI Semibold", 11F);
-            LabelSALF_PatientId.Location = new Point(56, 81);
+            LabelSALF_PatientId.Location = new Point(56, 83);
             LabelSALF_PatientId.Name = "LabelSALF_PatientId";
             LabelSALF_PatientId.Size = new Size(98, 25);
             LabelSALF_PatientId.TabIndex = 63;
@@ -121,7 +121,7 @@
             // 
             LabelSALF_Name.AutoSize = true;
             LabelSALF_Name.Font = new Font("Yu Gothic UI Semibold", 11F);
-            LabelSALF_Name.Location = new Point(24, 130);
+            LabelSALF_Name.Location = new Point(24, 128);
             LabelSALF_Name.Name = "LabelSALF_Name";
             LabelSALF_Name.Size = new Size(130, 25);
             LabelSALF_Name.TabIndex = 62;
@@ -131,7 +131,7 @@
             // 
             LabelSALF_Surname.AutoSize = true;
             LabelSALF_Surname.Font = new Font("Yu Gothic UI Semibold", 11F);
-            LabelSALF_Surname.Location = new Point(15, 179);
+            LabelSALF_Surname.Location = new Point(15, 181);
             LabelSALF_Surname.Name = "LabelSALF_Surname";
             LabelSALF_Surname.Size = new Size(154, 25);
             LabelSALF_Surname.TabIndex = 61;
