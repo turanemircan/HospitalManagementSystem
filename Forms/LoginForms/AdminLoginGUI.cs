@@ -1,4 +1,5 @@
-﻿using HospitalManagementSystem.Forms.AfterLoginForms;
+﻿using HospitalManagementSystem.Database;
+using HospitalManagementSystem.Forms.AfterLoginForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
         LoginGUI loginGUI;
 
         MainLoginButtons mainLoginButtons;
-        public AdminLoginGUI(Panel _panel,LoginGUI _loginGUI)
+        public AdminLoginGUI(Panel _panel, LoginGUI _loginGUI)
         {
             InitializeComponent();
             this.panel = _panel;
@@ -36,14 +37,45 @@ namespace HospitalManagementSystem.Forms.LoginForms
 
         private void rjBtnAdminSignIn_Click(object sender, EventArgs e)
         {
-            helper = new Helper.Helper();
-            bool kullanıcıKontrol = helper.IsValidUser("Name", "Surname");
-            if (kullanıcıKontrol)
+            bool tb_id = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxAdminLogiId);
+            bool tb_password = Helper.TextBoxValidation.IsTextBoxEmpty(textboxAdminPassword);
+
+            if (tb_id && tb_password)
             {
-                AdminALF adminALF = new AdminALF();
-                adminALF.Show();
-                loginGUI.Hide();
+                Helper.PasswordHasher hasher = new Helper.PasswordHasher();
+
+                string adminID = textBoxAdminLogiId.Text;
+                string adminPassword = textboxAdminPassword.Text;
+
+                bool passwordControl;
+                using (var context = new HospitalDbContext())
+                {
+                    var user = context.AdminIDValidation(adminID);
+                    if (user != null)
+                    {
+                        passwordControl = hasher.VerifyPassword(adminPassword, user.password);
+                        if (passwordControl)
+                        {
+                            AdminALF adminALF = new AdminALF();
+                            adminALF.Show();
+                            loginGUI.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Password is incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
+            else
+            {
+                MessageBox.Show("Password or ID cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBoxAdminLogiId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxAdminLogiId);
         }
     }
 }

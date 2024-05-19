@@ -114,6 +114,7 @@
             textBoxSecretaryLoginId.PlaceholderText = "ID";
             textBoxSecretaryLoginId.Size = new Size(266, 24);
             textBoxSecretaryLoginId.TabIndex = 38;
+            textBoxSecretaryLoginId.KeyPress += textBoxSecretaryLoginId_KeyPress;
             // 
             // textboxSecretaryPasswordId
             // 

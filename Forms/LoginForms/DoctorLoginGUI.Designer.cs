@@ -114,6 +114,7 @@
             textBoxDoctorLogiId.PlaceholderText = "ID";
             textBoxDoctorLogiId.Size = new Size(266, 24);
             textBoxDoctorLogiId.TabIndex = 40;
+            textBoxDoctorLogiId.KeyPress += textBoxDoctorLogiId_KeyPress;
             // 
             // textboxDoctorPassword
             // 

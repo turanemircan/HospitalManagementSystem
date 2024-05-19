@@ -114,6 +114,7 @@
             textBoxAdminLogiId.PlaceholderText = "ID";
             textBoxAdminLogiId.Size = new Size(266, 24);
             textBoxAdminLogiId.TabIndex = 41;
+            textBoxAdminLogiId.KeyPress += textBoxAdminLogiId_KeyPress;
             // 
             // textboxAdminPassword
             // 

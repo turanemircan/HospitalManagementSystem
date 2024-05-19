@@ -1,4 +1,5 @@
-﻿using HospitalManagementSystem.Forms.AfterLoginForms;
+﻿using HospitalManagementSystem.Database;
+using HospitalManagementSystem.Forms.AfterLoginForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,20 +36,51 @@ namespace HospitalManagementSystem.Forms.LoginForms
         {
             // MainLoginButtons'a geri don ve paneli ilet.
             Helper.Helper helper = new Helper.Helper(panel);
-            loginButtons = new MainLoginButtons(panel,loginGUI);
+            loginButtons = new MainLoginButtons(panel, loginGUI);
             helper.formGoster(loginButtons, loginButtons.Name);
         }
 
         private void rjBtnDoctorSignIn_Click(object sender, EventArgs e)
         {
-            helper = new Helper.Helper(panel);
-            bool kullanıcıKontrol = helper.IsValidUser("Name", "Surname");
-            if(kullanıcıKontrol)
+            bool tb_id = Helper.TextBoxValidation.IsTextBoxEmpty(textBoxDoctorLogiId);
+            bool tb_password = Helper.TextBoxValidation.IsTextBoxEmpty(textboxDoctorPassword);
+
+            if (tb_id && tb_password)
             {
-                DoctorALF doctorALF = new DoctorALF();
-                doctorALF.Show();
-                loginGUI.Hide();
+                Helper.PasswordHasher hasher = new Helper.PasswordHasher();
+
+                string doctorID = textBoxDoctorLogiId.Text;
+                string doctorPassword = textboxDoctorPassword.Text;
+
+                bool passwordControl;
+                using(var context = new HospitalDbContext())
+                {
+                    var user = context.DoctorIDValidation(doctorID);
+                    if (user != null)
+                    {
+                        passwordControl = hasher.VerifyPassword(doctorPassword, user.password);
+                        if (passwordControl)
+                        {
+                            DoctorALF doctorALF = new DoctorALF();
+                            doctorALF.Show();
+                            loginGUI.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Password is incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
+            else
+            {
+                MessageBox.Show("Password or ID cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBoxDoctorLogiId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e,textBoxDoctorLogiId);
         }
     }
 }

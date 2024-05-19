@@ -80,7 +80,6 @@ namespace HospitalManagementSystem.Forms
                             MessageBox.Show("Registration successful. You will be redirected to the login screen.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
-
                 }
                 else
                 {
