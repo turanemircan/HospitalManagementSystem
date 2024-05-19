@@ -66,6 +66,7 @@
             buttonAALF_DoctorSave.Text = "Save";
             buttonAALF_DoctorSave.TextColor = Color.White;
             buttonAALF_DoctorSave.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorSave.Click += buttonAALF_DoctorSave_Click;
             // 
             // buttonAALF_DoctorDelete
             // 
@@ -85,6 +86,7 @@
             buttonAALF_DoctorDelete.Text = "Delete";
             buttonAALF_DoctorDelete.TextColor = Color.White;
             buttonAALF_DoctorDelete.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorDelete.Click += buttonAALF_DoctorDelete_Click;
             // 
             // buttonAALF_DoctorUpdate
             // 
@@ -104,6 +106,7 @@
             buttonAALF_DoctorUpdate.Text = "Update";
             buttonAALF_DoctorUpdate.TextColor = Color.White;
             buttonAALF_DoctorUpdate.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorUpdate.Click += buttonAALF_DoctorUpdate_Click;
             // 
             // labelAALF_Branch
             // 
@@ -177,6 +180,7 @@
             // 
             // dataGridViewAALF_Doctor
             // 
+            dataGridViewAALF_Doctor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewAALF_Doctor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewAALF_Doctor.Location = new Point(426, 64);
             dataGridViewAALF_Doctor.Margin = new Padding(3, 2, 3, 2);
@@ -184,6 +188,9 @@
             dataGridViewAALF_Doctor.RowHeadersWidth = 51;
             dataGridViewAALF_Doctor.Size = new Size(426, 304);
             dataGridViewAALF_Doctor.TabIndex = 56;
+            dataGridViewAALF_Doctor.CellClick += dataGridViewAALF_Doctor_CellClick;
+            dataGridViewAALF_Doctor.CellEndEdit += dataGridViewAALF_Doctor_CellEndEdit;
+            dataGridViewAALF_Doctor.CellFormatting += dataGridViewAALF_Doctor_CellFormatting;
             // 
             // textboxAALF_DoctorId
             // 
@@ -193,6 +200,7 @@
             textboxAALF_DoctorId.PlaceholderText = "ID";
             textboxAALF_DoctorId.Size = new Size(228, 24);
             textboxAALF_DoctorId.TabIndex = 75;
+            textboxAALF_DoctorId.KeyPress += textboxAALF_DoctorId_KeyPress;
             // 
             // textboxAALF_DoctorName
             // 
@@ -220,6 +228,7 @@
             textboxAALF_DoctorPhone.PlaceholderText = "Phone Number";
             textboxAALF_DoctorPhone.Size = new Size(228, 24);
             textboxAALF_DoctorPhone.TabIndex = 78;
+            textboxAALF_DoctorPhone.KeyPress += textboxAALF_DoctorPhone_KeyPress;
             // 
             // textboxAALF_DoctorPassword
             // 

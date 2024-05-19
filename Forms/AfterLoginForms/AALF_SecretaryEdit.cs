@@ -59,7 +59,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                         context.SaveChanges();
                         MessageBox.Show("Database Registration successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Helper.Helper helper = new Helper.Helper();
-                        helper.loadData(dataGridViewAALF_Secretary, context);
+                        helper.loadDataSecretaries(dataGridViewAALF_Secretary, context);
                     }
                 }
                 else
@@ -86,7 +86,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void AALF_SecretaryEdit_Load(object sender, EventArgs e)
         {
             Helper.Helper helper = new Helper.Helper();
-            helper.loadData(dataGridViewAALF_Secretary, context);
+            helper.loadDataSecretaries(dataGridViewAALF_Secretary, context);
 
             dataGridViewAALF_Secretary.Columns["password"].ReadOnly = true;
         }
@@ -125,7 +125,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                     context.deleteSecretaryByID(Convert.ToInt32(this.secretaryDB_ID));
                 }
                 Helper.Helper helper = new Helper.Helper();
-                helper.loadData(dataGridViewAALF_Secretary, context);
+                helper.loadDataSecretaries(dataGridViewAALF_Secretary, context);
             }
             else
             {
@@ -146,7 +146,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                     );
                 context.SaveChanges();
                 Helper.Helper helper = new Helper.Helper();
-                helper.loadData(dataGridViewAALF_Secretary, context);
+                helper.loadDataSecretaries(dataGridViewAALF_Secretary, context);
             }
             
         }

@@ -18,7 +18,7 @@ namespace HospitalManagementSystem.Helper
             {
                 e.Handled = true;
             }
-            if(textBox.Text.Length == 11 && !char.IsControl(e.KeyChar))
+            if(textBox.Text.Length >= 11 && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }

@@ -85,7 +85,7 @@ namespace HospitalManagementSystem.Database
                 MessageBox.Show("Guncelleme islemi yapilamadi.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        public void updateDoctorByID(int id, string newName, string newSurname, string newIdentificationNo, string newGSMNo)
+        public void updateDoctorByID(int id, string newName, string newSurname, string newIdentificationNo, string newGSMNo,string newBranch)
         {
             var entityToUpdate = Doctors.FirstOrDefault(entity => entity.DoctorId == id);
 
@@ -95,6 +95,7 @@ namespace HospitalManagementSystem.Database
                 entityToUpdate.surname = newSurname;
                 entityToUpdate.identification = newIdentificationNo;
                 entityToUpdate.GSM_No = newGSMNo;
+                entityToUpdate.branch = newBranch;
 
                 SaveChanges();
 

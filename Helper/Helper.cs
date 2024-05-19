@@ -188,10 +188,14 @@ namespace HospitalManagementSystem.Helper
                 MessageBox.Show("Sayfa bulunamadi.");
             }
         }
-        public void loadData(DataGridView dataGridView, HospitalDbContext context)
+        public void loadDataSecretaries(DataGridView dataGridView, HospitalDbContext context)
         {
             dataGridView.DataSource = context.Secretaries.ToList();
         }
-        
+        public void loadDataDoctors(DataGridView dataGridView, HospitalDbContext context)
+        {
+            dataGridView.DataSource = context.Doctors.ToList();
+        }
+
     }
 }
