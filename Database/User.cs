@@ -16,9 +16,5 @@ namespace HospitalManagementSystem.Database
         public string identification { get; set; }
         public string GSM_No { get; set; }
         public string password { get; set; }
-        public Doctor Doctor { get; set; }
-        public Patient Patient { get; set; }
-        public Secretary Secretary { get; set; }
-        public Admin Admin { get; set; }
     }
 }
