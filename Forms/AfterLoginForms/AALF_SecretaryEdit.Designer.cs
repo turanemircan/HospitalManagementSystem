@@ -50,9 +50,9 @@
             // 
             labelAALF_Secret.AutoSize = true;
             labelAALF_Secret.Font = new Font("Yu Gothic UI Semibold", 13F);
-            labelAALF_Secret.Location = new Point(42, 28);
+            labelAALF_Secret.Location = new Point(37, 21);
             labelAALF_Secret.Name = "labelAALF_Secret";
-            labelAALF_Secret.Size = new Size(105, 30);
+            labelAALF_Secret.Size = new Size(89, 25);
             labelAALF_Secret.TabIndex = 32;
             labelAALF_Secret.Text = "Secretary";
             // 
@@ -67,14 +67,14 @@
             buttonAALF_SecretarySave.FlatStyle = FlatStyle.Flat;
             buttonAALF_SecretarySave.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_SecretarySave.ForeColor = Color.White;
-            buttonAALF_SecretarySave.Location = new Point(211, 337);
-            buttonAALF_SecretarySave.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_SecretarySave.Location = new Point(185, 253);
             buttonAALF_SecretarySave.Name = "buttonAALF_SecretarySave";
-            buttonAALF_SecretarySave.Size = new Size(286, 43);
+            buttonAALF_SecretarySave.Size = new Size(250, 32);
             buttonAALF_SecretarySave.TabIndex = 71;
             buttonAALF_SecretarySave.Text = "Save";
             buttonAALF_SecretarySave.TextColor = Color.White;
             buttonAALF_SecretarySave.UseVisualStyleBackColor = false;
+            buttonAALF_SecretarySave.Click += buttonAALF_SecretarySave_Click;
             // 
             // buttonAALF_SecretaryDelete
             // 
@@ -87,14 +87,14 @@
             buttonAALF_SecretaryDelete.FlatStyle = FlatStyle.Flat;
             buttonAALF_SecretaryDelete.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_SecretaryDelete.ForeColor = Color.White;
-            buttonAALF_SecretaryDelete.Location = new Point(211, 385);
-            buttonAALF_SecretaryDelete.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_SecretaryDelete.Location = new Point(185, 289);
             buttonAALF_SecretaryDelete.Name = "buttonAALF_SecretaryDelete";
-            buttonAALF_SecretaryDelete.Size = new Size(102, 36);
+            buttonAALF_SecretaryDelete.Size = new Size(89, 27);
             buttonAALF_SecretaryDelete.TabIndex = 70;
             buttonAALF_SecretaryDelete.Text = "Delete";
             buttonAALF_SecretaryDelete.TextColor = Color.White;
             buttonAALF_SecretaryDelete.UseVisualStyleBackColor = false;
+            buttonAALF_SecretaryDelete.Click += buttonAALF_SecretaryDelete_Click;
             // 
             // buttonAALF_SecretaryUpdate
             // 
@@ -107,22 +107,22 @@
             buttonAALF_SecretaryUpdate.FlatStyle = FlatStyle.Flat;
             buttonAALF_SecretaryUpdate.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_SecretaryUpdate.ForeColor = Color.White;
-            buttonAALF_SecretaryUpdate.Location = new Point(319, 385);
-            buttonAALF_SecretaryUpdate.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_SecretaryUpdate.Location = new Point(279, 289);
             buttonAALF_SecretaryUpdate.Name = "buttonAALF_SecretaryUpdate";
-            buttonAALF_SecretaryUpdate.Size = new Size(178, 36);
+            buttonAALF_SecretaryUpdate.Size = new Size(156, 27);
             buttonAALF_SecretaryUpdate.TabIndex = 69;
             buttonAALF_SecretaryUpdate.Text = "Update";
             buttonAALF_SecretaryUpdate.TextColor = Color.White;
             buttonAALF_SecretaryUpdate.UseVisualStyleBackColor = false;
+            buttonAALF_SecretaryUpdate.Click += buttonAALF_SecretaryUpdate_Click;
             // 
             // labelAALF_phon
             // 
             labelAALF_phon.AutoSize = true;
             labelAALF_phon.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_phon.Location = new Point(37, 231);
+            labelAALF_phon.Location = new Point(32, 173);
             labelAALF_phon.Name = "labelAALF_phon";
-            labelAALF_phon.Size = new Size(66, 25);
+            labelAALF_phon.Size = new Size(53, 20);
             labelAALF_phon.TabIndex = 67;
             labelAALF_phon.Text = "Phone";
             // 
@@ -130,9 +130,9 @@
             // 
             labelAALF_ID.AutoSize = true;
             labelAALF_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_ID.Location = new Point(39, 181);
+            labelAALF_ID.Location = new Point(34, 136);
             labelAALF_ID.Name = "labelAALF_ID";
-            labelAALF_ID.Size = new Size(157, 25);
+            labelAALF_ID.Size = new Size(124, 20);
             labelAALF_ID.TabIndex = 66;
             labelAALF_ID.Text = "Identification No";
             // 
@@ -140,9 +140,9 @@
             // 
             labelAALF_Name.AutoSize = true;
             labelAALF_Name.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Name.Location = new Point(39, 83);
+            labelAALF_Name.Location = new Point(34, 62);
             labelAALF_Name.Name = "labelAALF_Name";
-            labelAALF_Name.Size = new Size(64, 25);
+            labelAALF_Name.Size = new Size(50, 20);
             labelAALF_Name.TabIndex = 65;
             labelAALF_Name.Text = "Name";
             // 
@@ -150,9 +150,9 @@
             // 
             labelAALF_Pass.AutoSize = true;
             labelAALF_Pass.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Pass.Location = new Point(39, 280);
+            labelAALF_Pass.Location = new Point(34, 210);
             labelAALF_Pass.Name = "labelAALF_Pass";
-            labelAALF_Pass.Size = new Size(92, 25);
+            labelAALF_Pass.Size = new Size(73, 20);
             labelAALF_Pass.TabIndex = 60;
             labelAALF_Pass.Text = "Password";
             // 
@@ -160,77 +160,79 @@
             // 
             labelAALF_Surnam.AutoSize = true;
             labelAALF_Surnam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Surnam.Location = new Point(39, 132);
+            labelAALF_Surnam.Location = new Point(34, 99);
             labelAALF_Surnam.Name = "labelAALF_Surnam";
-            labelAALF_Surnam.Size = new Size(88, 25);
+            labelAALF_Surnam.Size = new Size(70, 20);
             labelAALF_Surnam.TabIndex = 58;
             labelAALF_Surnam.Text = "Surname";
             // 
             // dataGridViewAALF_Secretary
             // 
+            dataGridViewAALF_Secretary.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewAALF_Secretary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAALF_Secretary.Location = new Point(514, 67);
+            dataGridViewAALF_Secretary.Location = new Point(441, 52);
+            dataGridViewAALF_Secretary.Margin = new Padding(3, 2, 3, 2);
             dataGridViewAALF_Secretary.Name = "dataGridViewAALF_Secretary";
             dataGridViewAALF_Secretary.RowHeadersWidth = 51;
-            dataGridViewAALF_Secretary.Size = new Size(453, 427);
+            dataGridViewAALF_Secretary.Size = new Size(396, 320);
             dataGridViewAALF_Secretary.TabIndex = 56;
+            dataGridViewAALF_Secretary.CellClick += dataGridViewAALF_Secretary_CellClick;
+            dataGridViewAALF_Secretary.CellEndEdit += dataGridViewAALF_Secretary_CellEndEdit;
+            dataGridViewAALF_Secretary.CellFormatting += dataGridViewAALF_Secretary_CellFormatting;
             // 
             // textboxAALF_SecretaryName
             // 
             textboxAALF_SecretaryName.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_SecretaryName.Location = new Point(211, 81);
-            textboxAALF_SecretaryName.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryName.Location = new Point(185, 61);
             textboxAALF_SecretaryName.Name = "textboxAALF_SecretaryName";
             textboxAALF_SecretaryName.PlaceholderText = "Name";
-            textboxAALF_SecretaryName.Size = new Size(260, 29);
+            textboxAALF_SecretaryName.Size = new Size(250, 24);
             textboxAALF_SecretaryName.TabIndex = 77;
             // 
             // textboxAALF_SecretarySurname
             // 
             textboxAALF_SecretarySurname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_SecretarySurname.Location = new Point(211, 130);
-            textboxAALF_SecretarySurname.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretarySurname.Location = new Point(185, 98);
             textboxAALF_SecretarySurname.Name = "textboxAALF_SecretarySurname";
             textboxAALF_SecretarySurname.PlaceholderText = "Surname";
-            textboxAALF_SecretarySurname.Size = new Size(260, 29);
+            textboxAALF_SecretarySurname.Size = new Size(250, 24);
             textboxAALF_SecretarySurname.TabIndex = 78;
             // 
             // textboxAALF_SecretaryId
             // 
             textboxAALF_SecretaryId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_SecretaryId.Location = new Point(211, 179);
-            textboxAALF_SecretaryId.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryId.Location = new Point(185, 134);
             textboxAALF_SecretaryId.Name = "textboxAALF_SecretaryId";
             textboxAALF_SecretaryId.PlaceholderText = "ID";
-            textboxAALF_SecretaryId.Size = new Size(260, 29);
+            textboxAALF_SecretaryId.Size = new Size(250, 24);
             textboxAALF_SecretaryId.TabIndex = 79;
+            textboxAALF_SecretaryId.KeyPress += textboxAALF_SecretaryId_KeyPress;
             // 
             // textboxAALF_SecretaryPhone
             // 
             textboxAALF_SecretaryPhone.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_SecretaryPhone.Location = new Point(211, 229);
-            textboxAALF_SecretaryPhone.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryPhone.Location = new Point(185, 172);
             textboxAALF_SecretaryPhone.Name = "textboxAALF_SecretaryPhone";
             textboxAALF_SecretaryPhone.PlaceholderText = "Phone Number";
-            textboxAALF_SecretaryPhone.Size = new Size(260, 29);
+            textboxAALF_SecretaryPhone.Size = new Size(250, 24);
             textboxAALF_SecretaryPhone.TabIndex = 80;
+            textboxAALF_SecretaryPhone.KeyPress += textboxAALF_SecretaryPhone_KeyPress;
             // 
             // textboxAALF_SecretaryPassword
             // 
             textboxAALF_SecretaryPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_SecretaryPassword.Location = new Point(211, 278);
-            textboxAALF_SecretaryPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_SecretaryPassword.Location = new Point(185, 208);
             textboxAALF_SecretaryPassword.Name = "textboxAALF_SecretaryPassword";
             textboxAALF_SecretaryPassword.PlaceholderText = "Password";
-            textboxAALF_SecretaryPassword.Size = new Size(260, 29);
+            textboxAALF_SecretaryPassword.Size = new Size(250, 24);
             textboxAALF_SecretaryPassword.TabIndex = 81;
             // 
             // AALF_SecretaryEdit
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(995, 553);
+            ClientSize = new Size(871, 415);
             Controls.Add(textboxAALF_SecretaryPassword);
             Controls.Add(textboxAALF_SecretaryPhone);
             Controls.Add(textboxAALF_SecretaryId);
@@ -247,8 +249,10 @@
             Controls.Add(dataGridViewAALF_Secretary);
             Controls.Add(labelAALF_Secret);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AALF_SecretaryEdit";
             Text = "AALF_SecretaryEdit";
+            Load += AALF_SecretaryEdit_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAALF_Secretary).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -59,10 +59,9 @@
             buttonAALF_DoctorSave.FlatStyle = FlatStyle.Flat;
             buttonAALF_DoctorSave.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_DoctorSave.ForeColor = Color.White;
-            buttonAALF_DoctorSave.Location = new Point(193, 410);
-            buttonAALF_DoctorSave.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_DoctorSave.Location = new Point(169, 308);
             buttonAALF_DoctorSave.Name = "buttonAALF_DoctorSave";
-            buttonAALF_DoctorSave.Size = new Size(286, 43);
+            buttonAALF_DoctorSave.Size = new Size(250, 32);
             buttonAALF_DoctorSave.TabIndex = 72;
             buttonAALF_DoctorSave.Text = "Save";
             buttonAALF_DoctorSave.TextColor = Color.White;
@@ -79,10 +78,9 @@
             buttonAALF_DoctorDelete.FlatStyle = FlatStyle.Flat;
             buttonAALF_DoctorDelete.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_DoctorDelete.ForeColor = Color.White;
-            buttonAALF_DoctorDelete.Location = new Point(193, 458);
-            buttonAALF_DoctorDelete.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_DoctorDelete.Location = new Point(169, 344);
             buttonAALF_DoctorDelete.Name = "buttonAALF_DoctorDelete";
-            buttonAALF_DoctorDelete.Size = new Size(102, 36);
+            buttonAALF_DoctorDelete.Size = new Size(89, 27);
             buttonAALF_DoctorDelete.TabIndex = 71;
             buttonAALF_DoctorDelete.Text = "Delete";
             buttonAALF_DoctorDelete.TextColor = Color.White;
@@ -99,10 +97,9 @@
             buttonAALF_DoctorUpdate.FlatStyle = FlatStyle.Flat;
             buttonAALF_DoctorUpdate.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonAALF_DoctorUpdate.ForeColor = Color.White;
-            buttonAALF_DoctorUpdate.Location = new Point(301, 458);
-            buttonAALF_DoctorUpdate.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_DoctorUpdate.Location = new Point(263, 344);
             buttonAALF_DoctorUpdate.Name = "buttonAALF_DoctorUpdate";
-            buttonAALF_DoctorUpdate.Size = new Size(178, 36);
+            buttonAALF_DoctorUpdate.Size = new Size(156, 27);
             buttonAALF_DoctorUpdate.TabIndex = 70;
             buttonAALF_DoctorUpdate.Text = "Update";
             buttonAALF_DoctorUpdate.TextColor = Color.White;
@@ -112,9 +109,9 @@
             // 
             labelAALF_Branch.AutoSize = true;
             labelAALF_Branch.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Branch.Location = new Point(31, 347);
+            labelAALF_Branch.Location = new Point(27, 260);
             labelAALF_Branch.Name = "labelAALF_Branch";
-            labelAALF_Branch.Size = new Size(71, 25);
+            labelAALF_Branch.Size = new Size(57, 20);
             labelAALF_Branch.TabIndex = 69;
             labelAALF_Branch.Text = "Branch";
             // 
@@ -122,9 +119,9 @@
             // 
             labelAALF_phon.AutoSize = true;
             labelAALF_phon.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_phon.Location = new Point(29, 249);
+            labelAALF_phon.Location = new Point(25, 187);
             labelAALF_phon.Name = "labelAALF_phon";
-            labelAALF_phon.Size = new Size(66, 25);
+            labelAALF_phon.Size = new Size(53, 20);
             labelAALF_phon.TabIndex = 68;
             labelAALF_phon.Text = "Phone";
             // 
@@ -132,9 +129,9 @@
             // 
             labelAALF_ID.AutoSize = true;
             labelAALF_ID.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_ID.Location = new Point(31, 199);
+            labelAALF_ID.Location = new Point(27, 149);
             labelAALF_ID.Name = "labelAALF_ID";
-            labelAALF_ID.Size = new Size(157, 25);
+            labelAALF_ID.Size = new Size(124, 20);
             labelAALF_ID.TabIndex = 67;
             labelAALF_ID.Text = "Identification No";
             // 
@@ -142,9 +139,9 @@
             // 
             labelAALF_Name.AutoSize = true;
             labelAALF_Name.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Name.Location = new Point(31, 101);
+            labelAALF_Name.Location = new Point(27, 76);
             labelAALF_Name.Name = "labelAALF_Name";
-            labelAALF_Name.Size = new Size(64, 25);
+            labelAALF_Name.Size = new Size(50, 20);
             labelAALF_Name.TabIndex = 66;
             labelAALF_Name.Text = "Name";
             // 
@@ -152,9 +149,9 @@
             // 
             labelAALF_Pass.AutoSize = true;
             labelAALF_Pass.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Pass.Location = new Point(31, 298);
+            labelAALF_Pass.Location = new Point(27, 224);
             labelAALF_Pass.Name = "labelAALF_Pass";
-            labelAALF_Pass.Size = new Size(92, 25);
+            labelAALF_Pass.Size = new Size(73, 20);
             labelAALF_Pass.TabIndex = 61;
             labelAALF_Pass.Text = "Password";
             // 
@@ -162,9 +159,9 @@
             // 
             labelAALF_Surnam.AutoSize = true;
             labelAALF_Surnam.Font = new Font("Yu Gothic UI Semibold", 11F);
-            labelAALF_Surnam.Location = new Point(31, 146);
+            labelAALF_Surnam.Location = new Point(27, 110);
             labelAALF_Surnam.Name = "labelAALF_Surnam";
-            labelAALF_Surnam.Size = new Size(88, 25);
+            labelAALF_Surnam.Size = new Size(70, 20);
             labelAALF_Surnam.TabIndex = 59;
             labelAALF_Surnam.Text = "Surname";
             // 
@@ -172,87 +169,82 @@
             // 
             labelAALF_Doc.AutoSize = true;
             labelAALF_Doc.Font = new Font("Yu Gothic UI Semibold", 13F);
-            labelAALF_Doc.Location = new Point(31, 50);
+            labelAALF_Doc.Location = new Point(27, 38);
             labelAALF_Doc.Name = "labelAALF_Doc";
-            labelAALF_Doc.Size = new Size(81, 30);
+            labelAALF_Doc.Size = new Size(69, 25);
             labelAALF_Doc.TabIndex = 57;
             labelAALF_Doc.Text = "Doctor";
             // 
             // dataGridViewAALF_Doctor
             // 
             dataGridViewAALF_Doctor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAALF_Doctor.Location = new Point(487, 85);
+            dataGridViewAALF_Doctor.Location = new Point(426, 64);
+            dataGridViewAALF_Doctor.Margin = new Padding(3, 2, 3, 2);
             dataGridViewAALF_Doctor.Name = "dataGridViewAALF_Doctor";
             dataGridViewAALF_Doctor.RowHeadersWidth = 51;
-            dataGridViewAALF_Doctor.Size = new Size(487, 406);
+            dataGridViewAALF_Doctor.Size = new Size(426, 304);
             dataGridViewAALF_Doctor.TabIndex = 56;
             // 
             // textboxAALF_DoctorId
             // 
             textboxAALF_DoctorId.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorId.Location = new Point(194, 197);
-            textboxAALF_DoctorId.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorId.Location = new Point(170, 148);
             textboxAALF_DoctorId.Name = "textboxAALF_DoctorId";
             textboxAALF_DoctorId.PlaceholderText = "ID";
-            textboxAALF_DoctorId.Size = new Size(260, 29);
+            textboxAALF_DoctorId.Size = new Size(228, 24);
             textboxAALF_DoctorId.TabIndex = 75;
             // 
             // textboxAALF_DoctorName
             // 
             textboxAALF_DoctorName.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorName.Location = new Point(193, 99);
-            textboxAALF_DoctorName.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorName.Location = new Point(169, 74);
             textboxAALF_DoctorName.Name = "textboxAALF_DoctorName";
             textboxAALF_DoctorName.PlaceholderText = "Name";
-            textboxAALF_DoctorName.Size = new Size(260, 29);
+            textboxAALF_DoctorName.Size = new Size(228, 24);
             textboxAALF_DoctorName.TabIndex = 76;
             // 
             // textboxAALF_DoctorSurname
             // 
             textboxAALF_DoctorSurname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorSurname.Location = new Point(193, 144);
-            textboxAALF_DoctorSurname.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorSurname.Location = new Point(169, 108);
             textboxAALF_DoctorSurname.Name = "textboxAALF_DoctorSurname";
             textboxAALF_DoctorSurname.PlaceholderText = "Surname";
-            textboxAALF_DoctorSurname.Size = new Size(260, 29);
+            textboxAALF_DoctorSurname.Size = new Size(228, 24);
             textboxAALF_DoctorSurname.TabIndex = 77;
             // 
             // textboxAALF_DoctorPhone
             // 
             textboxAALF_DoctorPhone.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorPhone.Location = new Point(193, 247);
-            textboxAALF_DoctorPhone.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorPhone.Location = new Point(169, 185);
             textboxAALF_DoctorPhone.Name = "textboxAALF_DoctorPhone";
             textboxAALF_DoctorPhone.PlaceholderText = "Phone Number";
-            textboxAALF_DoctorPhone.Size = new Size(260, 29);
+            textboxAALF_DoctorPhone.Size = new Size(228, 24);
             textboxAALF_DoctorPhone.TabIndex = 78;
             // 
             // textboxAALF_DoctorPassword
             // 
             textboxAALF_DoctorPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorPassword.Location = new Point(194, 296);
-            textboxAALF_DoctorPassword.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorPassword.Location = new Point(170, 222);
             textboxAALF_DoctorPassword.Name = "textboxAALF_DoctorPassword";
             textboxAALF_DoctorPassword.PlaceholderText = "Password";
-            textboxAALF_DoctorPassword.Size = new Size(260, 29);
+            textboxAALF_DoctorPassword.Size = new Size(228, 24);
             textboxAALF_DoctorPassword.TabIndex = 79;
             // 
             // textboxAALF_DoctorBranch
             // 
             textboxAALF_DoctorBranch.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxAALF_DoctorBranch.Location = new Point(193, 345);
-            textboxAALF_DoctorBranch.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorBranch.Location = new Point(169, 259);
             textboxAALF_DoctorBranch.Name = "textboxAALF_DoctorBranch";
             textboxAALF_DoctorBranch.PlaceholderText = "Branch";
-            textboxAALF_DoctorBranch.Size = new Size(260, 29);
+            textboxAALF_DoctorBranch.Size = new Size(228, 24);
             textboxAALF_DoctorBranch.TabIndex = 80;
             // 
             // AALF_DoctorEdit
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(995, 553);
+            ClientSize = new Size(871, 415);
             Controls.Add(textboxAALF_DoctorBranch);
             Controls.Add(textboxAALF_DoctorPassword);
             Controls.Add(textboxAALF_DoctorPhone);
@@ -271,8 +263,10 @@
             Controls.Add(labelAALF_Doc);
             Controls.Add(dataGridViewAALF_Doctor);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AALF_DoctorEdit";
             Text = "AALF_DoctorEdit";
+            Load += AALF_DoctorEdit_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAALF_Doctor).EndInit();
             ResumeLayout(false);
             PerformLayout();

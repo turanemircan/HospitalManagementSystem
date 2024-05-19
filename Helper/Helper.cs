@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HospitalManagementSystem.Database;
 
 namespace HospitalManagementSystem.Helper
 {
@@ -187,9 +188,9 @@ namespace HospitalManagementSystem.Helper
                 MessageBox.Show("Sayfa bulunamadi.");
             }
         }
-        public bool IsValidUser(string username, string password)
+        public void loadData(DataGridView dataGridView, HospitalDbContext context)
         {
-            return true;
+            dataGridView.DataSource = context.Secretaries.ToList();
         }
         
     }

@@ -16,5 +16,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             InitializeComponent();
         }
+
+        private void AALF_DoctorEdit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

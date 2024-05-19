@@ -35,5 +35,75 @@ namespace HospitalManagementSystem.Database
         {
             return Admins.SingleOrDefault(p => p.identification == ID);
         }
+        public void deleteSecretaryByID(int id)
+        {
+            var entityToDelete = Secretaries.FirstOrDefault(entity => entity.SecretaryId == id);
+
+            if (entityToDelete != null)
+            {
+                Secretaries.Remove(entityToDelete);
+                SaveChanges();
+                MessageBox.Show("Deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("ID not found.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void deleteDoctorByID(int id)
+        {
+            var entityToDelete = Doctors.FirstOrDefault(entity => entity.DoctorId == id);
+
+            if (entityToDelete != null)
+            {
+                Doctors.Remove(entityToDelete);
+                SaveChanges();
+                MessageBox.Show("Deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("ID not found.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void updateSecretaryByID(int id,string newName, string newSurname, string newIdentificationNo, string newGSMNo)
+        {
+            var entityToUpdate = Secretaries.FirstOrDefault(entity => entity.SecretaryId == id);
+
+            if (entityToUpdate != null)
+            {
+                entityToUpdate.name = newName;
+                entityToUpdate.surname = newSurname;
+                entityToUpdate.identification = newIdentificationNo;
+                entityToUpdate.GSM_No = newGSMNo;
+
+                SaveChanges();
+
+                MessageBox.Show("Update successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Guncelleme islemi yapilamadi.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void updateDoctorByID(int id, string newName, string newSurname, string newIdentificationNo, string newGSMNo)
+        {
+            var entityToUpdate = Doctors.FirstOrDefault(entity => entity.DoctorId == id);
+
+            if (entityToUpdate != null)
+            {
+                entityToUpdate.name = newName;
+                entityToUpdate.surname = newSurname;
+                entityToUpdate.identification = newIdentificationNo;
+                entityToUpdate.GSM_No = newGSMNo;
+
+                SaveChanges();
+
+                MessageBox.Show("Update successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Guncelleme islemi yapilamadi.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
