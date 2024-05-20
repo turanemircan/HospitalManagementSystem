@@ -106,10 +106,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 
                 this.secretaryDB_ID = selectedRow.Cells["SecretaryId"].Value.ToString();
 
-                textboxAALF_SecretaryName.Text = columnName;
-                textboxAALF_SecretarySurname.Text = columnSurname;
-                textboxAALF_SecretaryId.Text = columnID;
-                textboxAALF_SecretaryPhone.Text = columnPhone;
+                textBoxAALF_SecretaryNameUp.Text = columnName;
+                textBoxAALF_SecretarySurnameUp.Text = columnSurname;
+                textBoxAALF_SecretaryIDUp.Text = columnID;
+                textBoxAALF_SecretaryPhoneUp.Text = columnPhone;
                 //textboxAALF_SecretaryPassword.Text = columnPassword;
 
                 //textboxAALF_SecretaryPassword.ReadOnly = true;
@@ -139,16 +139,16 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             using (var context = new HospitalDbContext())
             {
                 context.updateSecretaryByID(Convert.ToInt32(this.secretaryDB_ID),
-                    textboxAALF_SecretaryName.Text,
-                    textboxAALF_SecretarySurname.Text,
-                    textboxAALF_SecretaryId.Text,
-                    textboxAALF_SecretaryPhone.Text
+                    textBoxAALF_SecretaryNameUp.Text,
+                    textBoxAALF_SecretarySurnameUp.Text,
+                    textBoxAALF_SecretaryIDUp.Text,
+                    textBoxAALF_SecretaryPhoneUp.Text
                     );
                 context.SaveChanges();
                 Helper.Helper helper = new Helper.Helper();
                 helper.loadDataSecretaries(dataGridViewAALF_Secretary, context);
             }
-            
+
         }
 
         private void dataGridViewAALF_Secretary_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -178,7 +178,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                         secretary.name = updateValue;
                         break;
                     case "surname":
-                        secretary.surname = updateValue; 
+                        secretary.surname = updateValue;
                         break;
                     case "identification":
                         secretary.identification = updateValue;
@@ -190,6 +190,23 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                 context.SaveChanges();
 
             }
+        }
+
+        private void rjButtonAALF_SecretaryClear_Click(object sender, EventArgs e)
+        {
+            textboxAALF_SecretaryId.Clear();
+            textboxAALF_SecretaryName.Clear();
+            textboxAALF_SecretarySurname.Clear();
+            textboxAALF_SecretaryPhone.Clear();
+            textboxAALF_SecretaryPassword.Clear();
+        }
+
+        private void rjButtonAALF_SecretaryClearUp_Click(object sender, EventArgs e)
+        {
+            textBoxAALF_SecretaryIDUp.Clear();
+            textBoxAALF_SecretaryNameUp.Clear();
+            textBoxAALF_SecretarySurnameUp.Clear();
+            textBoxAALF_SecretaryPhoneUp.Clear();
         }
     }
 }

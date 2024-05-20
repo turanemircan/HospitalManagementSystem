@@ -82,7 +82,7 @@ namespace HospitalManagementSystem.Database
             }
             else
             {
-                MessageBox.Show("Guncelleme islemi yapilamadi.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Guncelleme islemi yapilamadi.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         public void updateDoctorByID(int id, string newName, string newSurname, string newIdentificationNo, string newGSMNo,string newBranch)
