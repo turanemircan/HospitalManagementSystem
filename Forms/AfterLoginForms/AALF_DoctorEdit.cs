@@ -120,11 +120,11 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 
                 this.doctorDB_ID = selectedRow.Cells["DoctorId"].Value.ToString();
 
-                textboxAALF_DoctorName.Text = columnName;
-                textboxAALF_DoctorSurname.Text = columnSurname;
-                textboxAALF_DoctorId.Text = columnID;
-                textboxAALF_DoctorPhone.Text = columnPhone;
-                textboxAALF_DoctorBranch.Text = columnBranch;
+                textboxAALF_DoctorNameUp.Text = columnName;
+                textboxAALF_DoctorSurnameUp.Text = columnSurname;
+                textboxAALF_DoctorIdUp.Text = columnID;
+                textboxAALF_DoctorPhoneUp.Text = columnPhone;
+                textboxAALF_DoctorBranchUp.Text = columnBranch;
             }
         }
 
@@ -149,14 +149,12 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             using (var context = new HospitalDbContext())
             {
-                context.updateDoctorByID
-                    (
-                    Convert.ToInt32(this.doctorDB_ID),
-                    textboxAALF_DoctorName.Text,
-                    textboxAALF_DoctorSurname.Text,
-                    textboxAALF_DoctorId.Text,
-                    textboxAALF_DoctorPhone.Text,
-                    textboxAALF_DoctorBranch.Text
+                context.updateDoctorByID(Convert.ToInt32(this.doctorDB_ID),
+                    textboxAALF_DoctorNameUp.Text,
+                    textboxAALF_DoctorSurnameUp.Text,
+                    textboxAALF_DoctorIdUp.Text,
+                    textboxAALF_DoctorPhoneUp.Text,
+                    textboxAALF_DoctorBranchUp.Text
                     );
                 context.SaveChanges();
                 Helper.Helper helper = new Helper.Helper();
@@ -197,6 +195,35 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                 }
                 context.SaveChanges();
             }
+        }
+
+        private void rjButtonAALF_DoctorClear_Click(object sender, EventArgs e)
+        {
+            textboxAALF_DoctorBranch.Clear();
+            textboxAALF_DoctorId.Clear();
+            textboxAALF_DoctorName.Clear();
+            textboxAALF_DoctorPassword.Clear();
+            textboxAALF_DoctorPhone.Clear();
+            textboxAALF_DoctorSurname.Clear();
+        }
+
+        private void rjButtonAALF_DoctorClearUp_Click(object sender, EventArgs e)
+        {
+            textboxAALF_DoctorBranchUp.Clear();
+            textboxAALF_DoctorIdUp.Clear();
+            textboxAALF_DoctorNameUp.Clear();
+            textboxAALF_DoctorPhoneUp.Clear();
+            textboxAALF_DoctorSurnameUp.Clear();
+        }
+
+        private void textboxAALF_DoctorIdUp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textboxAALF_DoctorIdUp);
+        }
+
+        private void textboxAALF_DoctorPhoneUp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textboxAALF_DoctorPhoneUp);
         }
     }
 }

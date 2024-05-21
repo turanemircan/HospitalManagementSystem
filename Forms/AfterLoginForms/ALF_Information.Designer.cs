@@ -140,6 +140,7 @@
             textboxALF_Id.PlaceholderText = "ID";
             textboxALF_Id.Size = new Size(260, 29);
             textboxALF_Id.TabIndex = 80;
+            textboxALF_Id.KeyPress += textboxALF_Id_KeyPress;
             // 
             // textboxALF_GSM
             // 
@@ -150,6 +151,7 @@
             textboxALF_GSM.PlaceholderText = "GSM";
             textboxALF_GSM.Size = new Size(260, 29);
             textboxALF_GSM.TabIndex = 81;
+            textboxALF_GSM.KeyPress += textboxALF_GSM_KeyPress;
             // 
             // ALF_Information
             // 
@@ -170,6 +172,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ALF_Information";
             Text = "ALF_Information";
+            Load += ALF_Information_Load;
             ResumeLayout(false);
             PerformLayout();
         }

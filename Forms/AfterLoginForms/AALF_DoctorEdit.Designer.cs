@@ -32,6 +32,7 @@
             dataGridViewAALF_Doctor = new DataGridView();
             tabControlAALF_Doctor = new TabControl();
             tabPageAALF_DoctorEdit = new TabPage();
+            rjButtonAALF_DoctorClear = new CustomTools.RJButton.RJButton();
             textboxAALF_DoctorBranch = new TextBox();
             textboxAALF_DoctorPassword = new TextBox();
             textboxAALF_DoctorPhone = new TextBox();
@@ -47,20 +48,18 @@
             labelAALF_Pass = new Label();
             labelAALF_Surnam = new Label();
             tabPageAALF_DoktorUpdate = new TabPage();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            rjButton2 = new CustomTools.RJButton.RJButton();
-            rjButton3 = new CustomTools.RJButton.RJButton();
+            rjButtonAALF_DoctorClearUp = new CustomTools.RJButton.RJButton();
+            textboxAALF_DoctorBranchUp = new TextBox();
+            textboxAALF_DoctorPhoneUp = new TextBox();
+            textboxAALF_DoctorSurnameUp = new TextBox();
+            textboxAALF_DoctorNameUp = new TextBox();
+            textboxAALF_DoctorIdUp = new TextBox();
+            buttonAALF_DoctorUpdate = new CustomTools.RJButton.RJButton();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label6 = new Label();
-            rjButton1 = new CustomTools.RJButton.RJButton();
-            rjButton4 = new CustomTools.RJButton.RJButton();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAALF_Doctor).BeginInit();
             tabControlAALF_Doctor.SuspendLayout();
             tabPageAALF_DoctorEdit.SuspendLayout();
@@ -102,7 +101,7 @@
             // 
             // tabPageAALF_DoctorEdit
             // 
-            tabPageAALF_DoctorEdit.Controls.Add(rjButton4);
+            tabPageAALF_DoctorEdit.Controls.Add(rjButtonAALF_DoctorClear);
             tabPageAALF_DoctorEdit.Controls.Add(textboxAALF_DoctorBranch);
             tabPageAALF_DoctorEdit.Controls.Add(textboxAALF_DoctorPassword);
             tabPageAALF_DoctorEdit.Controls.Add(textboxAALF_DoctorPhone);
@@ -124,6 +123,27 @@
             tabPageAALF_DoctorEdit.TabIndex = 0;
             tabPageAALF_DoctorEdit.Text = "Doctor Edit";
             tabPageAALF_DoctorEdit.UseVisualStyleBackColor = true;
+            // 
+            // rjButtonAALF_DoctorClear
+            // 
+            rjButtonAALF_DoctorClear.BackColor = Color.RosyBrown;
+            rjButtonAALF_DoctorClear.BackgroundColor = Color.RosyBrown;
+            rjButtonAALF_DoctorClear.BorderColor = Color.Salmon;
+            rjButtonAALF_DoctorClear.BorderRadius = 15;
+            rjButtonAALF_DoctorClear.BorderSize = 0;
+            rjButtonAALF_DoctorClear.FlatAppearance.BorderSize = 0;
+            rjButtonAALF_DoctorClear.FlatStyle = FlatStyle.Flat;
+            rjButtonAALF_DoctorClear.Font = new Font("Yu Gothic UI Semibold", 10F);
+            rjButtonAALF_DoctorClear.ForeColor = Color.White;
+            rjButtonAALF_DoctorClear.Location = new Point(9, 308);
+            rjButtonAALF_DoctorClear.Margin = new Padding(3, 4, 3, 4);
+            rjButtonAALF_DoctorClear.Name = "rjButtonAALF_DoctorClear";
+            rjButtonAALF_DoctorClear.Size = new Size(153, 36);
+            rjButtonAALF_DoctorClear.TabIndex = 96;
+            rjButtonAALF_DoctorClear.Text = "Clear";
+            rjButtonAALF_DoctorClear.TextColor = Color.White;
+            rjButtonAALF_DoctorClear.UseVisualStyleBackColor = false;
+            rjButtonAALF_DoctorClear.Click += rjButtonAALF_DoctorClear_Click;
             // 
             // textboxAALF_DoctorBranch
             // 
@@ -154,6 +174,7 @@
             textboxAALF_DoctorPhone.PlaceholderText = "Phone Number";
             textboxAALF_DoctorPhone.Size = new Size(260, 29);
             textboxAALF_DoctorPhone.TabIndex = 93;
+            textboxAALF_DoctorPhone.KeyPress += textboxAALF_DoctorPhone_KeyPress;
             // 
             // textboxAALF_DoctorSurname
             // 
@@ -184,6 +205,7 @@
             textboxAALF_DoctorId.PlaceholderText = "ID";
             textboxAALF_DoctorId.Size = new Size(260, 29);
             textboxAALF_DoctorId.TabIndex = 90;
+            textboxAALF_DoctorId.KeyPress += textboxAALF_DoctorId_KeyPress;
             // 
             // buttonAALF_DoctorSave
             // 
@@ -204,6 +226,7 @@
             buttonAALF_DoctorSave.Text = "Save";
             buttonAALF_DoctorSave.TextColor = Color.White;
             buttonAALF_DoctorSave.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorSave.Click += buttonAALF_DoctorSave_Click;
             // 
             // buttonAALF_DoctorDelete
             // 
@@ -224,6 +247,7 @@
             buttonAALF_DoctorDelete.Text = "Delete";
             buttonAALF_DoctorDelete.TextColor = Color.White;
             buttonAALF_DoctorDelete.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorDelete.Click += buttonAALF_DoctorDelete_Click;
             // 
             // labelAALF_Branch
             // 
@@ -287,14 +311,13 @@
             // 
             // tabPageAALF_DoktorUpdate
             // 
-            tabPageAALF_DoktorUpdate.Controls.Add(rjButton1);
-            tabPageAALF_DoktorUpdate.Controls.Add(textBox1);
-            tabPageAALF_DoktorUpdate.Controls.Add(textBox3);
-            tabPageAALF_DoktorUpdate.Controls.Add(textBox4);
-            tabPageAALF_DoktorUpdate.Controls.Add(textBox5);
-            tabPageAALF_DoktorUpdate.Controls.Add(textBox6);
-            tabPageAALF_DoktorUpdate.Controls.Add(rjButton2);
-            tabPageAALF_DoktorUpdate.Controls.Add(rjButton3);
+            tabPageAALF_DoktorUpdate.Controls.Add(rjButtonAALF_DoctorClearUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(textboxAALF_DoctorBranchUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(textboxAALF_DoctorPhoneUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(textboxAALF_DoctorSurnameUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(textboxAALF_DoctorNameUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(textboxAALF_DoctorIdUp);
+            tabPageAALF_DoktorUpdate.Controls.Add(buttonAALF_DoctorUpdate);
             tabPageAALF_DoktorUpdate.Controls.Add(label1);
             tabPageAALF_DoktorUpdate.Controls.Add(label2);
             tabPageAALF_DoktorUpdate.Controls.Add(label3);
@@ -305,98 +328,102 @@
             tabPageAALF_DoktorUpdate.Padding = new Padding(3);
             tabPageAALF_DoktorUpdate.Size = new Size(442, 413);
             tabPageAALF_DoktorUpdate.TabIndex = 1;
-            tabPageAALF_DoktorUpdate.Text = "Doktor Update";
+            tabPageAALF_DoktorUpdate.Text = "Doctor Update";
             tabPageAALF_DoktorUpdate.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // rjButtonAALF_DoctorClearUp
             // 
-            textBox1.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBox1.Location = new Point(168, 211);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Branch";
-            textBox1.Size = new Size(260, 29);
-            textBox1.TabIndex = 110;
+            rjButtonAALF_DoctorClearUp.BackColor = Color.RosyBrown;
+            rjButtonAALF_DoctorClearUp.BackgroundColor = Color.RosyBrown;
+            rjButtonAALF_DoctorClearUp.BorderColor = Color.Salmon;
+            rjButtonAALF_DoctorClearUp.BorderRadius = 15;
+            rjButtonAALF_DoctorClearUp.BorderSize = 0;
+            rjButtonAALF_DoctorClearUp.FlatAppearance.BorderSize = 0;
+            rjButtonAALF_DoctorClearUp.FlatStyle = FlatStyle.Flat;
+            rjButtonAALF_DoctorClearUp.Font = new Font("Yu Gothic UI Semibold", 10F);
+            rjButtonAALF_DoctorClearUp.ForeColor = Color.White;
+            rjButtonAALF_DoctorClearUp.Location = new Point(10, 265);
+            rjButtonAALF_DoctorClearUp.Margin = new Padding(3, 4, 3, 4);
+            rjButtonAALF_DoctorClearUp.Name = "rjButtonAALF_DoctorClearUp";
+            rjButtonAALF_DoctorClearUp.Size = new Size(153, 36);
+            rjButtonAALF_DoctorClearUp.TabIndex = 111;
+            rjButtonAALF_DoctorClearUp.Text = "Clear";
+            rjButtonAALF_DoctorClearUp.TextColor = Color.White;
+            rjButtonAALF_DoctorClearUp.UseVisualStyleBackColor = false;
+            rjButtonAALF_DoctorClearUp.Click += rjButtonAALF_DoctorClearUp_Click;
             // 
-            // textBox3
+            // textboxAALF_DoctorBranchUp
             // 
-            textBox3.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBox3.Location = new Point(168, 158);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Phone Number";
-            textBox3.Size = new Size(260, 29);
-            textBox3.TabIndex = 108;
+            textboxAALF_DoctorBranchUp.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_DoctorBranchUp.Location = new Point(168, 211);
+            textboxAALF_DoctorBranchUp.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorBranchUp.Name = "textboxAALF_DoctorBranchUp";
+            textboxAALF_DoctorBranchUp.PlaceholderText = "Branch";
+            textboxAALF_DoctorBranchUp.Size = new Size(260, 29);
+            textboxAALF_DoctorBranchUp.TabIndex = 110;
             // 
-            // textBox4
+            // textboxAALF_DoctorPhoneUp
             // 
-            textBox4.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBox4.Location = new Point(168, 55);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Surname";
-            textBox4.Size = new Size(260, 29);
-            textBox4.TabIndex = 107;
+            textboxAALF_DoctorPhoneUp.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_DoctorPhoneUp.Location = new Point(168, 158);
+            textboxAALF_DoctorPhoneUp.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorPhoneUp.Name = "textboxAALF_DoctorPhoneUp";
+            textboxAALF_DoctorPhoneUp.PlaceholderText = "Phone Number";
+            textboxAALF_DoctorPhoneUp.Size = new Size(260, 29);
+            textboxAALF_DoctorPhoneUp.TabIndex = 108;
+            textboxAALF_DoctorPhoneUp.KeyPress += textboxAALF_DoctorPhoneUp_KeyPress;
             // 
-            // textBox5
+            // textboxAALF_DoctorSurnameUp
             // 
-            textBox5.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBox5.Location = new Point(168, 10);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Name";
-            textBox5.Size = new Size(260, 29);
-            textBox5.TabIndex = 106;
+            textboxAALF_DoctorSurnameUp.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_DoctorSurnameUp.Location = new Point(168, 55);
+            textboxAALF_DoctorSurnameUp.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorSurnameUp.Name = "textboxAALF_DoctorSurnameUp";
+            textboxAALF_DoctorSurnameUp.PlaceholderText = "Surname";
+            textboxAALF_DoctorSurnameUp.Size = new Size(260, 29);
+            textboxAALF_DoctorSurnameUp.TabIndex = 107;
             // 
-            // textBox6
+            // textboxAALF_DoctorNameUp
             // 
-            textBox6.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textBox6.Location = new Point(169, 108);
-            textBox6.Margin = new Padding(3, 4, 3, 4);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "ID";
-            textBox6.Size = new Size(260, 29);
-            textBox6.TabIndex = 105;
+            textboxAALF_DoctorNameUp.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_DoctorNameUp.Location = new Point(168, 10);
+            textboxAALF_DoctorNameUp.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorNameUp.Name = "textboxAALF_DoctorNameUp";
+            textboxAALF_DoctorNameUp.PlaceholderText = "Name";
+            textboxAALF_DoctorNameUp.Size = new Size(260, 29);
+            textboxAALF_DoctorNameUp.TabIndex = 106;
             // 
-            // rjButton2
+            // textboxAALF_DoctorIdUp
             // 
-            rjButton2.BackColor = Color.Red;
-            rjButton2.BackgroundColor = Color.Red;
-            rjButton2.BorderColor = Color.Salmon;
-            rjButton2.BorderRadius = 15;
-            rjButton2.BorderSize = 0;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.Font = new Font("Yu Gothic UI Semibold", 10F);
-            rjButton2.ForeColor = Color.White;
-            rjButton2.Location = new Point(168, 310);
-            rjButton2.Margin = new Padding(3, 4, 3, 4);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(261, 36);
-            rjButton2.TabIndex = 103;
-            rjButton2.Text = "Delete";
-            rjButton2.TextColor = Color.White;
-            rjButton2.UseVisualStyleBackColor = false;
+            textboxAALF_DoctorIdUp.Font = new Font("Yu Gothic UI Semibold", 9.5F);
+            textboxAALF_DoctorIdUp.Location = new Point(169, 108);
+            textboxAALF_DoctorIdUp.Margin = new Padding(3, 4, 3, 4);
+            textboxAALF_DoctorIdUp.Name = "textboxAALF_DoctorIdUp";
+            textboxAALF_DoctorIdUp.PlaceholderText = "ID";
+            textboxAALF_DoctorIdUp.Size = new Size(260, 29);
+            textboxAALF_DoctorIdUp.TabIndex = 105;
+            textboxAALF_DoctorIdUp.KeyPress += textboxAALF_DoctorIdUp_KeyPress;
             // 
-            // rjButton3
+            // buttonAALF_DoctorUpdate
             // 
-            rjButton3.BackColor = Color.SkyBlue;
-            rjButton3.BackgroundColor = Color.SkyBlue;
-            rjButton3.BorderColor = Color.Salmon;
-            rjButton3.BorderRadius = 15;
-            rjButton3.BorderSize = 0;
-            rjButton3.FlatAppearance.BorderSize = 0;
-            rjButton3.FlatStyle = FlatStyle.Flat;
-            rjButton3.Font = new Font("Yu Gothic UI Semibold", 10F);
-            rjButton3.ForeColor = Color.White;
-            rjButton3.Location = new Point(169, 262);
-            rjButton3.Margin = new Padding(3, 4, 3, 4);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(259, 43);
-            rjButton3.TabIndex = 102;
-            rjButton3.Text = "Update";
-            rjButton3.TextColor = Color.White;
-            rjButton3.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorUpdate.BackColor = Color.SkyBlue;
+            buttonAALF_DoctorUpdate.BackgroundColor = Color.SkyBlue;
+            buttonAALF_DoctorUpdate.BorderColor = Color.Salmon;
+            buttonAALF_DoctorUpdate.BorderRadius = 15;
+            buttonAALF_DoctorUpdate.BorderSize = 0;
+            buttonAALF_DoctorUpdate.FlatAppearance.BorderSize = 0;
+            buttonAALF_DoctorUpdate.FlatStyle = FlatStyle.Flat;
+            buttonAALF_DoctorUpdate.Font = new Font("Yu Gothic UI Semibold", 10F);
+            buttonAALF_DoctorUpdate.ForeColor = Color.White;
+            buttonAALF_DoctorUpdate.Location = new Point(169, 262);
+            buttonAALF_DoctorUpdate.Margin = new Padding(3, 4, 3, 4);
+            buttonAALF_DoctorUpdate.Name = "buttonAALF_DoctorUpdate";
+            buttonAALF_DoctorUpdate.Size = new Size(259, 43);
+            buttonAALF_DoctorUpdate.TabIndex = 102;
+            buttonAALF_DoctorUpdate.Text = "Update";
+            buttonAALF_DoctorUpdate.TextColor = Color.White;
+            buttonAALF_DoctorUpdate.UseVisualStyleBackColor = false;
+            buttonAALF_DoctorUpdate.Click += buttonAALF_DoctorUpdate_Click;
             // 
             // label1
             // 
@@ -448,46 +475,6 @@
             label6.TabIndex = 96;
             label6.Text = "Surname";
             // 
-            // rjButton1
-            // 
-            rjButton1.BackColor = Color.RosyBrown;
-            rjButton1.BackgroundColor = Color.RosyBrown;
-            rjButton1.BorderColor = Color.Salmon;
-            rjButton1.BorderRadius = 15;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Yu Gothic UI Semibold", 10F);
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(10, 265);
-            rjButton1.Margin = new Padding(3, 4, 3, 4);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(153, 36);
-            rjButton1.TabIndex = 111;
-            rjButton1.Text = "Clear";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // rjButton4
-            // 
-            rjButton4.BackColor = Color.RosyBrown;
-            rjButton4.BackgroundColor = Color.RosyBrown;
-            rjButton4.BorderColor = Color.Salmon;
-            rjButton4.BorderRadius = 15;
-            rjButton4.BorderSize = 0;
-            rjButton4.FlatAppearance.BorderSize = 0;
-            rjButton4.FlatStyle = FlatStyle.Flat;
-            rjButton4.Font = new Font("Yu Gothic UI Semibold", 10F);
-            rjButton4.ForeColor = Color.White;
-            rjButton4.Location = new Point(9, 308);
-            rjButton4.Margin = new Padding(3, 4, 3, 4);
-            rjButton4.Name = "rjButton4";
-            rjButton4.Size = new Size(153, 36);
-            rjButton4.TabIndex = 96;
-            rjButton4.Text = "Clear";
-            rjButton4.TextColor = Color.White;
-            rjButton4.UseVisualStyleBackColor = false;
-            // 
             // AALF_DoctorEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -531,19 +518,18 @@
         private Label labelAALF_Name;
         private Label labelAALF_Pass;
         private Label labelAALF_Surnam;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private CustomTools.RJButton.RJButton rjButton2;
-        private CustomTools.RJButton.RJButton rjButton3;
+        private TextBox textboxAALF_DoctorBranchUp;
+        private TextBox textboxAALF_DoctorPhoneUp;
+        private TextBox textboxAALF_DoctorSurnameUp;
+        private TextBox textboxAALF_DoctorNameUp;
+        private TextBox textboxAALF_DoctorIdUp;
+        private CustomTools.RJButton.RJButton buttonAALF_DoctorUpdate;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label6;
-        private CustomTools.RJButton.RJButton rjButton4;
-        private CustomTools.RJButton.RJButton rjButton1;
+        private CustomTools.RJButton.RJButton rjButtonAALF_DoctorClear;
+        private CustomTools.RJButton.RJButton rjButtonAALF_DoctorClearUp;
     }
 }

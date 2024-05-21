@@ -208,5 +208,15 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             textBoxAALF_SecretarySurnameUp.Clear();
             textBoxAALF_SecretaryPhoneUp.Clear();
         }
+
+        private void textBoxAALF_SecretaryIDUp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxAALF_SecretaryIDUp);
+        }
+
+        private void textBoxAALF_SecretaryPhoneUp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxAALF_SecretaryPhoneUp);
+        }
     }
 }

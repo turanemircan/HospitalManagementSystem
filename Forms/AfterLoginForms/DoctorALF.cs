@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalManagementSystem.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +17,12 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 
         ALF_Information ALF_Information;
         DALF_RandevuGörüntüle dalf_randevuGörüntüle;
+        public Doctor doctor { get; set; }
 
-        public DoctorALF()
+        public DoctorALF(Doctor doctor)
         {
             InitializeComponent();
+            this.doctor = doctor;
         }
 
         private void buttonDALF_ViewAppointment_Click(object sender, EventArgs e)

@@ -66,7 +66,7 @@
             // 
             labelAALF_Secret.AutoSize = true;
             labelAALF_Secret.Font = new Font("Yu Gothic UI Semibold", 13F);
-            labelAALF_Secret.Location = new Point(42, 28);
+            labelAALF_Secret.Location = new Point(31, 32);
             labelAALF_Secret.Name = "labelAALF_Secret";
             labelAALF_Secret.Size = new Size(105, 30);
             labelAALF_Secret.TabIndex = 32;
@@ -76,7 +76,7 @@
             // 
             dataGridViewAALF_Secretary.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewAALF_Secretary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAALF_Secretary.Location = new Point(509, 98);
+            dataGridViewAALF_Secretary.Location = new Point(487, 94);
             dataGridViewAALF_Secretary.Name = "dataGridViewAALF_Secretary";
             dataGridViewAALF_Secretary.RowHeadersWidth = 51;
             dataGridViewAALF_Secretary.Size = new Size(935, 417);
@@ -89,7 +89,7 @@
             // 
             tabControlAALF_Secretary.Controls.Add(tabPageAALF_SecretaryEdit);
             tabControlAALF_Secretary.Controls.Add(tabPageAALF_SecretaryUpdate);
-            tabControlAALF_Secretary.Location = new Point(42, 69);
+            tabControlAALF_Secretary.Location = new Point(31, 65);
             tabControlAALF_Secretary.Name = "tabControlAALF_Secretary";
             tabControlAALF_Secretary.SelectedIndex = 0;
             tabControlAALF_Secretary.Size = new Size(450, 446);
@@ -237,7 +237,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label1.Location = new Point(7, 163);
+            label1.Location = new Point(4, 158);
             label1.Name = "label1";
             label1.Size = new Size(66, 25);
             label1.TabIndex = 85;
@@ -247,7 +247,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label2.Location = new Point(9, 113);
+            label2.Location = new Point(6, 108);
             label2.Name = "label2";
             label2.Size = new Size(157, 25);
             label2.TabIndex = 84;
@@ -257,7 +257,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label3.Location = new Point(9, 15);
+            label3.Location = new Point(6, 10);
             label3.Name = "label3";
             label3.Size = new Size(64, 25);
             label3.TabIndex = 83;
@@ -267,7 +267,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label4.Location = new Point(9, 213);
+            label4.Location = new Point(6, 208);
             label4.Name = "label4";
             label4.Size = new Size(92, 25);
             label4.TabIndex = 82;
@@ -277,7 +277,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label5.Location = new Point(9, 61);
+            label5.Location = new Point(6, 56);
             label5.Name = "label5";
             label5.Size = new Size(88, 25);
             label5.TabIndex = 81;
@@ -333,7 +333,7 @@
             textBoxAALF_SecretaryPhoneUp.PlaceholderText = "Phone Number";
             textBoxAALF_SecretaryPhoneUp.Size = new Size(260, 29);
             textBoxAALF_SecretaryPhoneUp.TabIndex = 108;
-            textBoxAALF_SecretaryPhoneUp.KeyPress += textboxAALF_SecretaryPhone_KeyPress;
+            textBoxAALF_SecretaryPhoneUp.KeyPress += textBoxAALF_SecretaryPhoneUp_KeyPress;
             // 
             // textBoxAALF_SecretarySurnameUp
             // 
@@ -364,7 +364,7 @@
             textBoxAALF_SecretaryIDUp.PlaceholderText = "ID";
             textBoxAALF_SecretaryIDUp.Size = new Size(260, 29);
             textBoxAALF_SecretaryIDUp.TabIndex = 105;
-            textBoxAALF_SecretaryIDUp.KeyPress += textboxAALF_SecretaryId_KeyPress;
+            textBoxAALF_SecretaryIDUp.KeyPress += textBoxAALF_SecretaryIDUp_KeyPress;
             // 
             // buttonAALF_DoctorUpdate
             // 
@@ -391,7 +391,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label7.Location = new Point(7, 163);
+            label7.Location = new Point(4, 158);
             label7.Name = "label7";
             label7.Size = new Size(66, 25);
             label7.TabIndex = 100;
@@ -401,7 +401,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label8.Location = new Point(9, 113);
+            label8.Location = new Point(6, 108);
             label8.Name = "label8";
             label8.Size = new Size(157, 25);
             label8.TabIndex = 99;
@@ -411,7 +411,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label9.Location = new Point(9, 15);
+            label9.Location = new Point(6, 10);
             label9.Name = "label9";
             label9.Size = new Size(64, 25);
             label9.TabIndex = 98;
@@ -421,7 +421,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label10.Location = new Point(9, 61);
+            label10.Location = new Point(6, 56);
             label10.Name = "label10";
             label10.Size = new Size(88, 25);
             label10.TabIndex = 96;
