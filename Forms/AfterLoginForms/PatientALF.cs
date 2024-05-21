@@ -19,28 +19,15 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         PALF_RandevuBilgileri randevuBilgileri;
         ALF_Information bilgilerim;
 
-<<<<<<< HEAD
-        public string patientId {  get; set; }
-        public string patientName { get; set; }
-        public string patientSurname { get; set; }  
-
-        public PatientALF(string _patientId, string _patientName, string _patientSurname)
-        {
-            InitializeComponent();
-           
-            this.patientId = _patientId;
-            this.patientName = _patientName;
-            this.patientSurname = _patientSurname;
-
-=======
         public Patient patient { get; set; }
-
-        public PatientALF(Patient _patient)
+            
+        public PatientALF( Patient _patient)
         {
             InitializeComponent();
             this.patient = _patient;
->>>>>>> 6b13874dc77df92b4db4f490875d8d7797ecffd5
+
         }
+
 
         private void PatientALF_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -53,9 +40,9 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             randevuAl = new PALF_RandevuAl();
             helper.formGoster(randevuAl, randevuAl.Name);
             
-            label2.Text=patientId.ToString();
-            
-            label3.Text=patientName.ToString() +" "+patientSurname.ToString();
+            label2.Text=patient.identification;
+
+            label3.Text = $"{patient.name} {patient.surname}";
         }
 
         private void buttonPALF_RandevuAl_Click(object sender, EventArgs e)

@@ -60,20 +60,22 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
+            label2.BackColor = Color.Salmon;
+            label2.Font = new Font("Yu Gothic UI Semibold", 10F);
             label2.Location = new Point(196, 98);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(55, 23);
             label2.TabIndex = 44;
             label2.Text = "label2";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.White;
+            label1.BackColor = Color.Salmon;
+            label1.Font = new Font("Yu Gothic UI Semibold", 10F);
             label1.Location = new Point(196, 51);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(53, 23);
             label1.TabIndex = 43;
             label1.Text = "label1";
             // 

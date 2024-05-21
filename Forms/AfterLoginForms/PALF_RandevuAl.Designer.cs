@@ -93,6 +93,7 @@
             cBoxRandevuPoliklinikSec.Name = "cBoxRandevuPoliklinikSec";
             cBoxRandevuPoliklinikSec.Size = new Size(228, 28);
             cBoxRandevuPoliklinikSec.TabIndex = 5;
+            cBoxRandevuPoliklinikSec.SelectedIndexChanged += cBoxRandevuPoliklinikSec_SelectedIndexChanged;
             // 
             // btnRandevuAl
             // 

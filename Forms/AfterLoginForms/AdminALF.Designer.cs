@@ -71,20 +71,22 @@
             // labelAALF_AdminName
             // 
             labelAALF_AdminName.AutoSize = true;
-            labelAALF_AdminName.BackColor = Color.White;
+            labelAALF_AdminName.BackColor = Color.Salmon;
+            labelAALF_AdminName.Font = new Font("Yu Gothic UI Semibold", 10F);
             labelAALF_AdminName.Location = new Point(186, 99);
             labelAALF_AdminName.Name = "labelAALF_AdminName";
-            labelAALF_AdminName.Size = new Size(50, 20);
+            labelAALF_AdminName.Size = new Size(46, 23);
             labelAALF_AdminName.TabIndex = 9;
-            labelAALF_AdminName.Text = "label2";
+            labelAALF_AdminName.Text = "label";
             // 
             // labelAALF_AdminID
             // 
             labelAALF_AdminID.AutoSize = true;
-            labelAALF_AdminID.BackColor = Color.White;
+            labelAALF_AdminID.BackColor = Color.Salmon;
+            labelAALF_AdminID.Font = new Font("Yu Gothic UI Semibold", 10F);
             labelAALF_AdminID.Location = new Point(186, 65);
             labelAALF_AdminID.Name = "labelAALF_AdminID";
-            labelAALF_AdminID.Size = new Size(42, 20);
+            labelAALF_AdminID.Size = new Size(46, 23);
             labelAALF_AdminID.TabIndex = 0;
             labelAALF_AdminID.Text = "label";
             // 

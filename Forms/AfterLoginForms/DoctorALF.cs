@@ -19,7 +19,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         DALF_RandevuGörüntüle dalf_randevuGörüntüle;
         public Doctor doctor { get; set; }
        
-        public DoctorALF(Doctor doctore)
+        public DoctorALF(Doctor doctor)
         {
             InitializeComponent();
             this.doctor = doctor;
@@ -44,6 +44,9 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             helper = new Helper.Helper(panelDoctorALF);
             ALF_Information = new ALF_Information(panelDoctorALF,doctor);
             helper.formGoster(ALF_Information, ALF_Information.Name);
+            
+            label1.Text = doctor.identification;
+            label2.Text = $"{doctor.name} {doctor.surname}";
 
 
         }

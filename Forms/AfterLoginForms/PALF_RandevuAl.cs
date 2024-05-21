@@ -16,5 +16,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             InitializeComponent();
         }
+
+        private void cBoxRandevuPoliklinikSec_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

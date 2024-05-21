@@ -150,7 +150,7 @@
             label2.Name = "label2";
             label2.Size = new Size(141, 23);
             label2.TabIndex = 48;
-            label2.Text = "label1";
+            label2.Text = "label";
             // 
             // label4
             // 

@@ -70,10 +70,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         }
         private void ALF_Information_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-
-=======
             using (var context = new HospitalDbContext())
             {
                 if (gelenKullanici is Doctor)
@@ -133,7 +130,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                 }
                 context.SaveChanges();
             }
->>>>>>> 6b13874dc77df92b4db4f490875d8d7797ecffd5
+
         }
     }
 }
