@@ -35,83 +35,103 @@
             label3 = new Label();
             cBoxRandevuPoliklinikSec = new ComboBox();
             btnRandevuAl = new Button();
+            cbSaat = new ComboBox();
+            RandevuSaat = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 13F);
-            label1.Location = new Point(175, 167);
+            label1.Location = new Point(153, 136);
             label1.Name = "label1";
-            label1.Size = new Size(141, 30);
+            label1.Size = new Size(117, 25);
             label1.TabIndex = 0;
             label1.Text = "Tarih Seçiniz:";
             // 
             // dtpRandevuTarihSec
             // 
             dtpRandevuTarihSec.Font = new Font("Yu Gothic UI Semibold", 12F);
-            dtpRandevuTarihSec.Location = new Point(315, 164);
-            dtpRandevuTarihSec.Margin = new Padding(3, 4, 3, 4);
+            dtpRandevuTarihSec.Location = new Point(276, 134);
             dtpRandevuTarihSec.Name = "dtpRandevuTarihSec";
-            dtpRandevuTarihSec.Size = new Size(228, 34);
+            dtpRandevuTarihSec.Size = new Size(200, 29);
             dtpRandevuTarihSec.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 13F);
-            label2.Location = new Point(153, 264);
+            label2.Location = new Point(134, 102);
             label2.Name = "label2";
-            label2.Size = new Size(163, 30);
+            label2.Size = new Size(136, 25);
             label2.TabIndex = 2;
             label2.Text = "Doktor Seçiniz:";
             // 
             // cBoxRandevuDoktorSec
             // 
             cBoxRandevuDoktorSec.FormattingEnabled = true;
-            cBoxRandevuDoktorSec.Location = new Point(315, 268);
-            cBoxRandevuDoktorSec.Margin = new Padding(3, 4, 3, 4);
+            cBoxRandevuDoktorSec.Location = new Point(276, 105);
             cBoxRandevuDoktorSec.Name = "cBoxRandevuDoktorSec";
-            cBoxRandevuDoktorSec.Size = new Size(228, 28);
+            cBoxRandevuDoktorSec.Size = new Size(200, 23);
             cBoxRandevuDoktorSec.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI Semibold", 13F);
-            label3.Location = new Point(133, 219);
+            label3.Location = new Point(116, 68);
             label3.Name = "label3";
-            label3.Size = new Size(186, 30);
+            label3.Size = new Size(154, 25);
             label3.TabIndex = 4;
             label3.Text = "Poliklinik Seçiniz:";
             // 
             // cBoxRandevuPoliklinikSec
             // 
             cBoxRandevuPoliklinikSec.FormattingEnabled = true;
-            cBoxRandevuPoliklinikSec.Location = new Point(315, 223);
-            cBoxRandevuPoliklinikSec.Margin = new Padding(3, 4, 3, 4);
+            cBoxRandevuPoliklinikSec.Items.AddRange(new object[] { "Kulak Burun Boğaz", "Beyin Cerrahi", "Çocuk Hastalıkları" });
+            cBoxRandevuPoliklinikSec.Location = new Point(276, 71);
             cBoxRandevuPoliklinikSec.Name = "cBoxRandevuPoliklinikSec";
-            cBoxRandevuPoliklinikSec.Size = new Size(228, 28);
+            cBoxRandevuPoliklinikSec.Size = new Size(200, 23);
             cBoxRandevuPoliklinikSec.TabIndex = 5;
             cBoxRandevuPoliklinikSec.SelectedIndexChanged += cBoxRandevuPoliklinikSec_SelectedIndexChanged;
             // 
             // btnRandevuAl
             // 
             btnRandevuAl.Font = new Font("Yu Gothic UI Semibold", 10F);
-            btnRandevuAl.Location = new Point(315, 320);
-            btnRandevuAl.Margin = new Padding(3, 4, 3, 4);
+            btnRandevuAl.Location = new Point(276, 240);
             btnRandevuAl.Name = "btnRandevuAl";
-            btnRandevuAl.Size = new Size(229, 39);
+            btnRandevuAl.Size = new Size(200, 29);
             btnRandevuAl.TabIndex = 6;
             btnRandevuAl.Text = "RandevuAl";
             btnRandevuAl.UseVisualStyleBackColor = true;
             // 
+            // cbSaat
+            // 
+            cbSaat.FormattingEnabled = true;
+            cbSaat.Items.AddRange(new object[] { "10.00", "11.00", "12.00", "13.00", "14.00", "15.00" });
+            cbSaat.Location = new Point(276, 172);
+            cbSaat.Name = "cbSaat";
+            cbSaat.Size = new Size(200, 23);
+            cbSaat.TabIndex = 7;
+            // 
+            // RandevuSaat
+            // 
+            RandevuSaat.AutoSize = true;
+            RandevuSaat.Font = new Font("Yu Gothic UI Semibold", 13F);
+            RandevuSaat.Location = new Point(153, 169);
+            RandevuSaat.Name = "RandevuSaat";
+            RandevuSaat.Size = new Size(113, 25);
+            RandevuSaat.TabIndex = 8;
+            RandevuSaat.Text = "Saat Seçiniz:";
+            // 
             // PALF_RandevuAl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(687, 536);
+            ClientSize = new Size(601, 402);
+            Controls.Add(RandevuSaat);
+            Controls.Add(cbSaat);
             Controls.Add(btnRandevuAl);
             Controls.Add(cBoxRandevuPoliklinikSec);
             Controls.Add(label3);
@@ -120,9 +140,9 @@
             Controls.Add(dtpRandevuTarihSec);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "PALF_RandevuAl";
             Text = "PALF_RandevuAl";
+            Load += PALF_RandevuAl_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -139,5 +159,7 @@
         private ComboBox comboBox1;
         private ListBox listBox1;
         private ListView listView1;
+        private ComboBox cbSaat;
+        private Label RandevuSaat;
     }
 }
