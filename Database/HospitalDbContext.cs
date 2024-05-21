@@ -14,6 +14,7 @@ namespace HospitalManagementSystem.Database
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Secretary> Secretaries { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
 
         Helper.Helper helper;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -36,6 +37,10 @@ namespace HospitalManagementSystem.Database
         public Admin AdminIDValidation(string ID)
         {
             return Admins.SingleOrDefault(p => p.identification == ID);
+        }
+        public Appointment AppointmentIDValidation(int ID)
+        {
+            return Appointments.SingleOrDefault(p => p.AppointmentId == ID);
         }
         public void deleteSecretaryByID(int id)
         {

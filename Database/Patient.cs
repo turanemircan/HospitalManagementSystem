@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HospitalManagementSystem.Database
 {
-    public class Patient 
+    public class Patient
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
