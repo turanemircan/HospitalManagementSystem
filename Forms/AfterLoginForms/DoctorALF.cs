@@ -42,7 +42,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void DoctorALF_Load(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelDoctorALF);
-            ALF_Information = new ALF_Information(panelDoctorALF);
+            ALF_Information = new ALF_Information(panelDoctorALF,doctor);
             helper.formGoster(ALF_Information, ALF_Information.Name);
 
 
@@ -51,7 +51,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void buttonDALF_İnformation_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelDoctorALF);
-            ALF_Information = new ALF_Information(panelDoctorALF);
+            ALF_Information = new ALF_Information(panelDoctorALF,doctor);
             helper.formGoster(ALF_Information, ALF_Information.Name);
         }
     }

@@ -1,4 +1,5 @@
-﻿using HospitalManagementSystem.Forms.AfterLoginForms;
+﻿using HospitalManagementSystem.Database;
+using HospitalManagementSystem.Forms.AfterLoginForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         ALF_Information myinformation;
         SALF_MadeAppointment madeAppointment;
 
+<<<<<<< HEAD
         public string secretaryId {  get; set; }   
         public string secretaryName { get; set; }  
         
@@ -30,6 +32,15 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             this.secretaryName = _secretaryName;
             this.secretarySurname=_secretarySurname;
             
+=======
+        public Secretary secretary { get; set; }
+
+        Helper.Helper helper;
+        public SecretaryALF(Secretary secretary)
+        {
+            InitializeComponent();
+            this.secretary = secretary;
+>>>>>>> 6b13874dc77df92b4db4f490875d8d7797ecffd5
         }
 
         private void SecretaryALF_Load(object sender, EventArgs e)
@@ -65,7 +76,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void SALF_MainPageInformation_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelSecretaryAlf);
-            myinformation= new ALF_Information(panelSecretaryAlf);
+            myinformation= new ALF_Information(panelSecretaryAlf, secretary);
             helper.formGoster(myinformation, myinformation.Name);
         }
     }

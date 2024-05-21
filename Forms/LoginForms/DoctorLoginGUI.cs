@@ -54,7 +54,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
                 string doctorPassword = textboxDoctorPassword.Text;
 
                 bool passwordControl;
-                using(var context = new HospitalDbContext())
+                using (var context = new HospitalDbContext())
                 {
                     var user = context.DoctorIDValidation(doctorID);
                     if (user != null)
@@ -81,7 +81,12 @@ namespace HospitalManagementSystem.Forms.LoginForms
 
         private void textBoxDoctorLogiId_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Helper.TextBoxValidation.onlyNumber(sender, e,textBoxDoctorLogiId);
+            Helper.TextBoxValidation.onlyNumber(sender, e, textBoxDoctorLogiId);
+        }
+
+        private void DoctorLoginGUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
