@@ -38,6 +38,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
             Helper.Helper helper = new Helper.Helper(panel);
             loginButtons = new MainLoginButtons(panel, loginGUI);
             helper.formGoster(loginButtons, loginButtons.Name);
+           
         }
 
         private void rjBtnDoctorSignIn_Click(object sender, EventArgs e)

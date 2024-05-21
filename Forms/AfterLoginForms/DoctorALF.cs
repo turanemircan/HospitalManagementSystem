@@ -18,12 +18,14 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         ALF_Information ALF_Information;
         DALF_RandevuGörüntüle dalf_randevuGörüntüle;
         public Doctor doctor { get; set; }
-
-        public DoctorALF(Doctor doctor)
+       
+        public DoctorALF(Doctor doctore)
         {
             InitializeComponent();
             this.doctor = doctor;
+           
         }
+     
 
         private void buttonDALF_ViewAppointment_Click(object sender, EventArgs e)
         {
@@ -42,6 +44,8 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             helper = new Helper.Helper(panelDoctorALF);
             ALF_Information = new ALF_Information(panelDoctorALF);
             helper.formGoster(ALF_Information, ALF_Information.Name);
+
+
         }
 
         private void buttonDALF_İnformation_Click(object sender, EventArgs e)

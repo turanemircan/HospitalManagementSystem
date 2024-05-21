@@ -36,8 +36,11 @@
             SALF_MainPageAppointments = new Button();
             SALF_MainPageMakeAppointments = new Button();
             panel5 = new Panel();
-            SALF_SecretaryName = new Label();
-            label1 = new Label();
+            label2 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            Salf_secretaryName = new Label();
+            labelDALF_SecretaryID = new Label();
             button2 = new Button();
             button1 = new Button();
             panelSecretaryAlf = new Panel();
@@ -128,31 +131,69 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(SALF_SecretaryName);
-            panel5.Controls.Add(label1);
+            panel5.Controls.Add(label2);
+            panel5.Controls.Add(label4);
+            panel5.Controls.Add(label3);
+            panel5.Controls.Add(Salf_secretaryName);
+            panel5.Controls.Add(labelDALF_SecretaryID);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(286, 174);
             panel5.TabIndex = 0;
             // 
-            // SALF_SecretaryName
+            // label2
             // 
-            SALF_SecretaryName.AutoSize = true;
-            SALF_SecretaryName.Location = new Point(81, 83);
-            SALF_SecretaryName.Name = "SALF_SecretaryName";
-            SALF_SecretaryName.Size = new Size(107, 20);
-            SALF_SecretaryName.TabIndex = 1;
-            SALF_SecretaryName.Text = "Sekreter Name";
+            label2.Font = new Font("Yu Gothic UI Semibold", 10F);
+            label2.ForeColor = SystemColors.ControlText;
+            label2.Location = new Point(139, 47);
+            label2.Name = "label2";
+            label2.Size = new Size(141, 23);
+            label2.TabIndex = 48;
+            label2.Text = "label1";
             // 
-            // label1
+            // label4
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(97, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Welcome";
+            label4.AutoSize = true;
+            label4.BackColor = Color.Salmon;
+            label4.Font = new Font("Yu Gothic UI Semibold", 10F);
+            label4.Location = new Point(160, 91);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 23);
+            label4.TabIndex = 47;
+            label4.Text = "label";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Salmon;
+            label3.Font = new Font("Yu Gothic UI Semibold", 10F);
+            label3.Location = new Point(160, 91);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 23);
+            label3.TabIndex = 46;
+            // 
+            // Salf_secretaryName
+            // 
+            Salf_secretaryName.AutoSize = true;
+            Salf_secretaryName.BackColor = Color.Salmon;
+            Salf_secretaryName.Font = new Font("Yu Gothic UI Semibold", 10F);
+            Salf_secretaryName.Location = new Point(13, 91);
+            Salf_secretaryName.Name = "Salf_secretaryName";
+            Salf_secretaryName.Size = new Size(149, 23);
+            Salf_secretaryName.TabIndex = 44;
+            Salf_secretaryName.Text = "Secretary Name =";
+            // 
+            // labelDALF_SecretaryID
+            // 
+            labelDALF_SecretaryID.AutoSize = true;
+            labelDALF_SecretaryID.BackColor = Color.Salmon;
+            labelDALF_SecretaryID.Font = new Font("Yu Gothic UI Semibold", 10F);
+            labelDALF_SecretaryID.Location = new Point(13, 47);
+            labelDALF_SecretaryID.Name = "labelDALF_SecretaryID";
+            labelDALF_SecretaryID.Size = new Size(120, 23);
+            labelDALF_SecretaryID.TabIndex = 43;
+            labelDALF_SecretaryID.Text = "Secretary ID =";
             // 
             // button2
             // 
@@ -212,8 +253,11 @@
         private Button SALF_MainPageAppointments;
         private Button SALF_MainPageMakeAppointments;
         private Panel panel5;
-        private Label SALF_SecretaryName;
-        private Label label1;
         private Panel panelSecretaryAlf;
+        private Label Salf_secretaryName;
+        private Label labelDALF_SecretaryID;
+        private Label label4;
+        private Label label3;
+        private Label label2;
     }
 }

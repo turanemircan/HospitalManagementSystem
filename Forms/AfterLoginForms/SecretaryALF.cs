@@ -17,10 +17,19 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         ALF_Information myinformation;
         SALF_MadeAppointment madeAppointment;
 
+        public string secretaryId {  get; set; }   
+        public string secretaryName { get; set; }  
+        
+        public string secretarySurname {  get; set; }
+
         Helper.Helper helper;
-        public SecretaryALF()
+        public SecretaryALF(string _secretaryId, string _secretaryName,string _secretarySurname)
         {
             InitializeComponent();
+            this.secretaryId = _secretaryId;
+            this.secretaryName = _secretaryName;
+            this.secretarySurname=_secretarySurname;
+            
         }
 
         private void SecretaryALF_Load(object sender, EventArgs e)
@@ -28,6 +37,8 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             helper = new Helper.Helper(panelSecretaryAlf);
             madeAppointment = new SALF_MadeAppointment();
             helper.formGoster(madeAppointment, madeAppointment.Name);
+            label2.Text=secretaryId.ToString();
+            label4.Text=secretaryName.ToString()+" "+secretarySurname.ToString();
 
         }
 

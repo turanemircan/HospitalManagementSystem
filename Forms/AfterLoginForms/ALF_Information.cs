@@ -45,6 +45,8 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         }
         private void ALF_Information_Load(object sender, EventArgs e)
         {
+
+
         }
     }
 }

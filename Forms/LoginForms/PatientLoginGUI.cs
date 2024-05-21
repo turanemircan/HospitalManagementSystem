@@ -65,7 +65,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
                         passwordControl = hasher.VerifyPassword(patientPassword, user.password);
                         if (passwordControl)
                         {
-                            PatientALF patientALF = new PatientALF();
+                            PatientALF patientALF = new PatientALF(user.identification,user.name,user.surname);
                             patientALF.Show();
                             LoginGUI.Hide();
                         }
