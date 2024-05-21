@@ -54,6 +54,7 @@
             rjBtnPasswordUpdate.Text = "Update";
             rjBtnPasswordUpdate.TextColor = Color.White;
             rjBtnPasswordUpdate.UseVisualStyleBackColor = false;
+            rjBtnPasswordUpdate.Click += rjBtnPasswordUpdate_Click;
             // 
             // rjBtnAdminBackMain
             // 

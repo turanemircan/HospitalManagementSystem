@@ -45,10 +45,10 @@
             linkLabelPasswordUpdate.AutoSize = true;
             linkLabelPasswordUpdate.Location = new Point(386, 420);
             linkLabelPasswordUpdate.Name = "linkLabelPasswordUpdate";
-            linkLabelPasswordUpdate.Size = new Size(215, 20);
+            linkLabelPasswordUpdate.Size = new Size(210, 20);
             linkLabelPasswordUpdate.TabIndex = 49;
             linkLabelPasswordUpdate.TabStop = true;
-            linkLabelPasswordUpdate.Text = "Click here to changer password";
+            linkLabelPasswordUpdate.Text = "Click here to change password";
             linkLabelPasswordUpdate.LinkClicked += linkLabelPasswordUpdate_LinkClicked;
             // 
             // buttonPALF_Upd
@@ -70,6 +70,7 @@
             buttonPALF_Upd.Text = "Update";
             buttonPALF_Upd.TextColor = Color.White;
             buttonPALF_Upd.UseVisualStyleBackColor = false;
+            buttonPALF_Upd.Click += buttonPALF_Upd_Click;
             // 
             // label4
             // 

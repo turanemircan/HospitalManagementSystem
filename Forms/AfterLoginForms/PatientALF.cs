@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalManagementSystem.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,9 +19,12 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         PALF_RandevuBilgileri randevuBilgileri;
         ALF_Information bilgilerim;
 
-        public PatientALF()
+        public Patient patient { get; set; }
+
+        public PatientALF(Patient _patient)
         {
             InitializeComponent();
+            this.patient = _patient;
         }
 
         private void PatientALF_FormClosed(object sender, FormClosedEventArgs e)
@@ -52,7 +56,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void buttonPALF_Bilgilerim_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelPatientALF);
-            bilgilerim = new ALF_Information(panelPatientALF);
+            bilgilerim = new ALF_Information(panelPatientALF, patient);
             helper.formGoster(bilgilerim,bilgilerim.Name);
         }
     }

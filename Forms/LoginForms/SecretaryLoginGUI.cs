@@ -57,7 +57,7 @@ namespace HospitalManagementSystem.Forms.LoginForms
                         passwordControl = hasher.VerifyPassword(secretaryPassword, user.password);
                         if (passwordControl)
                         {
-                            SecretaryALF secretaryALF = new SecretaryALF();
+                            SecretaryALF secretaryALF = new SecretaryALF(user);
                             secretaryALF.Show();
                             loginGUI.Hide();
                         }
