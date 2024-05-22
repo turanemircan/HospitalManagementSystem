@@ -54,11 +54,14 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             randevuGetir(PatientALF.gidenpatiid);
         }
 
+        int i = 0;
+
         public void doctorRatingButton_Click(object sender, EventArgs e)
         {
-            string sorgu = ("UPDATE Appointments SET DoctorPoint=@doctorPoint");
+            string sorgu = ("UPDATE Appointments SET DoctorPoint=@doctorPoint WHERE AppointmentID=@AppID");
             cmd = new SqlCommand(sorgu, bag);
             cmd.Parameters.AddWithValue("@doctorPoint", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@AppID", dataGridViewAktifRandevu.Rows[i].Cells[0].Value);
             bag.Open();
             cmd.ExecuteNonQuery();
             bag.Close();
@@ -68,6 +71,11 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void PALF_RandevuBilgileri_Load(object sender, EventArgs e)
         {
             randevuGetir(PatientALF.gidenpatiid);
+        }
+
+        private void dataGridViewAktifRandevu_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            i = e.RowIndex;
         }
     }
 

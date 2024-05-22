@@ -201,6 +201,10 @@ namespace HospitalManagementSystem.Helper
         {
             dataGridView.DataSource = context.Appointments.ToList();
         }
+        public void loadDataPatients(DataGridView dataGridView, HospitalDbContext context)
+        {
+            dataGridView.DataSource = context.Patients.ToList();
+        }
 
     }
 }

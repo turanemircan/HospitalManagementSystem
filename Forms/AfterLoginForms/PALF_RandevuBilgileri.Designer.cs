@@ -59,6 +59,7 @@
             dataGridViewAktifRandevu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewAktifRandevu.Size = new Size(994, 448);
             dataGridViewAktifRandevu.TabIndex = 0;
+            dataGridViewAktifRandevu.CellMouseClick += dataGridViewAktifRandevu_CellMouseClick;
             dataGridViewAktifRandevu.MouseEnter += dataGridViewAktifRandevu_MouseEnter;
             // 
             // appointmentIdDataGridViewTextBoxColumn

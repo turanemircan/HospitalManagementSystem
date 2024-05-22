@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataGridViewDALF_Appointments = new DataGridView();
             buttonDALF_Upd = new CustomTools.RJButton.RJButton();
             buttonDALF_Del = new CustomTools.RJButton.RJButton();
             buttonDALF_Save = new CustomTools.RJButton.RJButton();
@@ -40,17 +40,18 @@
             textboxDALF_PatientName = new TextBox();
             textboxDALF_Diagnosing = new TextBox();
             textboxDALF_Prescriptions = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDALF_Appointments).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewDALF_Appointments
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(352, 65);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(566, 472);
-            dataGridView1.TabIndex = 2;
+            dataGridViewDALF_Appointments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewDALF_Appointments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewDALF_Appointments.Location = new Point(352, 65);
+            dataGridViewDALF_Appointments.Name = "dataGridViewDALF_Appointments";
+            dataGridViewDALF_Appointments.RowHeadersWidth = 51;
+            dataGridViewDALF_Appointments.Size = new Size(566, 472);
+            dataGridViewDALF_Appointments.TabIndex = 2;
             // 
             // buttonDALF_Upd
             // 
@@ -111,6 +112,7 @@
             buttonDALF_Save.Text = "Save";
             buttonDALF_Save.TextColor = Color.White;
             buttonDALF_Save.UseVisualStyleBackColor = false;
+            buttonDALF_Save.Click += buttonDALF_Save_Click;
             // 
             // labelDALF_Presc
             // 
@@ -161,6 +163,7 @@
             textboxDALF_PatientId.PlaceholderText = "ID";
             textboxDALF_PatientId.Size = new Size(191, 29);
             textboxDALF_PatientId.TabIndex = 80;
+            textboxDALF_PatientId.KeyPress += textboxDALF_PatientId_KeyPress;
             // 
             // textboxDALF_PatientName
             // 
@@ -209,17 +212,18 @@
             Controls.Add(buttonDALF_Save);
             Controls.Add(buttonDALF_Del);
             Controls.Add(buttonDALF_Upd);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewDALF_Appointments);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DALF_RandevuGörüntüle";
             Text = "DALF_RandevuGörüntüle";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += DALF_RandevuGörüntüle_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDALF_Appointments).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewDALF_Appointments;
         private CustomTools.RJButton.RJButton buttonDALF_Upd;
         private CustomTools.RJButton.RJButton buttonDALF_Del;
         private CustomTools.RJButton.RJButton buttonDALF_Save;
