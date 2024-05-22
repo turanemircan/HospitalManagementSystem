@@ -34,7 +34,6 @@
             appointmentDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             appointmentTimeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             doctorNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            doctorSurnameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             doctorPointDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             patientIDDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             appointmentBindingSource = new BindingSource(components);
@@ -50,7 +49,7 @@
             dataGridViewAktifRandevu.AutoGenerateColumns = false;
             dataGridViewAktifRandevu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewAktifRandevu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAktifRandevu.Columns.AddRange(new DataGridViewColumn[] { appointmentIdDataGridViewTextBoxColumn, appointmentDateDataGridViewTextBoxColumn, appointmentTimeDataGridViewTextBoxColumn, doctorNameDataGridViewTextBoxColumn, doctorSurnameDataGridViewTextBoxColumn, doctorPointDataGridViewTextBoxColumn, patientIDDataGridViewTextBoxColumn });
+            dataGridViewAktifRandevu.Columns.AddRange(new DataGridViewColumn[] { appointmentIdDataGridViewTextBoxColumn, appointmentDateDataGridViewTextBoxColumn, appointmentTimeDataGridViewTextBoxColumn, doctorNameDataGridViewTextBoxColumn, doctorPointDataGridViewTextBoxColumn, patientIDDataGridViewTextBoxColumn });
             dataGridViewAktifRandevu.DataSource = appointmentBindingSource;
             dataGridViewAktifRandevu.Location = new Point(14, 43);
             dataGridViewAktifRandevu.Margin = new Padding(3, 4, 3, 4);
@@ -89,13 +88,6 @@
             doctorNameDataGridViewTextBoxColumn.HeaderText = "DoctorName";
             doctorNameDataGridViewTextBoxColumn.MinimumWidth = 6;
             doctorNameDataGridViewTextBoxColumn.Name = "doctorNameDataGridViewTextBoxColumn";
-            // 
-            // doctorSurnameDataGridViewTextBoxColumn
-            // 
-            doctorSurnameDataGridViewTextBoxColumn.DataPropertyName = "DoctorSurname";
-            doctorSurnameDataGridViewTextBoxColumn.HeaderText = "DoctorSurname";
-            doctorSurnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            doctorSurnameDataGridViewTextBoxColumn.Name = "doctorSurnameDataGridViewTextBoxColumn";
             // 
             // doctorPointDataGridViewTextBoxColumn
             // 
@@ -175,7 +167,6 @@
         private DataGridViewTextBoxColumn appointmentDateDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn appointmentTimeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn doctorNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn doctorSurnameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn doctorPointDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn;
         private BindingSource appointmentBindingSource;

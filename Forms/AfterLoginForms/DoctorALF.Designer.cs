@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            labelPALF_Hg = new Label();
             label2 = new Label();
             label1 = new Label();
             labelDALF_DoctorID = new Label();
@@ -44,6 +45,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Salmon;
+            panel1.Controls.Add(labelPALF_Hg);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(labelDALF_DoctorID);
@@ -57,12 +59,22 @@
             panel1.Size = new Size(338, 621);
             panel1.TabIndex = 0;
             // 
+            // labelPALF_Hg
+            // 
+            labelPALF_Hg.AutoSize = true;
+            labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
+            labelPALF_Hg.Location = new Point(83, 18);
+            labelPALF_Hg.Name = "labelPALF_Hg";
+            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.TabIndex = 51;
+            labelPALF_Hg.Text = "Hosgeldiniz";
+            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Salmon;
             label2.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label2.Location = new Point(196, 98);
+            label2.Location = new Point(166, 115);
             label2.Name = "label2";
             label2.Size = new Size(55, 23);
             label2.TabIndex = 44;
@@ -73,7 +85,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Salmon;
             label1.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label1.Location = new Point(196, 51);
+            label1.Location = new Point(166, 68);
             label1.Name = "label1";
             label1.Size = new Size(53, 23);
             label1.TabIndex = 43;
@@ -84,7 +96,7 @@
             labelDALF_DoctorID.AutoSize = true;
             labelDALF_DoctorID.BackColor = Color.Salmon;
             labelDALF_DoctorID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelDALF_DoctorID.Location = new Point(60, 48);
+            labelDALF_DoctorID.Location = new Point(30, 65);
             labelDALF_DoctorID.Name = "labelDALF_DoctorID";
             labelDALF_DoctorID.Size = new Size(101, 23);
             labelDALF_DoctorID.TabIndex = 42;
@@ -94,7 +106,7 @@
             // 
             labeDALF_DoctorName.AutoSize = true;
             labeDALF_DoctorName.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labeDALF_DoctorName.Location = new Point(60, 96);
+            labeDALF_DoctorName.Location = new Point(30, 113);
             labeDALF_DoctorName.Name = "labeDALF_DoctorName";
             labeDALF_DoctorName.Size = new Size(130, 23);
             labeDALF_DoctorName.TabIndex = 1;
@@ -103,6 +115,7 @@
             // buttonDALF_İnformation
             // 
             buttonDALF_İnformation.Dock = DockStyle.Bottom;
+            buttonDALF_İnformation.Font = new Font("Yu Gothic UI Semibold", 12F);
             buttonDALF_İnformation.Location = new Point(0, 160);
             buttonDALF_İnformation.Name = "buttonDALF_İnformation";
             buttonDALF_İnformation.Size = new Size(338, 53);
@@ -114,6 +127,7 @@
             // buttonDALF_ViewAppointment
             // 
             buttonDALF_ViewAppointment.Dock = DockStyle.Bottom;
+            buttonDALF_ViewAppointment.Font = new Font("Yu Gothic UI Semibold", 12F);
             buttonDALF_ViewAppointment.Location = new Point(0, 213);
             buttonDALF_ViewAppointment.Name = "buttonDALF_ViewAppointment";
             buttonDALF_ViewAppointment.Size = new Size(338, 53);
@@ -172,5 +186,6 @@
         private Panel panelDoctorALF;
         private Label label1;
         private Label label2;
+        private Label labelPALF_Hg;
     }
 }

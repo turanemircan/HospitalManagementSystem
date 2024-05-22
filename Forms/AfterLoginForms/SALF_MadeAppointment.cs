@@ -169,5 +169,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             saatkontrol(cboxdoktorSek.Text, dtpRandevuTarihSec.Value, cbSaat.Text, textboxSALF_PatientId.Text);
         }
+
+        private void textboxSALF_PatientId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Helper.TextBoxValidation.onlyNumber(sender, e, textboxSALF_PatientId);
+        }
     }
 }

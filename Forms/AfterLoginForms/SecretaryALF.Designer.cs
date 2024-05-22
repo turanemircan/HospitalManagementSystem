@@ -32,10 +32,12 @@
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
+            pictureBox1 = new PictureBox();
             SALF_MainPageInformation = new Button();
             SALF_MainPageAppointments = new Button();
             SALF_MainPageMakeAppointments = new Button();
             panel5 = new Panel();
+            labelPALF_Hg = new Label();
             label2 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -48,6 +50,7 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,7 +62,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(286, 644);
+            panel1.Size = new Size(286, 621);
             panel1.TabIndex = 0;
             // 
             // panel2
@@ -69,7 +72,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(286, 644);
+            panel2.Size = new Size(286, 621);
             panel2.TabIndex = 1;
             // 
             // panel3
@@ -80,12 +83,13 @@
             panel3.Dock = DockStyle.Left;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(286, 644);
+            panel3.Size = new Size(286, 621);
             panel3.TabIndex = 1;
             // 
             // panel4
             // 
             panel4.BackColor = Color.Salmon;
+            panel4.Controls.Add(pictureBox1);
             panel4.Controls.Add(SALF_MainPageInformation);
             panel4.Controls.Add(SALF_MainPageAppointments);
             panel4.Controls.Add(SALF_MainPageMakeAppointments);
@@ -93,15 +97,28 @@
             panel4.Dock = DockStyle.Left;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(286, 644);
+            panel4.Size = new Size(286, 621);
             panel4.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Bottom;
+            pictureBox1.Image = Properties.Resources.HospitalSystemLoginGUILogo;
+            pictureBox1.Location = new Point(0, 333);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(286, 288);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // SALF_MainPageInformation
             // 
             SALF_MainPageInformation.Dock = DockStyle.Top;
-            SALF_MainPageInformation.Location = new Point(0, 334);
+            SALF_MainPageInformation.Font = new Font("Yu Gothic UI Semibold", 12F);
+            SALF_MainPageInformation.Location = new Point(0, 280);
             SALF_MainPageInformation.Name = "SALF_MainPageInformation";
-            SALF_MainPageInformation.Size = new Size(286, 80);
+            SALF_MainPageInformation.Size = new Size(286, 54);
             SALF_MainPageInformation.TabIndex = 3;
             SALF_MainPageInformation.Text = "İnformation";
             SALF_MainPageInformation.UseVisualStyleBackColor = true;
@@ -110,9 +127,10 @@
             // SALF_MainPageAppointments
             // 
             SALF_MainPageAppointments.Dock = DockStyle.Top;
-            SALF_MainPageAppointments.Location = new Point(0, 254);
+            SALF_MainPageAppointments.Font = new Font("Yu Gothic UI Semibold", 12F);
+            SALF_MainPageAppointments.Location = new Point(0, 226);
             SALF_MainPageAppointments.Name = "SALF_MainPageAppointments";
-            SALF_MainPageAppointments.Size = new Size(286, 80);
+            SALF_MainPageAppointments.Size = new Size(286, 54);
             SALF_MainPageAppointments.TabIndex = 2;
             SALF_MainPageAppointments.Text = "Appointments";
             SALF_MainPageAppointments.UseVisualStyleBackColor = true;
@@ -121,9 +139,10 @@
             // SALF_MainPageMakeAppointments
             // 
             SALF_MainPageMakeAppointments.Dock = DockStyle.Top;
+            SALF_MainPageMakeAppointments.Font = new Font("Yu Gothic UI Semibold", 12F);
             SALF_MainPageMakeAppointments.Location = new Point(0, 174);
             SALF_MainPageMakeAppointments.Name = "SALF_MainPageMakeAppointments";
-            SALF_MainPageMakeAppointments.Size = new Size(286, 80);
+            SALF_MainPageMakeAppointments.Size = new Size(286, 52);
             SALF_MainPageMakeAppointments.TabIndex = 1;
             SALF_MainPageMakeAppointments.Text = "Make an Appointment";
             SALF_MainPageMakeAppointments.UseVisualStyleBackColor = true;
@@ -131,6 +150,7 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(labelPALF_Hg);
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label4);
             panel5.Controls.Add(label3);
@@ -142,11 +162,21 @@
             panel5.Size = new Size(286, 174);
             panel5.TabIndex = 0;
             // 
+            // labelPALF_Hg
+            // 
+            labelPALF_Hg.AutoSize = true;
+            labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
+            labelPALF_Hg.Location = new Point(68, 31);
+            labelPALF_Hg.Name = "labelPALF_Hg";
+            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.TabIndex = 49;
+            labelPALF_Hg.Text = "Hosgeldiniz";
+            // 
             // label2
             // 
             label2.Font = new Font("Yu Gothic UI Semibold", 10F);
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point(139, 47);
+            label2.Location = new Point(142, 91);
             label2.Name = "label2";
             label2.Size = new Size(141, 23);
             label2.TabIndex = 48;
@@ -157,7 +187,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Salmon;
             label4.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label4.Location = new Point(160, 91);
+            label4.Location = new Point(163, 135);
             label4.Name = "label4";
             label4.Size = new Size(46, 23);
             label4.TabIndex = 47;
@@ -168,7 +198,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Salmon;
             label3.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label3.Location = new Point(160, 91);
+            label3.Location = new Point(163, 135);
             label3.Name = "label3";
             label3.Size = new Size(0, 23);
             label3.TabIndex = 46;
@@ -178,7 +208,7 @@
             Salf_secretaryName.AutoSize = true;
             Salf_secretaryName.BackColor = Color.Salmon;
             Salf_secretaryName.Font = new Font("Yu Gothic UI Semibold", 10F);
-            Salf_secretaryName.Location = new Point(13, 91);
+            Salf_secretaryName.Location = new Point(16, 135);
             Salf_secretaryName.Name = "Salf_secretaryName";
             Salf_secretaryName.Size = new Size(149, 23);
             Salf_secretaryName.TabIndex = 44;
@@ -189,7 +219,7 @@
             labelDALF_SecretaryID.AutoSize = true;
             labelDALF_SecretaryID.BackColor = Color.Salmon;
             labelDALF_SecretaryID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelDALF_SecretaryID.Location = new Point(13, 47);
+            labelDALF_SecretaryID.Location = new Point(16, 91);
             labelDALF_SecretaryID.Name = "labelDALF_SecretaryID";
             labelDALF_SecretaryID.Size = new Size(120, 23);
             labelDALF_SecretaryID.TabIndex = 43;
@@ -215,17 +245,18 @@
             // 
             // panelSecretaryAlf
             // 
+            panelSecretaryAlf.BackColor = Color.White;
             panelSecretaryAlf.Dock = DockStyle.Fill;
             panelSecretaryAlf.Location = new Point(286, 0);
             panelSecretaryAlf.Name = "panelSecretaryAlf";
-            panelSecretaryAlf.Size = new Size(1266, 644);
+            panelSecretaryAlf.Size = new Size(998, 621);
             panelSecretaryAlf.TabIndex = 1;
             // 
             // SecretaryALF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1552, 644);
+            ClientSize = new Size(1284, 621);
             Controls.Add(panelSecretaryAlf);
             Controls.Add(panel1);
             Name = "SecretaryALF";
@@ -236,6 +267,7 @@
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ResumeLayout(false);
@@ -259,5 +291,7 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private Label labelPALF_Hg;
+        private PictureBox pictureBox1;
     }
 }

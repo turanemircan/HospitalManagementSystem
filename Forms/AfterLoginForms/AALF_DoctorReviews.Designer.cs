@@ -37,7 +37,7 @@
             // 
             dataGridViewAALF_DoctorReviews.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewAALF_DoctorReviews.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAALF_DoctorReviews.Location = new Point(40, 83);
+            dataGridViewAALF_DoctorReviews.Location = new Point(247, 87);
             dataGridViewAALF_DoctorReviews.Name = "dataGridViewAALF_DoctorReviews";
             dataGridViewAALF_DoctorReviews.RowHeadersWidth = 51;
             dataGridViewAALF_DoctorReviews.Size = new Size(920, 413);
@@ -47,7 +47,7 @@
             // 
             labelAALF_DR.AutoSize = true;
             labelAALF_DR.Font = new Font("Yu Gothic UI Semibold", 13F);
-            labelAALF_DR.Location = new Point(40, 27);
+            labelAALF_DR.Location = new Point(247, 32);
             labelAALF_DR.Name = "labelAALF_DR";
             labelAALF_DR.Size = new Size(168, 30);
             labelAALF_DR.TabIndex = 29;
@@ -58,7 +58,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(995, 553);
+            ClientSize = new Size(1448, 553);
             Controls.Add(labelAALF_DR);
             Controls.Add(dataGridViewAALF_DoctorReviews);
             FormBorderStyle = FormBorderStyle.None;

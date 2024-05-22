@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            labelPALF_Hg = new Label();
+            buttonAALF_DoctorReview = new Button();
             buttonAALF_Secretary = new Button();
             labelAALF_AdminName = new Label();
             labelAALF_AdminID = new Label();
@@ -37,7 +39,6 @@
             labelAALF_AdminI = new Label();
             pictureBox1 = new PictureBox();
             panelAdminALF = new Panel();
-            buttonAALF_DoctorReview = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -45,6 +46,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Salmon;
+            panel1.Controls.Add(labelPALF_Hg);
             panel1.Controls.Add(buttonAALF_DoctorReview);
             panel1.Controls.Add(buttonAALF_Secretary);
             panel1.Controls.Add(labelAALF_AdminName);
@@ -59,9 +61,32 @@
             panel1.Size = new Size(298, 553);
             panel1.TabIndex = 0;
             // 
+            // labelPALF_Hg
+            // 
+            labelPALF_Hg.AutoSize = true;
+            labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
+            labelPALF_Hg.Location = new Point(70, 30);
+            labelPALF_Hg.Name = "labelPALF_Hg";
+            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.TabIndex = 50;
+            labelPALF_Hg.Text = "Hosgeldiniz";
+            // 
+            // buttonAALF_DoctorReview
+            // 
+            buttonAALF_DoctorReview.Dock = DockStyle.Bottom;
+            buttonAALF_DoctorReview.Font = new Font("Yu Gothic UI Semibold", 12F);
+            buttonAALF_DoctorReview.Location = new Point(0, 179);
+            buttonAALF_DoctorReview.Name = "buttonAALF_DoctorReview";
+            buttonAALF_DoctorReview.Size = new Size(298, 44);
+            buttonAALF_DoctorReview.TabIndex = 11;
+            buttonAALF_DoctorReview.Text = "Doctor Review";
+            buttonAALF_DoctorReview.UseVisualStyleBackColor = true;
+            buttonAALF_DoctorReview.Click += buttonAALF_DoctorReview_Click;
+            // 
             // buttonAALF_Secretary
             // 
             buttonAALF_Secretary.Dock = DockStyle.Bottom;
+            buttonAALF_Secretary.Font = new Font("Yu Gothic UI Semibold", 12F);
             buttonAALF_Secretary.Location = new Point(0, 223);
             buttonAALF_Secretary.Name = "buttonAALF_Secretary";
             buttonAALF_Secretary.Size = new Size(298, 44);
@@ -75,7 +100,7 @@
             labelAALF_AdminName.AutoSize = true;
             labelAALF_AdminName.BackColor = Color.Salmon;
             labelAALF_AdminName.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminName.Location = new Point(186, 99);
+            labelAALF_AdminName.Location = new Point(145, 119);
             labelAALF_AdminName.Name = "labelAALF_AdminName";
             labelAALF_AdminName.Size = new Size(46, 23);
             labelAALF_AdminName.TabIndex = 9;
@@ -86,7 +111,7 @@
             labelAALF_AdminID.AutoSize = true;
             labelAALF_AdminID.BackColor = Color.Salmon;
             labelAALF_AdminID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminID.Location = new Point(186, 65);
+            labelAALF_AdminID.Location = new Point(145, 85);
             labelAALF_AdminID.Name = "labelAALF_AdminID";
             labelAALF_AdminID.Size = new Size(46, 23);
             labelAALF_AdminID.TabIndex = 0;
@@ -96,7 +121,7 @@
             // 
             labelAALF_AdminN.AutoSize = true;
             labelAALF_AdminN.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminN.Location = new Point(53, 95);
+            labelAALF_AdminN.Location = new Point(12, 115);
             labelAALF_AdminN.Name = "labelAALF_AdminN";
             labelAALF_AdminN.Size = new Size(128, 23);
             labelAALF_AdminN.TabIndex = 8;
@@ -105,6 +130,7 @@
             // buttonAALF_DoctorEdit
             // 
             buttonAALF_DoctorEdit.Dock = DockStyle.Bottom;
+            buttonAALF_DoctorEdit.Font = new Font("Yu Gothic UI Semibold", 12F);
             buttonAALF_DoctorEdit.Location = new Point(0, 267);
             buttonAALF_DoctorEdit.Name = "buttonAALF_DoctorEdit";
             buttonAALF_DoctorEdit.Size = new Size(298, 43);
@@ -117,7 +143,7 @@
             // 
             labelAALF_AdminI.AutoSize = true;
             labelAALF_AdminI.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminI.Location = new Point(53, 63);
+            labelAALF_AdminI.Location = new Point(12, 83);
             labelAALF_AdminI.Name = "labelAALF_AdminI";
             labelAALF_AdminI.Size = new Size(99, 23);
             labelAALF_AdminI.TabIndex = 0;
@@ -141,25 +167,14 @@
             panelAdminALF.Dock = DockStyle.Fill;
             panelAdminALF.Location = new Point(298, 0);
             panelAdminALF.Name = "panelAdminALF";
-            panelAdminALF.Size = new Size(995, 553);
+            panelAdminALF.Size = new Size(1454, 553);
             panelAdminALF.TabIndex = 1;
-            // 
-            // buttonAALF_DoctorReview
-            // 
-            buttonAALF_DoctorReview.Dock = DockStyle.Bottom;
-            buttonAALF_DoctorReview.Location = new Point(0, 179);
-            buttonAALF_DoctorReview.Name = "buttonAALF_DoctorReview";
-            buttonAALF_DoctorReview.Size = new Size(298, 44);
-            buttonAALF_DoctorReview.TabIndex = 11;
-            buttonAALF_DoctorReview.Text = "Doctor Review";
-            buttonAALF_DoctorReview.UseVisualStyleBackColor = true;
-            buttonAALF_DoctorReview.Click += buttonAALF_DoctorReview_Click;
             // 
             // AdminALF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1293, 553);
+            ClientSize = new Size(1752, 553);
             Controls.Add(panelAdminALF);
             Controls.Add(panel1);
             Name = "AdminALF";
@@ -184,5 +199,6 @@
         private Label labelAALF_AdminN;
         private Button buttonAALF_Secretary;
         private Button buttonAALF_DoctorReview;
+        private Label labelPALF_Hg;
     }
 }

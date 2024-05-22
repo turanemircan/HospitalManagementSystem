@@ -74,6 +74,7 @@
             buttonDALF_Upd.Text = "Update";
             buttonDALF_Upd.TextColor = Color.White;
             buttonDALF_Upd.UseVisualStyleBackColor = false;
+            buttonDALF_Upd.Click += buttonDALF_Upd_Click;
             // 
             // buttonDALF_Del
             // 
@@ -94,6 +95,7 @@
             buttonDALF_Del.Text = "Delete";
             buttonDALF_Del.TextColor = Color.White;
             buttonDALF_Del.UseVisualStyleBackColor = false;
+            buttonDALF_Del.Click += buttonDALF_Del_Click;
             // 
             // buttonDALF_Save
             // 
@@ -180,6 +182,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Tanı 1", "Tanı 2", "Tanı 3" });
             comboBox1.Location = new Point(151, 235);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(191, 28);
@@ -189,6 +192,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Reçete 1", "Reçete 2", "Reçete 3" });
             comboBox2.Location = new Point(151, 285);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(191, 28);

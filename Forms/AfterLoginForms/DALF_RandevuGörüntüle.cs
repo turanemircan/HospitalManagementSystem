@@ -30,11 +30,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             using (HospitalDbContext context = new HospitalDbContext())
             {
+
                 if (textboxDALF_PatientId.Text != "")
                 {
-                    int patientId = Convert.ToInt32(textboxDALF_PatientId.Text);
-                    //var appointments = context.Appointments.Where(a => a.PatientID = patientId).ToList();
-                    //dataGridViewDALF_Appointments.DataSource = appointments;
+                    MessageBox.Show("Database Registration successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -81,24 +80,21 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             switch (comboBox1.Text)
             {
-                case "Tanı 1":
+                case "Tanım 1":
                     comboBox1.Items.Clear();
                     comboBox1.Text = string.Empty;
-                    comboBox1.Items.AddRange(new string[] { "Seçenek 1", "Seçenek 2", "Seçenek 3" });
+                    comboBox1.Items.AddRange(new string[] { "Tanı 1", "Tanı 2", "Tanı 3" });
                     break;
-
-                case "Tanı 2":
+                case "Tanım 2":
                     comboBox1.Items.Clear();
                     comboBox1.Text = string.Empty;
-                    comboBox1.Items.AddRange(new string[] { "Seçenek A", "Seçenek B", "Seçenek C" });
+                    comboBox1.Items.AddRange(new string[] { "Tanı 1", "Tanı 2", "Tanı 3" });
                     break;
-
-                case "Tanı 3":
+                case "Tanım 3":
                     comboBox1.Items.Clear();
                     comboBox1.Text = string.Empty;
-                    comboBox1.Items.AddRange(new string[] { "Seçenek X", "Seçenek Y", "Seçenek Z" });
+                    comboBox1.Items.AddRange(new string[] { "Tanı 1", "Tanı 2", "Tanı 3" });
                     break;
-
             }
         }
 
@@ -106,21 +102,50 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             switch (comboBox2.Text)
             {
-                case "Tanı 1":
+                case "Reçetem 1":
                     comboBox2.Items.Clear();
-                    comboBox2.Items.AddRange(new string[] { "Seçenek 1", "Seçenek 2", "Seçenek 3" });
+                    comboBox2.Items.AddRange(new string[] { "Reçete 1", "Reçete 2", "Reçete 3" });
                     break;
-
-                case "Tanı 2":
+                case "Reçetem 2":
                     comboBox2.Items.Clear();
-                    comboBox2.Items.AddRange(new string[] { "Seçenek A", "Seçenek B", "Seçenek C" });
+                    comboBox2.Items.AddRange(new string[] { "Reçete 1", "Reçete 2", "Reçete 3" });
                     break;
-
-                case "Tanı 3":
+                case "Reçetem 3":
                     comboBox2.Items.Clear();
-                    comboBox2.Items.AddRange(new string[] { "Seçenek X", "Seçenek Y", "Seçenek Z" });
+                    comboBox2.Items.AddRange(new string[] { "Reçete 1", "Reçete 2", "Reçete 3" });
                     break;
+            }
+        }
 
+        private void buttonDALF_Upd_Click(object sender, EventArgs e)
+        {
+            using (HospitalDbContext context = new HospitalDbContext())
+            {
+
+                if (textboxDALF_PatientId.Text != "")
+                {
+                    MessageBox.Show("Database Registration successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen bir hasta ID'si giriniz.");
+                }
+            }
+        }
+
+        private void buttonDALF_Del_Click(object sender, EventArgs e)
+        {
+            using (HospitalDbContext context = new HospitalDbContext())
+            {
+
+                if (textboxDALF_PatientId.Text != "")
+                {
+                    MessageBox.Show("Database Registration successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen bir hasta ID'si giriniz.");
+                }
             }
         }
     }
