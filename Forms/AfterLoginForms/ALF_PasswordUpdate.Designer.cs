@@ -46,7 +46,7 @@
             rjBtnPasswordUpdate.FlatStyle = FlatStyle.Flat;
             rjBtnPasswordUpdate.Font = new Font("Yu Gothic UI Semibold", 10F);
             rjBtnPasswordUpdate.ForeColor = Color.White;
-            rjBtnPasswordUpdate.Location = new Point(143, 187);
+            rjBtnPasswordUpdate.Location = new Point(421, 317);
             rjBtnPasswordUpdate.Margin = new Padding(3, 4, 3, 4);
             rjBtnPasswordUpdate.Name = "rjBtnPasswordUpdate";
             rjBtnPasswordUpdate.Size = new Size(160, 41);
@@ -79,7 +79,7 @@
             // textboxOldPassword
             // 
             textboxOldPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxOldPassword.Location = new Point(99, 42);
+            textboxOldPassword.Location = new Point(377, 172);
             textboxOldPassword.Margin = new Padding(3, 4, 3, 4);
             textboxOldPassword.Name = "textboxOldPassword";
             textboxOldPassword.PlaceholderText = "Old Password";
@@ -89,7 +89,7 @@
             // textboxNewPassword
             // 
             textboxNewPassword.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxNewPassword.Location = new Point(99, 90);
+            textboxNewPassword.Location = new Point(377, 220);
             textboxNewPassword.Margin = new Padding(3, 4, 3, 4);
             textboxNewPassword.Name = "textboxNewPassword";
             textboxNewPassword.PlaceholderText = "New Password";
@@ -99,7 +99,7 @@
             // textboxNewPasswordAgain
             // 
             textboxNewPasswordAgain.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxNewPasswordAgain.Location = new Point(99, 138);
+            textboxNewPasswordAgain.Location = new Point(377, 268);
             textboxNewPasswordAgain.Margin = new Padding(3, 4, 3, 4);
             textboxNewPasswordAgain.Name = "textboxNewPasswordAgain";
             textboxNewPasswordAgain.PlaceholderText = "New Password Again";
@@ -111,7 +111,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(457, 267);
+            ClientSize = new Size(1040, 536);
             Controls.Add(textboxNewPasswordAgain);
             Controls.Add(textboxNewPassword);
             Controls.Add(textboxOldPassword);

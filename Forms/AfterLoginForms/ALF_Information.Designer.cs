@@ -43,7 +43,7 @@
             // linkLabelPasswordUpdate
             // 
             linkLabelPasswordUpdate.AutoSize = true;
-            linkLabelPasswordUpdate.Location = new Point(386, 420);
+            linkLabelPasswordUpdate.Location = new Point(411, 394);
             linkLabelPasswordUpdate.Name = "linkLabelPasswordUpdate";
             linkLabelPasswordUpdate.Size = new Size(210, 20);
             linkLabelPasswordUpdate.TabIndex = 49;
@@ -62,7 +62,7 @@
             buttonPALF_Upd.FlatStyle = FlatStyle.Flat;
             buttonPALF_Upd.Font = new Font("Yu Gothic UI Semibold", 10F);
             buttonPALF_Upd.ForeColor = Color.White;
-            buttonPALF_Upd.Location = new Point(404, 348);
+            buttonPALF_Upd.Location = new Point(436, 330);
             buttonPALF_Upd.Margin = new Padding(3, 4, 3, 4);
             buttonPALF_Upd.Name = "buttonPALF_Upd";
             buttonPALF_Upd.Size = new Size(160, 41);
@@ -76,7 +76,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label4.Location = new Point(247, 304);
+            label4.Location = new Point(311, 280);
             label4.Name = "label4";
             label4.Size = new Size(89, 25);
             label4.TabIndex = 43;
@@ -86,7 +86,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label3.Location = new Point(180, 255);
+            label3.Location = new Point(244, 231);
             label3.Name = "label3";
             label3.Size = new Size(162, 25);
             label3.TabIndex = 42;
@@ -96,7 +96,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label2.Location = new Point(242, 204);
+            label2.Location = new Point(306, 180);
             label2.Name = "label2";
             label2.Size = new Size(93, 25);
             label2.TabIndex = 41;
@@ -106,7 +106,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 11F);
-            label1.Location = new Point(266, 157);
+            label1.Location = new Point(330, 133);
             label1.Name = "label1";
             label1.Size = new Size(69, 25);
             label1.TabIndex = 40;
@@ -115,7 +115,7 @@
             // textboxALF_Name
             // 
             textboxALF_Name.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxALF_Name.Location = new Point(347, 155);
+            textboxALF_Name.Location = new Point(411, 131);
             textboxALF_Name.Margin = new Padding(3, 4, 3, 4);
             textboxALF_Name.Name = "textboxALF_Name";
             textboxALF_Name.PlaceholderText = "Name";
@@ -125,7 +125,7 @@
             // textboxALF_Surname
             // 
             textboxALF_Surname.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxALF_Surname.Location = new Point(347, 202);
+            textboxALF_Surname.Location = new Point(411, 178);
             textboxALF_Surname.Margin = new Padding(3, 4, 3, 4);
             textboxALF_Surname.Name = "textboxALF_Surname";
             textboxALF_Surname.PlaceholderText = "Surname";
@@ -135,7 +135,7 @@
             // textboxALF_Id
             // 
             textboxALF_Id.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxALF_Id.Location = new Point(348, 253);
+            textboxALF_Id.Location = new Point(412, 229);
             textboxALF_Id.Margin = new Padding(3, 4, 3, 4);
             textboxALF_Id.Name = "textboxALF_Id";
             textboxALF_Id.PlaceholderText = "ID";
@@ -146,7 +146,7 @@
             // textboxALF_GSM
             // 
             textboxALF_GSM.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxALF_GSM.Location = new Point(348, 302);
+            textboxALF_GSM.Location = new Point(412, 278);
             textboxALF_GSM.Margin = new Padding(3, 4, 3, 4);
             textboxALF_GSM.Name = "textboxALF_GSM";
             textboxALF_GSM.PlaceholderText = "GSM";
@@ -159,7 +159,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(955, 539);
+            ClientSize = new Size(1040, 536);
             Controls.Add(textboxALF_GSM);
             Controls.Add(textboxALF_Id);
             Controls.Add(textboxALF_Surname);

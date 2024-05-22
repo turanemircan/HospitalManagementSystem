@@ -74,7 +74,6 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                             GSM_No = textboxAALF_DoctorPhone.Text,
                             password = hashedPassword,
                             branch = textboxAALF_DoctorBranch.Text,
-                            averageEvaluationScore = 0
                         };
                         context.Doctors.Add(newDoctor);
                         context.SaveChanges();

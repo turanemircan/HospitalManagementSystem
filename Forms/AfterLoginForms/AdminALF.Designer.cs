@@ -37,6 +37,7 @@
             labelAALF_AdminI = new Label();
             pictureBox1 = new PictureBox();
             panelAdminALF = new Panel();
+            buttonAALF_DoctorReview = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Salmon;
+            panel1.Controls.Add(buttonAALF_DoctorReview);
             panel1.Controls.Add(buttonAALF_Secretary);
             panel1.Controls.Add(labelAALF_AdminName);
             panel1.Controls.Add(labelAALF_AdminID);
@@ -142,6 +144,17 @@
             panelAdminALF.Size = new Size(995, 553);
             panelAdminALF.TabIndex = 1;
             // 
+            // buttonAALF_DoctorReview
+            // 
+            buttonAALF_DoctorReview.Dock = DockStyle.Bottom;
+            buttonAALF_DoctorReview.Location = new Point(0, 179);
+            buttonAALF_DoctorReview.Name = "buttonAALF_DoctorReview";
+            buttonAALF_DoctorReview.Size = new Size(298, 44);
+            buttonAALF_DoctorReview.TabIndex = 11;
+            buttonAALF_DoctorReview.Text = "Doctor Review";
+            buttonAALF_DoctorReview.UseVisualStyleBackColor = true;
+            buttonAALF_DoctorReview.Click += buttonAALF_DoctorReview_Click;
+            // 
             // AdminALF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -170,5 +183,6 @@
         private Label labelAALF_AdminID;
         private Label labelAALF_AdminN;
         private Button buttonAALF_Secretary;
+        private Button buttonAALF_DoctorReview;
     }
 }

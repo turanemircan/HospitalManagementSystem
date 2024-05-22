@@ -19,6 +19,5 @@ namespace HospitalManagementSystem.Database
         public string GSM_No { get; set; }
         public string password { get; set; }
         public string branch { get; set; }
-        public double averageEvaluationScore { get; set; }
     }
 }

@@ -57,11 +57,16 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         public void doctorRatingButton_Click(object sender, EventArgs e)
         {
             string sorgu = ("UPDATE Appointments SET DoctorPoint=@doctorPoint");
-            cmd = new SqlCommand(sorgu,bag);
-            cmd.Parameters.AddWithValue("@doctorPoint",comboBox1.Text);
+            cmd = new SqlCommand(sorgu, bag);
+            cmd.Parameters.AddWithValue("@doctorPoint", comboBox1.Text);
             bag.Open();
-            cmd.ExecuteNonQuery(); 
+            cmd.ExecuteNonQuery();
             bag.Close();
+            randevuGetir(PatientALF.gidenpatiid);
+        }
+
+        private void PALF_RandevuBilgileri_Load(object sender, EventArgs e)
+        {
             randevuGetir(PatientALF.gidenpatiid);
         }
     }

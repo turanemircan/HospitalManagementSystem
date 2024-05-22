@@ -156,7 +156,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(687, 536);
+            ClientSize = new Size(1040, 536);
             Controls.Add(textboxPALF_GSM);
             Controls.Add(textboxPALF_Id);
             Controls.Add(textboxPALF_Surname);

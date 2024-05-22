@@ -78,7 +78,7 @@
             // 
             // dataGridViewAALF_Doctor
             // 
-            dataGridViewAALF_Doctor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewAALF_Doctor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewAALF_Doctor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewAALF_Doctor.Location = new Point(487, 94);
             dataGridViewAALF_Doctor.Name = "dataGridViewAALF_Doctor";

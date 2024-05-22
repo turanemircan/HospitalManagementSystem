@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using HospitalManagementSystem.Database;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,39 +14,17 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 {
     public partial class AALF_DoctorReviews : Form
     {
-        SqlConnection bag = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=HospitalManagementSystem;Integrated Security=True;Trust Server Certificate=True");
-        SqlCommand cmd;
-        SqlDataAdapter adapter;
+        HospitalDbContext context;
         public AALF_DoctorReviews()
         {
             InitializeComponent();
-        }
-        public void randevuGetir()
-        {
-            dataGridViewAALF_DoctorReviews.DataSource = null;
-
-
-            bag.Open();
-            string query = "SELECT * FROM Appointments ";
-
-            using (SqlCommand cmd = new SqlCommand(query, bag))
-            {
-
-
-                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridViewAALF_DoctorReviews.DataSource = dt;
-                }
-            }
-
-            bag.Close();
+            context = new HospitalDbContext();
         }
 
-        private void dataGridViewAALF_DoctorReviews_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        private void AALF_DoctorReviews_Load(object sender, EventArgs e)
         {
-            randevuGetir();
+            Helper.Helper helper = new Helper.Helper();
+            helper.loadDataDoctorsReviews(dataGridViewAALF_DoctorReviews, context);
         }
     }
 }

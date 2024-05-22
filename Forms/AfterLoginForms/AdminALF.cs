@@ -13,8 +13,10 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
 {
     public partial class AdminALF : Form
     {
-        public int adminID { get; set; }
+        public string adminID { get; set; }
         public string adminName { get; set; }
+
+        public string adminSurname { get; set; }
 
         Helper.Helper helper;
 
@@ -22,11 +24,12 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         AALF_DoctorEdit aalf_doctor;
         AALF_DoctorReviews aalf_doctorReviews;
 
-        public AdminALF(int _adminID, string _adminName)
+        public AdminALF(string _adminID, string _adminName, string _adminSurname)
         {
             InitializeComponent();
             this.adminID = _adminID;
             this.adminName = _adminName;
+            this.adminSurname = _adminSurname;
         }
 
         private void AdminALF_FormClosed(object sender, FormClosedEventArgs e)
@@ -48,7 +51,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             helper.formGoster(aalf_doctor, aalf_doctor.Name);
         }
 
-        private void buttonAALF_DoctorReviews_Click(object sender, EventArgs e)
+        private void buttonAALF_DoctorReview_Click(object sender, EventArgs e)
         {
             helper = new Helper.Helper(panelAdminALF);
             aalf_doctorReviews = new AALF_DoctorReviews();
@@ -58,7 +61,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         private void AdminALF_Load(object sender, EventArgs e)
         {
             labelAALF_AdminID.Text = adminID.ToString();
-            labelAALF_AdminName.Text = adminName.ToString();
+            labelAALF_AdminName.Text = adminName.ToString() + " " + adminSurname.ToString();
         }
     }
 }

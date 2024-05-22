@@ -171,7 +171,7 @@
             panelPatientALF.Location = new Point(286, 0);
             panelPatientALF.Margin = new Padding(3, 4, 3, 4);
             panelPatientALF.Name = "panelPatientALF";
-            panelPatientALF.Size = new Size(687, 536);
+            panelPatientALF.Size = new Size(1045, 536);
             panelPatientALF.TabIndex = 1;
             // 
             // PatientALF
@@ -179,7 +179,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(973, 536);
+            ClientSize = new Size(1331, 536);
             Controls.Add(panelPatientALF);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);

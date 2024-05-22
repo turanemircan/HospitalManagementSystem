@@ -74,7 +74,7 @@
             // 
             // dataGridViewAALF_Secretary
             // 
-            dataGridViewAALF_Secretary.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewAALF_Secretary.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewAALF_Secretary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewAALF_Secretary.Location = new Point(487, 94);
             dataGridViewAALF_Secretary.Name = "dataGridViewAALF_Secretary";
