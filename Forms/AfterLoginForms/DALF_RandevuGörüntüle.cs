@@ -14,6 +14,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
     public partial class DALF_RandevuGörüntüle : Form
     {
         HospitalDbContext context;
+        public string patientDB_ID { get; set; }
         public DALF_RandevuGörüntüle()
         {
             InitializeComponent();
@@ -46,6 +47,81 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             Helper.Helper helper = new Helper.Helper();
             helper.loadDataPatients(dataGridViewDALF_Appointments, context);
+        }
+
+        private void dataGridViewDALF_Appointments_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dataGridViewDALF_Appointments.Columns[e.ColumnIndex].Name == "password" && e.Value != null)
+            {
+                // Hücre değerini sansürle
+                e.Value = new string('*', 5);
+                e.FormattingApplied = true;
+            }
+        }
+
+        private void dataGridViewDALF_Appointments_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int selectedRowIndex = e.RowIndex;
+            if (selectedRowIndex >= 0 && selectedRowIndex < dataGridViewDALF_Appointments.Rows.Count)
+            {
+                DataGridViewRow selectedRow = dataGridViewDALF_Appointments.Rows[selectedRowIndex];
+
+                string columnName = selectedRow.Cells["name"].Value.ToString();
+                string columnID = selectedRow.Cells["identification"].Value.ToString();
+
+
+                this.patientDB_ID = selectedRow.Cells["PatientID"].Value.ToString();
+
+                textboxDALF_PatientName.Text = columnName;
+                textboxDALF_PatientId.Text = columnID;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.Text)
+            {
+                case "Tanı 1":
+                    comboBox1.Items.Clear();
+                    comboBox1.Text = string.Empty;
+                    comboBox1.Items.AddRange(new string[] { "Seçenek 1", "Seçenek 2", "Seçenek 3" });
+                    break;
+
+                case "Tanı 2":
+                    comboBox1.Items.Clear();
+                    comboBox1.Text = string.Empty;
+                    comboBox1.Items.AddRange(new string[] { "Seçenek A", "Seçenek B", "Seçenek C" });
+                    break;
+
+                case "Tanı 3":
+                    comboBox1.Items.Clear();
+                    comboBox1.Text = string.Empty;
+                    comboBox1.Items.AddRange(new string[] { "Seçenek X", "Seçenek Y", "Seçenek Z" });
+                    break;
+
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox2.Text)
+            {
+                case "Tanı 1":
+                    comboBox2.Items.Clear();
+                    comboBox2.Items.AddRange(new string[] { "Seçenek 1", "Seçenek 2", "Seçenek 3" });
+                    break;
+
+                case "Tanı 2":
+                    comboBox2.Items.Clear();
+                    comboBox2.Items.AddRange(new string[] { "Seçenek A", "Seçenek B", "Seçenek C" });
+                    break;
+
+                case "Tanı 3":
+                    comboBox2.Items.Clear();
+                    comboBox2.Items.AddRange(new string[] { "Seçenek X", "Seçenek Y", "Seçenek Z" });
+                    break;
+
+            }
         }
     }
 }

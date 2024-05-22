@@ -16,7 +16,7 @@ namespace HospitalManagementSystem.Database
         public DateTime AppointmentDate { get; set; }
         public string AppointmentTime { get; set; }
         public string DoctorName { get; set; }
-        public string DoctorSurname { get; set; }
+       // public string DoctorSurname { get; set; }
         public string DoctorPoint { get; set; }
 
         public string PatientID { get; set; }

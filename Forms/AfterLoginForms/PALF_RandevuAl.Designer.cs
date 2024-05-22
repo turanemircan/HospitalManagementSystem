@@ -106,7 +106,7 @@
             btnRandevuAl.Name = "btnRandevuAl";
             btnRandevuAl.Size = new Size(229, 39);
             btnRandevuAl.TabIndex = 6;
-            btnRandevuAl.Text = "RandevuAl";
+            btnRandevuAl.Text = "Appointment";
             btnRandevuAl.UseVisualStyleBackColor = true;
             btnRandevuAl.Click += btnRandevuAl_Click;
             // 

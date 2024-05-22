@@ -38,8 +38,8 @@
             labelDALF_Patinam = new Label();
             textboxDALF_PatientId = new TextBox();
             textboxDALF_PatientName = new TextBox();
-            textboxDALF_Diagnosing = new TextBox();
-            textboxDALF_Prescriptions = new TextBox();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDALF_Appointments).BeginInit();
             SuspendLayout();
             // 
@@ -52,6 +52,8 @@
             dataGridViewDALF_Appointments.RowHeadersWidth = 51;
             dataGridViewDALF_Appointments.Size = new Size(566, 472);
             dataGridViewDALF_Appointments.TabIndex = 2;
+            dataGridViewDALF_Appointments.CellClick += dataGridViewDALF_Appointments_CellClick;
+            dataGridViewDALF_Appointments.CellFormatting += dataGridViewDALF_Appointments_CellFormatting;
             // 
             // buttonDALF_Upd
             // 
@@ -175,25 +177,23 @@
             textboxDALF_PatientName.Size = new Size(191, 29);
             textboxDALF_PatientName.TabIndex = 81;
             // 
-            // textboxDALF_Diagnosing
+            // comboBox1
             // 
-            textboxDALF_Diagnosing.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxDALF_Diagnosing.Location = new Point(151, 232);
-            textboxDALF_Diagnosing.Margin = new Padding(3, 4, 3, 4);
-            textboxDALF_Diagnosing.Name = "textboxDALF_Diagnosing";
-            textboxDALF_Diagnosing.PlaceholderText = "Diagnosing";
-            textboxDALF_Diagnosing.Size = new Size(191, 29);
-            textboxDALF_Diagnosing.TabIndex = 82;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(151, 235);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(191, 28);
+            comboBox1.TabIndex = 84;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // textboxDALF_Prescriptions
+            // comboBox2
             // 
-            textboxDALF_Prescriptions.Font = new Font("Yu Gothic UI Semibold", 9.5F);
-            textboxDALF_Prescriptions.Location = new Point(151, 282);
-            textboxDALF_Prescriptions.Margin = new Padding(3, 4, 3, 4);
-            textboxDALF_Prescriptions.Name = "textboxDALF_Prescriptions";
-            textboxDALF_Prescriptions.PlaceholderText = "Prescriptions";
-            textboxDALF_Prescriptions.Size = new Size(191, 29);
-            textboxDALF_Prescriptions.TabIndex = 83;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(151, 285);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(191, 28);
+            comboBox2.TabIndex = 85;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // DALF_RandevuGörüntüle
             // 
@@ -201,8 +201,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(946, 621);
-            Controls.Add(textboxDALF_Prescriptions);
-            Controls.Add(textboxDALF_Diagnosing);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Controls.Add(textboxDALF_PatientName);
             Controls.Add(textboxDALF_PatientId);
             Controls.Add(labelDALF_Presc);
@@ -233,7 +233,7 @@
         private Label labelDALF_Patinam;
         private TextBox textboxDALF_PatientId;
         private TextBox textboxDALF_PatientName;
-        private TextBox textboxDALF_Diagnosing;
-        private TextBox textboxDALF_Prescriptions;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
     }
 }
