@@ -36,31 +36,34 @@
             // DataGridSALF_Appointments
             // 
             DataGridSALF_Appointments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DataGridSALF_Appointments.Location = new Point(42, 74);
+            DataGridSALF_Appointments.Location = new Point(12, 42);
+            DataGridSALF_Appointments.Margin = new Padding(3, 2, 3, 2);
             DataGridSALF_Appointments.Name = "DataGridSALF_Appointments";
             DataGridSALF_Appointments.RowHeadersWidth = 51;
-            DataGridSALF_Appointments.Size = new Size(694, 309);
+            DataGridSALF_Appointments.Size = new Size(676, 285);
             DataGridSALF_Appointments.TabIndex = 0;
+            DataGridSALF_Appointments.MouseEnter += DataGridSALF_Appointments_MouseEnter;
             // 
             // LabelSALF_AllAppointments
             // 
             LabelSALF_AllAppointments.AutoSize = true;
             LabelSALF_AllAppointments.Font = new Font("Yu Gothic UI Semibold", 11F);
-            LabelSALF_AllAppointments.Location = new Point(42, 26);
+            LabelSALF_AllAppointments.Location = new Point(37, 20);
             LabelSALF_AllAppointments.Name = "LabelSALF_AllAppointments";
-            LabelSALF_AllAppointments.Size = new Size(162, 25);
+            LabelSALF_AllAppointments.Size = new Size(127, 20);
             LabelSALF_AllAppointments.TabIndex = 53;
             LabelSALF_AllAppointments.Text = "All Appointments";
             // 
             // SALF_Appointments
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(LabelSALF_AllAppointments);
             Controls.Add(DataGridSALF_Appointments);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SALF_Appointments";
             Text = "SALF_Appointments";
             ((System.ComponentModel.ISupportInitialize)DataGridSALF_Appointments).EndInit();

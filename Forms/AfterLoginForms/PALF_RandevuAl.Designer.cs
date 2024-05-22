@@ -45,17 +45,19 @@
             label1.Font = new Font("Yu Gothic UI Semibold", 13F);
             label1.Location = new Point(153, 136);
             label1.Name = "label1";
-            label1.Size = new Size(117, 25);
+            label1.Size = new Size(60, 25);
             label1.TabIndex = 0;
-            label1.Text = "Tarih Seçiniz:";
+            label1.Text = "Date :";
+            
             // 
             // dtpRandevuTarihSec
             // 
             dtpRandevuTarihSec.Font = new Font("Yu Gothic UI Semibold", 12F);
-            dtpRandevuTarihSec.Location = new Point(276, 134);
+            dtpRandevuTarihSec.Location = new Point(217, 134);
             dtpRandevuTarihSec.Name = "dtpRandevuTarihSec";
             dtpRandevuTarihSec.Size = new Size(200, 29);
             dtpRandevuTarihSec.TabIndex = 1;
+            
             // 
             // label2
             // 
@@ -63,17 +65,19 @@
             label2.Font = new Font("Yu Gothic UI Semibold", 13F);
             label2.Location = new Point(134, 102);
             label2.Name = "label2";
-            label2.Size = new Size(136, 25);
+            label2.Size = new Size(78, 25);
             label2.TabIndex = 2;
-            label2.Text = "Doktor Seçiniz:";
+            label2.Text = "Doctor :";
+            
             // 
             // cBoxRandevuDoktorSec
             // 
             cBoxRandevuDoktorSec.FormattingEnabled = true;
-            cBoxRandevuDoktorSec.Location = new Point(276, 105);
+            cBoxRandevuDoktorSec.Location = new Point(217, 105);
             cBoxRandevuDoktorSec.Name = "cBoxRandevuDoktorSec";
             cBoxRandevuDoktorSec.Size = new Size(200, 23);
             cBoxRandevuDoktorSec.TabIndex = 3;
+            
             // 
             // label3
             // 
@@ -81,15 +85,16 @@
             label3.Font = new Font("Yu Gothic UI Semibold", 13F);
             label3.Location = new Point(116, 68);
             label3.Name = "label3";
-            label3.Size = new Size(154, 25);
+            label3.Size = new Size(95, 25);
             label3.TabIndex = 4;
-            label3.Text = "Poliklinik Seçiniz:";
+            label3.Text = "Policlinic :";
+            
             // 
             // cBoxRandevuPoliklinikSec
             // 
             cBoxRandevuPoliklinikSec.FormattingEnabled = true;
             cBoxRandevuPoliklinikSec.Items.AddRange(new object[] { "Kulak Burun Boğaz", "Beyin Cerrahi", "Çocuk Hastalıkları" });
-            cBoxRandevuPoliklinikSec.Location = new Point(276, 71);
+            cBoxRandevuPoliklinikSec.Location = new Point(217, 71);
             cBoxRandevuPoliklinikSec.Name = "cBoxRandevuPoliklinikSec";
             cBoxRandevuPoliklinikSec.Size = new Size(200, 23);
             cBoxRandevuPoliklinikSec.TabIndex = 5;
@@ -98,21 +103,23 @@
             // btnRandevuAl
             // 
             btnRandevuAl.Font = new Font("Yu Gothic UI Semibold", 10F);
-            btnRandevuAl.Location = new Point(276, 240);
+            btnRandevuAl.Location = new Point(217, 240);
             btnRandevuAl.Name = "btnRandevuAl";
             btnRandevuAl.Size = new Size(200, 29);
             btnRandevuAl.TabIndex = 6;
             btnRandevuAl.Text = "RandevuAl";
             btnRandevuAl.UseVisualStyleBackColor = true;
+            btnRandevuAl.Click += btnRandevuAl_Click;
             // 
             // cbSaat
             // 
             cbSaat.FormattingEnabled = true;
             cbSaat.Items.AddRange(new object[] { "10.00", "11.00", "12.00", "13.00", "14.00", "15.00" });
-            cbSaat.Location = new Point(276, 172);
+            cbSaat.Location = new Point(217, 172);
             cbSaat.Name = "cbSaat";
             cbSaat.Size = new Size(200, 23);
             cbSaat.TabIndex = 7;
+            cbSaat.SelectedIndexChanged += cbSaat_SelectedIndexChanged;
             // 
             // RandevuSaat
             // 
@@ -120,9 +127,10 @@
             RandevuSaat.Font = new Font("Yu Gothic UI Semibold", 13F);
             RandevuSaat.Location = new Point(153, 169);
             RandevuSaat.Name = "RandevuSaat";
-            RandevuSaat.Size = new Size(113, 25);
+            RandevuSaat.Size = new Size(62, 25);
             RandevuSaat.TabIndex = 8;
-            RandevuSaat.Text = "Saat Seçiniz:";
+            RandevuSaat.Text = "Time :";
+            RandevuSaat.Click += RandevuSaat_Click;
             // 
             // PALF_RandevuAl
             // 

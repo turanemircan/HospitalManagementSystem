@@ -36,31 +36,34 @@
             // dataGridViewAALF_DoctorReviews
             // 
             dataGridViewAALF_DoctorReviews.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAALF_DoctorReviews.Location = new Point(40, 82);
+            dataGridViewAALF_DoctorReviews.Location = new Point(35, 62);
+            dataGridViewAALF_DoctorReviews.Margin = new Padding(3, 2, 3, 2);
             dataGridViewAALF_DoctorReviews.Name = "dataGridViewAALF_DoctorReviews";
             dataGridViewAALF_DoctorReviews.RowHeadersWidth = 51;
-            dataGridViewAALF_DoctorReviews.Size = new Size(920, 413);
+            dataGridViewAALF_DoctorReviews.Size = new Size(805, 310);
             dataGridViewAALF_DoctorReviews.TabIndex = 0;
+            dataGridViewAALF_DoctorReviews.CellMouseEnter += dataGridViewAALF_DoctorReviews_CellMouseEnter;
             // 
             // labelAALF_DR
             // 
             labelAALF_DR.AutoSize = true;
             labelAALF_DR.Font = new Font("Yu Gothic UI Semibold", 13F);
-            labelAALF_DR.Location = new Point(40, 26);
+            labelAALF_DR.Location = new Point(35, 20);
             labelAALF_DR.Name = "labelAALF_DR";
-            labelAALF_DR.Size = new Size(168, 30);
+            labelAALF_DR.Size = new Size(141, 25);
             labelAALF_DR.TabIndex = 29;
             labelAALF_DR.Text = "Doctor Reviews";
             // 
             // AALF_DoctorReviews
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(995, 553);
+            ClientSize = new Size(871, 415);
             Controls.Add(labelAALF_DR);
             Controls.Add(dataGridViewAALF_DoctorReviews);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AALF_DoctorReviews";
             Text = "AALF_DoctorReviews";
             ((System.ComponentModel.ISupportInitialize)dataGridViewAALF_DoctorReviews).EndInit();

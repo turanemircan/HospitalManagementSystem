@@ -1,4 +1,5 @@
 ﻿using HospitalManagementSystem.Database;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,7 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         PALF_RandevuAl randevuAl;
         PALF_RandevuBilgileri randevuBilgileri;
         ALF_Information bilgilerim;
-
+        public static string gidenpatiid;
         public Patient patient { get; set; }
             
         public PatientALF( Patient _patient)
@@ -41,6 +42,8 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             helper.formGoster(randevuAl, randevuAl.Name);
             
             label2.Text=patient.identification;
+            gidenpatiid =label2.Text;
+            PALF_RandevuAl randevualform = new PALF_RandevuAl();
 
             label3.Text = $"{patient.name} {patient.surname}";
         }

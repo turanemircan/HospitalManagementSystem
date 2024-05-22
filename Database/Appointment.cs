@@ -18,5 +18,7 @@ namespace HospitalManagementSystem.Database
         public string DoctorName { get; set; }
         public string DoctorSurname { get; set; }
         public string DoctorPoint { get; set; }
+
+        public string PatientID { get; set; }
     }
 }

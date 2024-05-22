@@ -28,29 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             dataGridViewAktifRandevu = new DataGridView();
-            dataGridViewGecmisRandevu = new DataGridView();
+            appointmentIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            appointmentDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            appointmentTimeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            doctorNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            doctorSurnameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            doctorPointDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            patientIDDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            appointmentBindingSource = new BindingSource(components);
             label1 = new Label();
-            label2 = new Label();
+            doctorRatingButton = new Button();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAktifRandevu).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewGecmisRandevu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)appointmentBindingSource).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewAktifRandevu
             // 
+            dataGridViewAktifRandevu.AutoGenerateColumns = false;
             dataGridViewAktifRandevu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewAktifRandevu.Columns.AddRange(new DataGridViewColumn[] { appointmentIdDataGridViewTextBoxColumn, appointmentDateDataGridViewTextBoxColumn, appointmentTimeDataGridViewTextBoxColumn, doctorNameDataGridViewTextBoxColumn, doctorSurnameDataGridViewTextBoxColumn, doctorPointDataGridViewTextBoxColumn, patientIDDataGridViewTextBoxColumn });
+            dataGridViewAktifRandevu.DataSource = appointmentBindingSource;
             dataGridViewAktifRandevu.Location = new Point(12, 32);
             dataGridViewAktifRandevu.Name = "dataGridViewAktifRandevu";
-            dataGridViewAktifRandevu.Size = new Size(577, 160);
+            dataGridViewAktifRandevu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewAktifRandevu.Size = new Size(577, 336);
             dataGridViewAktifRandevu.TabIndex = 0;
+            dataGridViewAktifRandevu.MouseEnter += dataGridViewAktifRandevu_MouseEnter;
             // 
-            // dataGridViewGecmisRandevu
+            // appointmentIdDataGridViewTextBoxColumn
             // 
-            dataGridViewGecmisRandevu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewGecmisRandevu.Location = new Point(12, 230);
-            dataGridViewGecmisRandevu.Name = "dataGridViewGecmisRandevu";
-            dataGridViewGecmisRandevu.Size = new Size(577, 160);
-            dataGridViewGecmisRandevu.TabIndex = 1;
+            appointmentIdDataGridViewTextBoxColumn.DataPropertyName = "AppointmentId";
+            appointmentIdDataGridViewTextBoxColumn.HeaderText = "AppointmentId";
+            appointmentIdDataGridViewTextBoxColumn.Name = "appointmentIdDataGridViewTextBoxColumn";
+            // 
+            // appointmentDateDataGridViewTextBoxColumn
+            // 
+            appointmentDateDataGridViewTextBoxColumn.DataPropertyName = "AppointmentDate";
+            appointmentDateDataGridViewTextBoxColumn.HeaderText = "AppointmentDate";
+            appointmentDateDataGridViewTextBoxColumn.Name = "appointmentDateDataGridViewTextBoxColumn";
+            // 
+            // appointmentTimeDataGridViewTextBoxColumn
+            // 
+            appointmentTimeDataGridViewTextBoxColumn.DataPropertyName = "AppointmentTime";
+            appointmentTimeDataGridViewTextBoxColumn.HeaderText = "AppointmentTime";
+            appointmentTimeDataGridViewTextBoxColumn.Name = "appointmentTimeDataGridViewTextBoxColumn";
+            // 
+            // doctorNameDataGridViewTextBoxColumn
+            // 
+            doctorNameDataGridViewTextBoxColumn.DataPropertyName = "DoctorName";
+            doctorNameDataGridViewTextBoxColumn.HeaderText = "DoctorName";
+            doctorNameDataGridViewTextBoxColumn.Name = "doctorNameDataGridViewTextBoxColumn";
+            // 
+            // doctorSurnameDataGridViewTextBoxColumn
+            // 
+            doctorSurnameDataGridViewTextBoxColumn.DataPropertyName = "DoctorSurname";
+            doctorSurnameDataGridViewTextBoxColumn.HeaderText = "DoctorSurname";
+            doctorSurnameDataGridViewTextBoxColumn.Name = "doctorSurnameDataGridViewTextBoxColumn";
+            // 
+            // doctorPointDataGridViewTextBoxColumn
+            // 
+            doctorPointDataGridViewTextBoxColumn.DataPropertyName = "DoctorPoint";
+            doctorPointDataGridViewTextBoxColumn.HeaderText = "DoctorPoint";
+            doctorPointDataGridViewTextBoxColumn.Name = "doctorPointDataGridViewTextBoxColumn";
+            // 
+            // patientIDDataGridViewTextBoxColumn
+            // 
+            patientIDDataGridViewTextBoxColumn.DataPropertyName = "PatientID";
+            patientIDDataGridViewTextBoxColumn.HeaderText = "PatientID";
+            patientIDDataGridViewTextBoxColumn.Name = "patientIDDataGridViewTextBoxColumn";
+            // 
+            // appointmentBindingSource
+            // 
+            appointmentBindingSource.DataSource = typeof(Database.Appointment);
             // 
             // label1
             // 
@@ -58,19 +110,28 @@
             label1.Font = new Font("Segoe UI", 11F);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(118, 20);
+            label1.Size = new Size(83, 20);
             label1.TabIndex = 2;
-            label1.Text = "Aktif Randevular";
+            label1.Text = "Randevular";
             // 
-            // label2
+            // doctorRatingButton
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11F);
-            label2.Location = new Point(12, 207);
-            label2.Name = "label2";
-            label2.Size = new Size(135, 20);
-            label2.TabIndex = 3;
-            label2.Text = "Gecmis Randevular";
+            doctorRatingButton.Location = new Point(495, 374);
+            doctorRatingButton.Name = "doctorRatingButton";
+            doctorRatingButton.Size = new Size(94, 23);
+            doctorRatingButton.TabIndex = 3;
+            doctorRatingButton.Text = "Doctor Rating";
+            doctorRatingButton.UseVisualStyleBackColor = true;
+            doctorRatingButton.Click += doctorRatingButton_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "1 (Çok Kötü)", "2 (Kötü)", "3 (Normal)", "4 (İyi)", "5 (Çok İyi)" });
+            comboBox1.Location = new Point(395, 374);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(94, 23);
+            comboBox1.TabIndex = 4;
             // 
             // PALF_RandevuBilgileri
             // 
@@ -78,15 +139,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(601, 402);
-            Controls.Add(label2);
+            Controls.Add(comboBox1);
+            Controls.Add(doctorRatingButton);
             Controls.Add(label1);
-            Controls.Add(dataGridViewGecmisRandevu);
             Controls.Add(dataGridViewAktifRandevu);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PALF_RandevuBilgileri";
             Text = "PALF_RandevuBilgileri";
             ((System.ComponentModel.ISupportInitialize)dataGridViewAktifRandevu).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewGecmisRandevu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)appointmentBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -94,8 +155,16 @@
         #endregion
 
         private DataGridView dataGridViewAktifRandevu;
-        private DataGridView dataGridViewGecmisRandevu;
         private Label label1;
-        private Label label2;
+        private DataGridViewTextBoxColumn appointmentIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn appointmentDateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn appointmentTimeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn doctorNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn doctorSurnameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn doctorPointDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn patientIDDataGridViewTextBoxColumn;
+        private BindingSource appointmentBindingSource;
+        private Button doctorRatingButton;
+        private ComboBox comboBox1;
     }
 }
