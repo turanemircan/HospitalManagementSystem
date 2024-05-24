@@ -43,5 +43,33 @@ If the appointment time is already booked, it will display a warning.(See Fig 1.
 
 ![PatientAppoitmentError](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/dc65afb9-90ef-4df0-b917-0902d94c73fa) Fig 1.6
 
-#### 1. Appoitment History:
+#### 2. Appoitment History:
+
+Here, the patient can see their appointment history which contains Doctor Name, Appointment Date and Time. Additionally, the patient can rate the doctor.(See Fig 1.7).
+
+![PatientAppoitmentHistory](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/6e95f661-d655-4c56-8bb8-2ecd67b3265b) Fig 1.7
+
+This is how the patient module works. On the whole, this module allows patients to register their account or login their account(if he/she has one), book an appointment and view his/her appointment history.
+
+### 3. Information
+Users can update their personal information in this section.(Fig 1.8) They can also update their password from the password change screen.(Fig 1.9)
+
+![Information](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/d4eedbc1-f95c-4baf-a50b-e2869a4ca410) Fig 1.8
+
+![İnformationPassword](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/4601bf5a-e454-465c-9c11-5d1aea23099a) Fig 1.9
+
+### Doctor Module
+The doctors can login into their account which can be done by toggling the tab from ‘Patient’ to ‘Doctor’. Fig 1.10 shows the login form for a doctor. Registration of a doctor account can be done only by admin. We will discuss more about this in Admin Module. I will not mention it again since it is the same for both the Doctor and Secretary sections.
+
+![DoctorSecretaryAdminLogin](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/d87989a2-8995-4965-a74d-410c8b92344f) Fig 1.10
+
+Once the doctor clicking the ‘Login’ button, they will be redirected to their own dashboard which is shown in Fig 1.11
+
+![DoctorMenu](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/c744009d-fb80-48b2-8b7e-ee473992cc51) Fig 1.11
+
+#### 1. View Appoitment:
+
+In this page, doctor can able to see their appointments which has been booked by the patients.(Fig 1.12)
+
+![DoctorViewAppointment](https://github.com/turanemircan/HospitalManagementSystem/assets/115572710/5d3ed9fa-f1ea-4726-beda-cd489c845b26) Fig 1.12
 
