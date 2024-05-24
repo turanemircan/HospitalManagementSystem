@@ -58,26 +58,26 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(298, 553);
+            panel1.Size = new Size(338, 553);
             panel1.TabIndex = 0;
             // 
             // labelPALF_Hg
             // 
             labelPALF_Hg.AutoSize = true;
             labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
-            labelPALF_Hg.Location = new Point(70, 30);
+            labelPALF_Hg.Location = new Point(101, 9);
             labelPALF_Hg.Name = "labelPALF_Hg";
-            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.Size = new Size(120, 35);
             labelPALF_Hg.TabIndex = 50;
-            labelPALF_Hg.Text = "Hosgeldiniz";
+            labelPALF_Hg.Text = "Welcome";
             // 
             // buttonAALF_DoctorReview
             // 
             buttonAALF_DoctorReview.Dock = DockStyle.Bottom;
             buttonAALF_DoctorReview.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonAALF_DoctorReview.Location = new Point(0, 179);
+            buttonAALF_DoctorReview.Location = new Point(0, 151);
             buttonAALF_DoctorReview.Name = "buttonAALF_DoctorReview";
-            buttonAALF_DoctorReview.Size = new Size(298, 44);
+            buttonAALF_DoctorReview.Size = new Size(338, 53);
             buttonAALF_DoctorReview.TabIndex = 11;
             buttonAALF_DoctorReview.Text = "Doctor Review";
             buttonAALF_DoctorReview.UseVisualStyleBackColor = true;
@@ -87,9 +87,9 @@
             // 
             buttonAALF_Secretary.Dock = DockStyle.Bottom;
             buttonAALF_Secretary.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonAALF_Secretary.Location = new Point(0, 223);
+            buttonAALF_Secretary.Location = new Point(0, 204);
             buttonAALF_Secretary.Name = "buttonAALF_Secretary";
-            buttonAALF_Secretary.Size = new Size(298, 44);
+            buttonAALF_Secretary.Size = new Size(338, 53);
             buttonAALF_Secretary.TabIndex = 10;
             buttonAALF_Secretary.Text = "Secretary Edit";
             buttonAALF_Secretary.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             labelAALF_AdminName.AutoSize = true;
             labelAALF_AdminName.BackColor = Color.Salmon;
             labelAALF_AdminName.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminName.Location = new Point(145, 119);
+            labelAALF_AdminName.Location = new Point(166, 105);
             labelAALF_AdminName.Name = "labelAALF_AdminName";
             labelAALF_AdminName.Size = new Size(46, 23);
             labelAALF_AdminName.TabIndex = 9;
@@ -111,7 +111,7 @@
             labelAALF_AdminID.AutoSize = true;
             labelAALF_AdminID.BackColor = Color.Salmon;
             labelAALF_AdminID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminID.Location = new Point(145, 85);
+            labelAALF_AdminID.Location = new Point(166, 67);
             labelAALF_AdminID.Name = "labelAALF_AdminID";
             labelAALF_AdminID.Size = new Size(46, 23);
             labelAALF_AdminID.TabIndex = 0;
@@ -121,7 +121,7 @@
             // 
             labelAALF_AdminN.AutoSize = true;
             labelAALF_AdminN.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminN.Location = new Point(12, 115);
+            labelAALF_AdminN.Location = new Point(30, 103);
             labelAALF_AdminN.Name = "labelAALF_AdminN";
             labelAALF_AdminN.Size = new Size(128, 23);
             labelAALF_AdminN.TabIndex = 8;
@@ -131,9 +131,9 @@
             // 
             buttonAALF_DoctorEdit.Dock = DockStyle.Bottom;
             buttonAALF_DoctorEdit.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonAALF_DoctorEdit.Location = new Point(0, 267);
+            buttonAALF_DoctorEdit.Location = new Point(0, 257);
             buttonAALF_DoctorEdit.Name = "buttonAALF_DoctorEdit";
-            buttonAALF_DoctorEdit.Size = new Size(298, 43);
+            buttonAALF_DoctorEdit.Size = new Size(338, 53);
             buttonAALF_DoctorEdit.TabIndex = 7;
             buttonAALF_DoctorEdit.Text = "Doctor Edit";
             buttonAALF_DoctorEdit.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             // 
             labelAALF_AdminI.AutoSize = true;
             labelAALF_AdminI.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelAALF_AdminI.Location = new Point(12, 83);
+            labelAALF_AdminI.Location = new Point(30, 67);
             labelAALF_AdminI.Name = "labelAALF_AdminI";
             labelAALF_AdminI.Size = new Size(99, 23);
             labelAALF_AdminI.TabIndex = 0;
@@ -156,7 +156,7 @@
             pictureBox1.Location = new Point(0, 310);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(298, 243);
+            pictureBox1.Size = new Size(338, 243);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -165,7 +165,7 @@
             // 
             panelAdminALF.BackColor = Color.White;
             panelAdminALF.Dock = DockStyle.Fill;
-            panelAdminALF.Location = new Point(298, 0);
+            panelAdminALF.Location = new Point(338, 0);
             panelAdminALF.Name = "panelAdminALF";
             panelAdminALF.Size = new Size(1454, 553);
             panelAdminALF.TabIndex = 1;
@@ -174,10 +174,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1752, 553);
+            ClientSize = new Size(1792, 553);
             Controls.Add(panelAdminALF);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "AdminALF";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AdminALF";
             FormClosed += AdminALF_FormClosed;
             Load += AdminALF_Load;

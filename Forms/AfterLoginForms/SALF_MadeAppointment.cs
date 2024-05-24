@@ -21,7 +21,6 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
     {
         SqlConnection bag = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=HospitalManagementSystem;Integrated Security=True;Trust Server Certificate=True");
         SqlCommand cmd;
-        SqlDataAdapter adapter;
         public SALF_MadeAppointment()
         {
             InitializeComponent();
@@ -31,14 +30,11 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             bag.Open();
 
-
             cmd = new SqlCommand("Select *from Doctors where branch='Kulak Burun Boğaz'", bag);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-
                 cboxdoktorSek.Items.Add(reader[1] + " " + reader[2]);
-
             }
             bag.Close();
         }
@@ -47,14 +43,11 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             bag.Open();
 
-
             cmd = new SqlCommand("Select *from Doctors where branch='Beyin Cerrahi'", bag);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-
                 cboxdoktorSek.Items.Add(reader[1] + " " + reader[2]);
-
             }
             bag.Close();
         }
@@ -63,14 +56,11 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
         {
             bag.Open();
 
-
             cmd = new SqlCommand("Select *from Doctors where branch='Çocuk Hastalıkları'", bag);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-
                 cboxdoktorSek.Items.Add(reader[1] + " " + reader[2]);
-
             }
             bag.Close();
         }
@@ -96,7 +86,6 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
                     cboxdoktorSek.Text = string.Empty;
                     doctorgetir3();
                     break;
-
             }
         }
 
@@ -110,58 +99,38 @@ namespace HospitalManagementSystem.Forms.AfterLoginForms
             pid = textboxSALF_PatientId.Text;
 
 
-            // SQL bağlantısını açın
             bag.Open();
 
-            // SQL sorgusunu hazırlayın
             string query = "SELECT COUNT(*) FROM Appointments WHERE DoctorName = @DoctorName AND AppointmentTime = @AppointmentTime AND AppointmentDate = @AppointmentDate";
 
-            // SqlCommand nesnesini oluşturun
             using (SqlCommand cmd = new SqlCommand(query, bag))
             {
-                // Parametreleri ekleyin
                 cmd.Parameters.AddWithValue("@DoctorName", doctorName);
                 cmd.Parameters.AddWithValue("@AppointmentTime", saat);
                 cmd.Parameters.AddWithValue("@AppointmentDate", dateonly);
 
-
-                // Sorguyu çalıştırın ve sonucu alın
                 int count = (int)cmd.ExecuteScalar();
 
-                // Sonucu kontrol edin ve uygun işlemleri yapın
                 if (count > 0)
                 {
-                    // Aynı saat için zaten bir randevu var
-                    MessageBox.Show("Bu doktor için bu saatte zaten bir randevu var.");
+                    MessageBox.Show("There is already an appointment for this doctor at this time.");
                 }
                 else
                 {
-
-
                     string insertQuery = "INSERT INTO Appointments (DoctorName, AppointmentDate, AppointmentTime,PatientID) VALUES (@DoctorName, @AppointmentDate, @AppointmentTime,@PatiID)";
 
                     using (SqlCommand insertCmd = new SqlCommand(insertQuery, bag))
                     {
-                        // Parametreleri ekleyin
                         insertCmd.Parameters.AddWithValue("@DoctorName", doctorName);
                         insertCmd.Parameters.AddWithValue("@AppointmentDate", dateonly);
                         insertCmd.Parameters.AddWithValue("@AppointmentTime", saat);
                         insertCmd.Parameters.AddWithValue("@PatiID", pid);
 
-
-                        // INSERT sorgusunu çalıştırın
                         insertCmd.ExecuteNonQuery();
                     }
-
-
-
-
-
-                    MessageBox.Show("Randevu alındi.");
+                    MessageBox.Show("You are appointment successfully booked");
                 }
             }
-
-
             bag.Close();
         }
 

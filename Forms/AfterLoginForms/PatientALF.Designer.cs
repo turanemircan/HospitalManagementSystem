@@ -57,17 +57,17 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(286, 536);
+            panel1.Size = new Size(338, 536);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Bottom;
             pictureBox1.Image = Properties.Resources.HospitalSystemLoginGUILogo;
-            pictureBox1.Location = new Point(0, 290);
+            pictureBox1.Location = new Point(0, 320);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(286, 246);
+            pictureBox1.Size = new Size(338, 216);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -76,12 +76,12 @@
             // 
             buttonPALF_Bilgilerim.Dock = DockStyle.Top;
             buttonPALF_Bilgilerim.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonPALF_Bilgilerim.Location = new Point(0, 244);
+            buttonPALF_Bilgilerim.Location = new Point(0, 267);
             buttonPALF_Bilgilerim.Margin = new Padding(3, 4, 3, 4);
             buttonPALF_Bilgilerim.Name = "buttonPALF_Bilgilerim";
-            buttonPALF_Bilgilerim.Size = new Size(286, 47);
+            buttonPALF_Bilgilerim.Size = new Size(338, 53);
             buttonPALF_Bilgilerim.TabIndex = 3;
-            buttonPALF_Bilgilerim.Text = "Bilgilerim";
+            buttonPALF_Bilgilerim.Text = "Information";
             buttonPALF_Bilgilerim.UseVisualStyleBackColor = true;
             buttonPALF_Bilgilerim.Click += buttonPALF_Bilgilerim_Click;
             // 
@@ -89,12 +89,12 @@
             // 
             buttonPALF_RandevuBilgileri.Dock = DockStyle.Top;
             buttonPALF_RandevuBilgileri.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonPALF_RandevuBilgileri.Location = new Point(0, 199);
+            buttonPALF_RandevuBilgileri.Location = new Point(0, 214);
             buttonPALF_RandevuBilgileri.Margin = new Padding(3, 4, 3, 4);
             buttonPALF_RandevuBilgileri.Name = "buttonPALF_RandevuBilgileri";
-            buttonPALF_RandevuBilgileri.Size = new Size(286, 45);
+            buttonPALF_RandevuBilgileri.Size = new Size(338, 53);
             buttonPALF_RandevuBilgileri.TabIndex = 2;
-            buttonPALF_RandevuBilgileri.Text = "Randevu Bilgileri";
+            buttonPALF_RandevuBilgileri.Text = "Appointment History";
             buttonPALF_RandevuBilgileri.UseVisualStyleBackColor = true;
             buttonPALF_RandevuBilgileri.Click += buttonPALF_RandevuBilgileri_Click;
             // 
@@ -102,12 +102,12 @@
             // 
             buttonPALF_RandevuAl.Dock = DockStyle.Top;
             buttonPALF_RandevuAl.Font = new Font("Yu Gothic UI Semibold", 12F);
-            buttonPALF_RandevuAl.Location = new Point(0, 157);
+            buttonPALF_RandevuAl.Location = new Point(0, 161);
             buttonPALF_RandevuAl.Margin = new Padding(3, 4, 3, 4);
             buttonPALF_RandevuAl.Name = "buttonPALF_RandevuAl";
-            buttonPALF_RandevuAl.Size = new Size(286, 42);
+            buttonPALF_RandevuAl.Size = new Size(338, 53);
             buttonPALF_RandevuAl.TabIndex = 1;
-            buttonPALF_RandevuAl.Text = "Randevu Al";
+            buttonPALF_RandevuAl.Text = "Make an Appointment";
             buttonPALF_RandevuAl.UseVisualStyleBackColor = true;
             buttonPALF_RandevuAl.Click += buttonPALF_RandevuAl_Click;
             // 
@@ -122,7 +122,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(286, 157);
+            panel2.Size = new Size(338, 161);
             panel2.TabIndex = 0;
             // 
             // label3
@@ -130,7 +130,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Salmon;
             label3.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label3.Location = new Point(142, 107);
+            label3.Location = new Point(166, 105);
             label3.Name = "label3";
             label3.Size = new Size(46, 23);
             label3.TabIndex = 46;
@@ -141,7 +141,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Salmon;
             label2.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label2.Location = new Point(120, 67);
+            label2.Location = new Point(166, 67);
             label2.Name = "label2";
             label2.Size = new Size(46, 23);
             label2.TabIndex = 45;
@@ -152,18 +152,18 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Salmon;
             label1.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label1.Location = new Point(21, 107);
+            label1.Location = new Point(30, 103);
             label1.Name = "label1";
-            label1.Size = new Size(127, 23);
+            label1.Size = new Size(132, 23);
             label1.TabIndex = 44;
-            label1.Text = "Patient Name=";
+            label1.Text = "Patient Name =";
             // 
             // labelDALF_DoctorID
             // 
             labelDALF_DoctorID.AutoSize = true;
             labelDALF_DoctorID.BackColor = Color.Salmon;
             labelDALF_DoctorID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelDALF_DoctorID.Location = new Point(21, 67);
+            labelDALF_DoctorID.Location = new Point(30, 67);
             labelDALF_DoctorID.Name = "labelDALF_DoctorID";
             labelDALF_DoctorID.Size = new Size(103, 23);
             labelDALF_DoctorID.TabIndex = 43;
@@ -173,17 +173,17 @@
             // 
             labelPALF_Hg.AutoSize = true;
             labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
-            labelPALF_Hg.Location = new Point(62, 19);
+            labelPALF_Hg.Location = new Point(101, 9);
             labelPALF_Hg.Name = "labelPALF_Hg";
-            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.Size = new Size(120, 35);
             labelPALF_Hg.TabIndex = 0;
-            labelPALF_Hg.Text = "Hosgeldiniz";
+            labelPALF_Hg.Text = "Welcome";
             // 
             // panelPatientALF
             // 
             panelPatientALF.BackColor = Color.White;
             panelPatientALF.Dock = DockStyle.Fill;
-            panelPatientALF.Location = new Point(286, 0);
+            panelPatientALF.Location = new Point(338, 0);
             panelPatientALF.Margin = new Padding(3, 4, 3, 4);
             panelPatientALF.Name = "panelPatientALF";
             panelPatientALF.Size = new Size(1045, 536);
@@ -194,11 +194,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1331, 536);
+            ClientSize = new Size(1383, 536);
             Controls.Add(panelPatientALF);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "PatientALF";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PatientALF";
             FormClosed += PatientALF_FormClosed;
             Load += PatientALF_Load;

@@ -51,11 +51,11 @@
             // 
             // dtpRandevuTarihSec
             // 
-            dtpRandevuTarihSec.Font = new Font("Yu Gothic UI Semibold", 12F);
+            dtpRandevuTarihSec.Font = new Font("Microsoft Sans Serif", 12F);
             dtpRandevuTarihSec.Location = new Point(438, 228);
             dtpRandevuTarihSec.Margin = new Padding(3, 4, 3, 4);
             dtpRandevuTarihSec.Name = "dtpRandevuTarihSec";
-            dtpRandevuTarihSec.Size = new Size(228, 34);
+            dtpRandevuTarihSec.Size = new Size(256, 30);
             dtpRandevuTarihSec.TabIndex = 1;
             // 
             // label2
@@ -74,7 +74,7 @@
             cBoxRandevuDoktorSec.Location = new Point(438, 189);
             cBoxRandevuDoktorSec.Margin = new Padding(3, 4, 3, 4);
             cBoxRandevuDoktorSec.Name = "cBoxRandevuDoktorSec";
-            cBoxRandevuDoktorSec.Size = new Size(228, 28);
+            cBoxRandevuDoktorSec.Size = new Size(256, 28);
             cBoxRandevuDoktorSec.TabIndex = 3;
             // 
             // label3
@@ -94,7 +94,7 @@
             cBoxRandevuPoliklinikSec.Location = new Point(438, 144);
             cBoxRandevuPoliklinikSec.Margin = new Padding(3, 4, 3, 4);
             cBoxRandevuPoliklinikSec.Name = "cBoxRandevuPoliklinikSec";
-            cBoxRandevuPoliklinikSec.Size = new Size(228, 28);
+            cBoxRandevuPoliklinikSec.Size = new Size(256, 28);
             cBoxRandevuPoliklinikSec.TabIndex = 5;
             cBoxRandevuPoliklinikSec.SelectedIndexChanged += cBoxRandevuPoliklinikSec_SelectedIndexChanged;
             // 
@@ -104,7 +104,7 @@
             btnRandevuAl.Location = new Point(438, 369);
             btnRandevuAl.Margin = new Padding(3, 4, 3, 4);
             btnRandevuAl.Name = "btnRandevuAl";
-            btnRandevuAl.Size = new Size(229, 39);
+            btnRandevuAl.Size = new Size(256, 39);
             btnRandevuAl.TabIndex = 6;
             btnRandevuAl.Text = "Appointment";
             btnRandevuAl.UseVisualStyleBackColor = true;
@@ -117,9 +117,8 @@
             cbSaat.Location = new Point(438, 278);
             cbSaat.Margin = new Padding(3, 4, 3, 4);
             cbSaat.Name = "cbSaat";
-            cbSaat.Size = new Size(228, 28);
+            cbSaat.Size = new Size(256, 28);
             cbSaat.TabIndex = 7;
-            cbSaat.SelectedIndexChanged += cbSaat_SelectedIndexChanged;
             // 
             // RandevuSaat
             // 
@@ -130,7 +129,6 @@
             RandevuSaat.Size = new Size(73, 30);
             RandevuSaat.TabIndex = 8;
             RandevuSaat.Text = "Time :";
-            RandevuSaat.Click += RandevuSaat_Click;
             // 
             // PALF_RandevuAl
             // 
@@ -151,7 +149,6 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "PALF_RandevuAl";
             Text = "PALF_RandevuAl";
-            Load += PALF_RandevuAl_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -63,18 +63,18 @@
             // 
             labelPALF_Hg.AutoSize = true;
             labelPALF_Hg.Font = new Font("Yu Gothic UI Semibold", 15F);
-            labelPALF_Hg.Location = new Point(83, 18);
+            labelPALF_Hg.Location = new Point(101, 9);
             labelPALF_Hg.Name = "labelPALF_Hg";
-            labelPALF_Hg.Size = new Size(150, 35);
+            labelPALF_Hg.Size = new Size(120, 35);
             labelPALF_Hg.TabIndex = 51;
-            labelPALF_Hg.Text = "Hosgeldiniz";
+            labelPALF_Hg.Text = "Welcome";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Salmon;
             label2.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label2.Location = new Point(166, 115);
+            label2.Location = new Point(166, 105);
             label2.Name = "label2";
             label2.Size = new Size(55, 23);
             label2.TabIndex = 44;
@@ -85,7 +85,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Salmon;
             label1.Font = new Font("Yu Gothic UI Semibold", 10F);
-            label1.Location = new Point(166, 68);
+            label1.Location = new Point(166, 67);
             label1.Name = "label1";
             label1.Size = new Size(53, 23);
             label1.TabIndex = 43;
@@ -96,7 +96,7 @@
             labelDALF_DoctorID.AutoSize = true;
             labelDALF_DoctorID.BackColor = Color.Salmon;
             labelDALF_DoctorID.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labelDALF_DoctorID.Location = new Point(30, 65);
+            labelDALF_DoctorID.Location = new Point(30, 67);
             labelDALF_DoctorID.Name = "labelDALF_DoctorID";
             labelDALF_DoctorID.Size = new Size(101, 23);
             labelDALF_DoctorID.TabIndex = 42;
@@ -106,7 +106,7 @@
             // 
             labeDALF_DoctorName.AutoSize = true;
             labeDALF_DoctorName.Font = new Font("Yu Gothic UI Semibold", 10F);
-            labeDALF_DoctorName.Location = new Point(30, 113);
+            labeDALF_DoctorName.Location = new Point(30, 103);
             labeDALF_DoctorName.Name = "labeDALF_DoctorName";
             labeDALF_DoctorName.Size = new Size(130, 23);
             labeDALF_DoctorName.TabIndex = 1;
@@ -120,7 +120,7 @@
             buttonDALF_İnformation.Name = "buttonDALF_İnformation";
             buttonDALF_İnformation.Size = new Size(338, 53);
             buttonDALF_İnformation.TabIndex = 7;
-            buttonDALF_İnformation.Text = "İnformation";
+            buttonDALF_İnformation.Text = "Information";
             buttonDALF_İnformation.UseVisualStyleBackColor = true;
             buttonDALF_İnformation.Click += buttonDALF_İnformation_Click;
             // 
@@ -164,7 +164,10 @@
             ClientSize = new Size(1284, 621);
             Controls.Add(panelDoctorALF);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "DoctorALF";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DoctorALF";
             FormClosed += DoctorALF_FormClosed;
             Load += DoctorALF_Load;

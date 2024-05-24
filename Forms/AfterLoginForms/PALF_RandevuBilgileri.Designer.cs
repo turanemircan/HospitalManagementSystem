@@ -119,10 +119,10 @@
             // 
             // doctorRatingButton
             // 
-            doctorRatingButton.Location = new Point(566, 499);
+            doctorRatingButton.Location = new Point(547, 499);
             doctorRatingButton.Margin = new Padding(3, 4, 3, 4);
             doctorRatingButton.Name = "doctorRatingButton";
-            doctorRatingButton.Size = new Size(107, 31);
+            doctorRatingButton.Size = new Size(137, 31);
             doctorRatingButton.TabIndex = 3;
             doctorRatingButton.Text = "Doctor Rating";
             doctorRatingButton.UseVisualStyleBackColor = true;
@@ -131,8 +131,8 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1 (Çok Kötü)", "2 (Kötü)", "3 (Normal)", "4 (İyi)", "5 (Çok İyi)" });
-            comboBox1.Location = new Point(451, 499);
+            comboBox1.Items.AddRange(new object[] { "1 (Vey Bad)", "2 (Bad)", "3 (Normal)", "4 (Good)", "5 (Very Good)" });
+            comboBox1.Location = new Point(432, 499);
             comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(107, 28);

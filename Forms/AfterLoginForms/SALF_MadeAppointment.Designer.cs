@@ -145,7 +145,7 @@
             // 
             // dtpRandevuTarihSec
             // 
-            dtpRandevuTarihSec.Font = new Font("Yu Gothic UI Semibold", 12F);
+            dtpRandevuTarihSec.Font = new Font("Segoe UI", 12F);
             dtpRandevuTarihSec.Location = new Point(388, 302);
             dtpRandevuTarihSec.Margin = new Padding(3, 4, 3, 4);
             dtpRandevuTarihSec.Name = "dtpRandevuTarihSec";
